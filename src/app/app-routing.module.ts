@@ -4,7 +4,8 @@ import { Routes, RouterModule } from '@angular/router';
 const routes: Routes = [
     { path: '', pathMatch: 'full', loadChildren: './modules/landing/landing.module#LandingModule' },
     { path: 'trends', loadChildren: './modules/trends/trends.module#TrendsModule' },
-    { path: 'trading-post', loadChildren: './modules/trading-post/trading-post.module#TradingPostModule' }
+    { path: 'trading-post', loadChildren: './modules/trading-post/trading-post.module#TradingPostModule' },
+    { path: 'item', loadChildren: './modules/item/item.module#ItemModule' }
 ];
 
 @NgModule({
