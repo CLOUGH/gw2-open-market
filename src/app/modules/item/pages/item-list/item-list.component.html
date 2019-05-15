@@ -1,31 +1,33 @@
-<div class="container">
+<div class="container pb-3">
+  <!-- <h1 class="display-4 mt-3 mb-3">Items</h1> -->
   <table class="table">
     <thead>
       <tr>
         <th>Name</th>
-        <th>Level</th>
-        <th>type</th>
-        <th>rarity</th>
+        <th class="text-center">Level</th>
+        <th class="text-center">Type</th>
+        <th class="text-center">Rarity</th>
       </tr>
     </thead>
-    <tbody>
+    <tbody *ngIf="!loading">
       <tr *ngFor="let item of items">
-        <td scope="row">
-          
+        <td scope="row">          
           <a [routerLink]="[ '/item', item.id ]">
             <img [src]="item.icon" [alt]="item.name" height="25">
             {{item.name}}
           </a>
         </td>
-        <td>{{item.level}}</td>
-        <td>{{item.type}}</td>
-        <td>{{item.rarity}}</td>
+        <td class="text-center">{{item.level}}</td>
+        <td class="text-center">{{item.type}}</td>
+        <td class="text-center">{{item.rarity}}</td>
       </tr>
-      <!-- <tr>
-        <td scope="row"></td>
-        <td></td>
-        <td></td>
-      </tr> -->
+    </tbody>
+    <tbody *ngIf="loading">
+      <tr >
+        <td scope="row" colspan="4" class="text-center">
+          <app-loading></app-loading>
+        </td>
+      </tr>
     </tbody>
   </table>
   <div class="d-flex justify-content-between p-2">

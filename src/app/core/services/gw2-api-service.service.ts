@@ -16,10 +16,14 @@ export class Gw2ApiServiceService {
   getItem(id: string) {
     return this.http.get(`${this.url}/items?v=latest&id=${id}`);
   }
-  getPrices(id: string) {
+  getCommercePrices(id: string) {
     return this.http.get(`${this.url}/commerce/prices?v=latest&id=${id}`);
   }
   getListings(id: string) {
     return this.http.get(`${this.url}/commerce/listings?v=latest&id=${id}`);
+  }
+  getCommerceListing(items?: string[]) {
+    const ids = items && items.length > 0 ? `ids=${items.join(',')}` : '';
+    return this.http.get(`${this.url}/commerce/listings?v=latest&${ids}`);
   }
 }

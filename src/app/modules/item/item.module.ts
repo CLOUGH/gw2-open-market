@@ -6,9 +6,14 @@ import { ItemComponent } from './pages/item/item.component';
 import { ItemListComponent } from './pages/item-list/item-list.component';
 import { NgbPaginationModule } from '@ng-bootstrap/ng-bootstrap';
 import { FormsModule } from '@angular/forms';
+import { LoadingComponent } from 'src/app/shared/components/loading/loading.component';
 
 @NgModule({
-  declarations: [ItemComponent, ItemListComponent],
+  declarations: [
+    ItemComponent,
+    ItemListComponent,
+    LoadingComponent
+  ],
   imports: [
     CommonModule,
     ItemRoutingModule,
