@@ -1,3 +1,42 @@
-<p>
-  item-list works!
-</p>
+<div class="container">
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Level</th>
+        <th>type</th>
+        <th>rarity</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of items">
+        <td scope="row">
+          
+          <a [routerLink]="[ '/item', item.id ]">
+            <img [src]="item.icon" [alt]="item.name" height="25">
+            {{item.name}}
+          </a>
+        </td>
+        <td>{{item.level}}</td>
+        <td>{{item.type}}</td>
+        <td>{{item.rarity}}</td>
+      </tr>
+      <!-- <tr>
+        <td scope="row"></td>
+        <td></td>
+        <td></td>
+      </tr> -->
+    </tbody>
+  </table>
+  <div class="d-flex justify-content-between p-2">
+    <ngb-pagination [collectionSize]="collectionSize" [(page)]="itemListOffset" [pageSize]="listSize" maxSize="5" (pageChange)="pageChanged()" [rotate]="true">
+    </ngb-pagination>
+  
+    <select class="custom-select" style="width: auto" [(ngModel)]="listSize" (change)="pageChanged()">
+      <option [ngValue]="10">10 items per page</option>
+      <option [ngValue]="15">15 items per page</option>
+      <option [ngValue]="20">20 items per page</option>
+      <option [ngValue]="50">50 items per page</option>
+    </select>
+  </div>
+</div>
