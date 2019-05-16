@@ -16,9 +16,9 @@
         <dd class="col-9">{{item.level}}</dd>
       </dl>
     </div>
-    <div class="col-lg-3" *ngIf="listings">
+    <div class="col-lg-3 buy" *ngIf="listings">
       <h2>Buy</h2>
-      <table class="table">
+      <table class="table table-striped table-sm table-borderless">
         <thead>
           <tr>
             <th>Volume</th>
@@ -28,14 +28,16 @@
         <tbody>
           <tr *ngFor="let buy of listings.buys">
             <td>{{buy.quantity}}</td>
-            <td class="text-center">{{buy.unit_price}}</td>
+            <td class="text-center">
+              <app-coin [units]="buy.unit_price"></app-coin>
+            </td>
           </tr>
         </tbody>
       </table>
     </div>
-    <div class="col-lg-3" *ngIf="listings">
+    <div class="col-lg-3 sell" *ngIf="listings">
       <h2>Sell</h2>
-      <table class="table">
+      <table class="table table-striped table-sm table-borderless">
         <thead>
           <tr>
             <th>Volume</th>
@@ -45,12 +47,14 @@
         <tbody>
           <tr *ngFor="let sell of listings.sells">
             <td>{{sell.quantity}}</td>
-            <td class="text-center">{{sell.unit_price}}</td>
+            <td class="text-center">
+              <app-coin [units]="sell.unit_price"></app-coin>
+            </td>
           </tr>
         </tbody>
       </table>
-      
     </div>
-    
+
   </div>
+  <app-trade-history-chart [data]="listingsData"></app-trade-history-chart>
 </div>

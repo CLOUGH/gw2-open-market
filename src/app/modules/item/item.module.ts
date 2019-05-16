@@ -7,12 +7,16 @@ import { ItemListComponent } from './pages/item-list/item-list.component';
 import { NgbPaginationModule } from '@ng-bootstrap/ng-bootstrap';
 import { FormsModule } from '@angular/forms';
 import { LoadingComponent } from 'src/app/shared/components/loading/loading.component';
+import { CoinComponent } from 'src/app/shared/components/coin/coin.component';
+import { TradeHistoryChartComponent } from 'src/app/shared/components/trade-history-chart/trade-history-chart.component';
 
 @NgModule({
   declarations: [
     ItemComponent,
     ItemListComponent,
-    LoadingComponent
+    LoadingComponent,
+    CoinComponent,
+    TradeHistoryChartComponent
   ],
   imports: [
     CommonModule,

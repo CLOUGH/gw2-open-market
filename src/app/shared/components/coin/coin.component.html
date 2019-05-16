@@ -1,3 +1,15 @@
-<p>
-  coin works!
-</p>
+<span>
+  <span class="negative" *ngIf="isNegative">-</span>
+  <span class="coin" *ngIf="gold!=0">
+    <span class="value">{{gold}}</span>
+    <img src="assets/images/gold_coin.png" alt="gold_coin" class="icon">
+  </span>
+  <span class="coin" *ngIf="gold!=0 || silver!=0">
+    <span class="value">{{silver}}</span>
+    <img src="assets/images/silver_coin.png" alt="silver_coin" class="icon">
+  </span>
+  <span class="coin">
+    <span class="value">{{copper}}</span>
+    <img src="assets/images/copper_coin.png" alt="copper_coin" class="icon">
+  </span>
+</span>
