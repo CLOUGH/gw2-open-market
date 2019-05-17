@@ -1,8 +1,9 @@
 <div class="container" *ngIf="item">
   <nav class="breadcrumb mt-3">
-    <a class="breadcrumb-item" routerLink="/item">Items</a>
+    <a class="breadcrumb-item" routerLink="{{locationBackUrl}}">Items</a>
     <span class="breadcrumb-item active">{{item.name}}</span>
   </nav>
+  {{locationBackUrl}}
   <h1 class="display-4"><img [src]="item.icon" [alt]="item.name" height="70"> {{item.name}}</h1>
   <div class="row mt-3 mb-3">
     <div [className]="listings?'col-lg-6': col-lg-12">

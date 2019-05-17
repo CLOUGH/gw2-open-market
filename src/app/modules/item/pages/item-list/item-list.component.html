@@ -9,10 +9,10 @@
         <th class="text-center">Rarity</th>
       </tr>
     </thead>
-    <tbody *ngIf="!loading">
+    <tbody>
       <tr *ngFor="let item of items">
         <td scope="row">          
-          <a [routerLink]="[ '/item', item.id ]">
+          <a [routerLink]="[ '/item', item.id ]" preserveQueryParams="true">
             <img [src]="item.icon" [alt]="item.name" height="25">
             {{item.name}}
           </a>
@@ -30,7 +30,7 @@
       </tr>
     </tbody>
   </table>
-  <div class="d-flex justify-content-between p-2">
+  <div class="d-flex justify-content-between p-2" *ngIf="collectionSize">
     <ngb-pagination [collectionSize]="collectionSize" [(page)]="itemListOffset" [pageSize]="listSize" maxSize="5" (pageChange)="pageChanged()" [rotate]="true">
     </ngb-pagination>
   
