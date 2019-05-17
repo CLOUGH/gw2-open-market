@@ -2,6 +2,9 @@ import { Component, OnInit } from '@angular/core';
 import { Gw2ApiServiceService } from 'src/app/core/services/gw2-api-service.service';
 import { Location } from '@angular/common';
 import { Router, ActivatedRoute, RoutesRecognized } from '@angular/router';
+import { IAppState } from 'src/app/core/store/app/app.state';
+import {  Store } from '@ngrx/store';
+import { SetPreviousUrl } from 'src/app/core/store/navigation/navigation.action';
 @Component({
   selector: 'app-item-list',
   templateUrl: './item-list.component.html',
@@ -19,7 +22,8 @@ export class ItemListComponent implements OnInit {
     private gw2Service: Gw2ApiServiceService,
     private location: Location,
     private router: Router,
-    private activatedRoute: ActivatedRoute
+    private activatedRoute: ActivatedRoute,
+    private store: Store<IAppState>
   ) { }
 
   ngOnInit() {
@@ -76,17 +80,8 @@ export class ItemListComponent implements OnInit {
         }
       })
       .toString();
-    // this.router.navigate([{}], {
-    //     queryParams: {
-    //     size: this.listSize,
-    //     page: this.itemListOffset
-    //   },
-    //   queryParamsHandling: 'merge',
-    //   replaceUrl: true,
-    //   skipLocationChange: true
-    // });
-    // window.history.replaceState({},'', url);
     this.location.go(url);
+    this.store.dispatch(new SetPreviousUrl(url));
   }
 
   handleError(error) {

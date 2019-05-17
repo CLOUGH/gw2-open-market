@@ -40,9 +40,10 @@ export class ItemComponent implements OnInit {
       });
 
     this.store.select(selectPreviousUrl).subscribe(previousUrl => {
-      // if (/^\/item/.test(previousUrl)) {
-      //   this.locationBackUrl = previousUrl;
-      // }
+      if (/^\/item/.test(previousUrl)) {
+        console.log(previousUrl);
+        this.locationBackUrl = previousUrl;
+      }
     });
   }
 }

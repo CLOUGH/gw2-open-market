@@ -9,7 +9,7 @@
         <th class="text-center">Rarity</th>
       </tr>
     </thead>
-    <tbody>
+    <tbody *ngIf="!loading">
       <tr *ngFor="let item of items">
         <td scope="row">          
           <a [routerLink]="[ '/item', item.id ]" preserveQueryParams="true">

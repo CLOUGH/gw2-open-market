@@ -24,7 +24,7 @@ import { NavigationEffect } from './store/navigation/navigation.effect';
     EffectsModule.forRoot([
       NavigationEffect
     ]),
-    StoreRouterConnectingModule.forRoot({stateKey: 'router'}),
+    // StoreRouterConnectingModule.forRoot({stateKey: 'router'}),
     !environment.production ? StoreDevtoolsModule.instrument({
       maxAge: 25,
       logOnly: false,
