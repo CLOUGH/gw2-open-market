@@ -1,5 +1,5 @@
 <div class="container" *ngIf="item">
-  <nav class="breadcrumb mt-3">
+  <nav class="breadcrumb mt-3" >
     <a class="breadcrumb-item" [href]="locationBackUrl">Items</a>
     <span class="breadcrumb-item active">{{item.name}}</span>
   </nav>
@@ -56,5 +56,8 @@
     </div>
 
   </div>
+</div>
+<div *ngIf="listingsData&&listingsData.buy">
   <app-trade-history-chart [data]="listingsData"></app-trade-history-chart>
+
 </div>

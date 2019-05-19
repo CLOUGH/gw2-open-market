@@ -43,9 +43,17 @@ export class TradeHistoryChartComponent implements OnInit {
   line2: any;
   context: any;
   zoom: any;
+  yScale3: any;
+  profitData: any[];
+  profitLine: any;
+  yAxis2: any;
+  xAxis3: any;
+  xScale3: any;
+  yAxis3: any;
+  height3: number;
+  margin3: { top: number; right: number; bottom: number; left: number; };
 
-  enableYScaling: boolean;
-
+  enableYScaling = true;
   constructor(private el: ElementRef) { }
 
   ngOnInit() {
@@ -73,19 +81,30 @@ export class TradeHistoryChartComponent implements OnInit {
       quantity: +d.quantity
     })).sort((a, b) => a.date - b.date);
 
+    this.profitData = this.sellData.map((d, i) => ({
+      date: d.date,
+      profit: +this.buyData[i].price - (d.price * 1.15),
+    }));
+
+    console.log(this.profitData);
+
     this.svg = d3.select(this.chartElement.nativeElement);
     this.margin = { top: 20, right: 40, bottom: 110, left: 20 };
     this.margin2 = { top: 430, right: 40, bottom: 20, left: 20 };
+    this.margin3 = { top: 330, right: 40, bottom: 20, left: 20 };
     this.width = +this.svg.attr('width') - this.margin.left - this.margin.right;
     this.height = +this.svg.attr('height') - this.margin.top - this.margin.bottom;
     this.height2 = +this.svg.attr('height') - this.margin2.top - this.margin2.bottom;
+    this.height3 = +this.svg.attr('height') - this.margin3.top - this.margin3.bottom;
 
     const xMin = d3.min(this.buyData, d => d.date);
     const xMax = d3.max(this.buyData, d => d.date);
     const yMin = d3.min(this.buyData.concat(this.sellData), d => d.price);
     const yMax = d3.max(this.buyData.concat(this.sellData), d => d.price);
-    const yMinVolume = d3.min(this.buyData, d => Math.min(d.quantity));
-    const yMaxVolume = d3.max(this.buyData, d => Math.max(d.quantity));
+    const yMinVolume = d3.min(this.buyData.concat(this.sellData), d => Math.min(d.quantity));
+    const yMaxVolume = d3.max(this.buyData.concat(this.sellData), d => Math.max(d.quantity));
+    const profitMin = d3.min(this.profitData, d => Math.min(d.profit));
+    const profitMax = d3.max(this.profitData, d => Math.max(d.profit));
 
     const focusDate0 = moment().subtract(1, 'weeks').toDate();
     const focusDate1 = new Date();
@@ -94,6 +113,7 @@ export class TradeHistoryChartComponent implements OnInit {
     this.xScale2 = d3.scaleTime().domain([xMin, xMax]).range([0, this.width]);
     this.yScale = d3.scaleLinear().domain([yMin - 5, yMax]).range([this.height, 0]);
     this.yScale2 = d3.scaleLinear().domain([yMin - 5, yMax]).range([this.height2, 0]);
+    this.yScale3 = d3.scaleLinear().domain([profitMin - 5, profitMax]).range([this.height3, 0]);
     this.yVolumeScale = d3.scaleLinear().domain([yMinVolume, yMaxVolume]).range([this.height, this.height * (3 / 4)]);
 
     this.zoom = d3.zoom()
@@ -104,7 +124,11 @@ export class TradeHistoryChartComponent implements OnInit {
 
     this.xAxis = d3.axisBottom(this.xScale);
     this.xAxis2 = d3.axisBottom(this.xScale2);
+    this.xAxis3 = d3.axisBottom(this.xScale3);
     this.yAxis = d3.axisRight(this.yScale);
+    this.yAxis2 = d3.axisLeft(this.yScale2);
+    this.yAxis3 = d3.axisLeft(this.yScale3);
+
 
     this.brush = d3.brushX()
       .extent([[0, 0], [this.width, this.height2]])
@@ -116,6 +140,9 @@ export class TradeHistoryChartComponent implements OnInit {
     this.line2 = d3.line()
       .x((d: any) => this.xScale2(d.date))
       .y((d: any) => this.yScale2(d.price));
+    this.profitLine = d3.line()
+      .y((d: any) => this.yScale3(d.profit))
+      .x((d: any) => this.xScale3(d.date))
 
     this.svg.append('defs')
       .append('clipPath')
@@ -148,6 +175,14 @@ export class TradeHistoryChartComponent implements OnInit {
       .attr('stroke', 'red')
       .attr('stroke-width', '1.5')
       .attr('d', this.line);
+    this.focus
+      .append('path')
+      .data([this.profitData])
+      .style('fill', 'none')
+      .attr('class', 'profitLine')
+      .attr('stroke', 'green')
+      .attr('stroke-width', '1')
+      .attr('d', this.profitLine);
 
 
     this.context.append('path')
@@ -175,7 +210,7 @@ export class TradeHistoryChartComponent implements OnInit {
 
     this.focus
       .append('g')
-      .attr('class', 'buyVolume')
+      .attr('class', 'demand')
       .selectAll('rect')
       .data(this.buyData)
       .join('rect')
@@ -184,10 +219,10 @@ export class TradeHistoryChartComponent implements OnInit {
       .attr('width', 1)
       .attr('height', d => this.height - this.yVolumeScale(d.quantity))
       .attr('fill-opacity', '0.5')
-      .attr('fill', '#03a678');
+      .attr('fill', '#c0392b');
     this.focus
       .append('g')
-      .attr('class', 'sellVolume')
+      .attr('class', 'supply')
       .selectAll('rect')
       .data(this.sellData)
       .join('rect')
@@ -196,12 +231,18 @@ export class TradeHistoryChartComponent implements OnInit {
       .attr('width', 1)
       .attr('height', d => this.height - this.yVolumeScale(d.quantity))
       .attr('fill-opacity', '0.5')
-      .attr('fill', '#c0392b');
+      .attr('fill', '#03a678');
+
 
     this.focus.append('g')
       .attr('class', 'axis axis--x')
       .attr('transform', `translate(0, ${this.height})`)
       .call(this.xAxis);
+
+    this.focus.append('g')
+      .attr('class', 'axis axis--y2')
+      // .attr('transform', `translate(${this.height},0)`)
+      .call(this.yAxis2);
 
     this.focus.append('g')
       .attr('class', 'axis axis--y')
@@ -279,8 +320,8 @@ export class TradeHistoryChartComponent implements OnInit {
     // const t = d3.event.transform;
     // const xt = t.rescaleX(this.xScale);
     // const yt = t.rescaleY(this.yScale);
-    // this.svg.selectAll('.buyVolume rect').attr('x', (d: any) => xt(d.date)).attr('width', 2);
-    // this.svg.selectAll('.sellVolume rect').attr('x', (d: any) => xt(d.date)).attr('width', 2);
+    // this.svg.selectAll('.demand rect').attr('x', (d: any) => xt(d.date)).attr('width', 2);
+    // this.svg.selectAll('.supply rect').attr('x', (d: any) => xt(d.date)).attr('width', 2);
     // this.svg.select('.buyLine').attr('d', this.line.x((d: any) => xt(d.date)));
     // this.svg.select('.sellLine').attr('d', this.line.x((d: any) => xt(d.date)));
     // this.svg.selectAll('.axis--x').call(this.xAxis.scale(xt));
@@ -293,7 +334,7 @@ export class TradeHistoryChartComponent implements OnInit {
 
     const data = this.sellData.concat(this.buyData);
     // const xt = t.rescaleX(this.xScale);
-    if(this.enableYScaling) {
+    if (this.enableYScaling) {
       this.yScale.domain([d3.min(data.map((d) => {
         if (d.date > domain[0] && d.date < domain[1]) {
           return parseFloat(d.price);
@@ -302,15 +343,26 @@ export class TradeHistoryChartComponent implements OnInit {
         if (d.date > domain[0] && d.date < domain[1]) {
           return d.price;
         }
+      //   this.yScale3.domain([d3.min(this.profitData.map((d) => {
+      //   }))]);
+      //   if (d.date > domain[0] && d.date < domain[1]) {
+      //     return parseFloat(d.profit);
+      //   }
+      // })), d3.max(this.profitData.map((d) => {
+      //   if (d.date > domain[0] && d.date < domain[1]) {
+      //     return d.profit;
+      //   }
       }))]);
       this.focus.select('.axis--y').call(this.yAxis);
+      // this.focus.select('.axis--y2').call(this.yAxis2);
     }
     const scale = d3.event.transform.k;
-    const bandWidth = Math.max(Math.abs(Math.log10(scale)), 1) * 2;
+    const bandWidth = Math.max(Math.abs(Math.log10(scale)), 1) * 1;
     console.log(bandWidth);
-    this.focus.selectAll('.buyVolume rect').attr('x', (d: any) => this.xScale(d.date) + bandWidth).attr('width', bandWidth);
-    this.focus.selectAll('.sellVolume rect').attr('x', (d: any) => this.xScale(d.date)).attr('width', bandWidth);
+    this.focus.selectAll('.demand rect').attr('x', (d: any) => this.xScale(d.date) + bandWidth).attr('width', bandWidth);
+    this.focus.selectAll('.supply rect').attr('x', (d: any) => this.xScale(d.date)).attr('width', bandWidth);
     this.focus.select('.sellLine').attr('d', this.line);
+    this.focus.select('.profitLine').attr('d', this.profitLine);
     this.focus.select('.buyLine').attr('d', this.line);
     this.focus.select('.axis--x').call(this.xAxis);
 
