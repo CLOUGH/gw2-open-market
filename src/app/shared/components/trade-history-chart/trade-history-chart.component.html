@@ -1,1 +1,7 @@
-<div  id="chart" style="height: 600px;"></div>
+<div #container>
+    <!-- <div class="form-check">
+        <input type="checkbox" class="form-check-input" [(ngModel)]="enableYScaling">
+        <label class="form-check-label col-form-label-sm " for="exampleCheck1">Scale with Price</label>
+    </div> -->
+    <svg #chart height="500" attr.width="{{container.offsetWidth}}"></svg>
+</div>

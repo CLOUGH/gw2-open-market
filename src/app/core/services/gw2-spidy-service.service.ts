@@ -30,8 +30,9 @@ export class Gw2SpidyServiceService {
           return forkJoin([of(responses), ...promises]);
         }),
         switchMap((data) => {
+          console.log(data);
           const listingsData = {
-            buy: data[0][1].results,
+            buy: data[0][0].results,
             sell: data[0][1].results
           };
 
