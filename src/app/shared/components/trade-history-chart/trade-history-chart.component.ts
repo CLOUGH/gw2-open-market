@@ -1,7 +1,8 @@
-import { Component, OnInit, Input, ElementRef, ViewChild, ViewEncapsulation } from '@angular/core';
+import { Component, OnInit, Input, ElementRef, ViewChild, ViewEncapsulation, AfterViewInit } from '@angular/core';
 import * as d3 from 'd3';
 import { Listing } from 'src/app/core/models/listing';
 import * as moment from 'moment';
+import { Observable, of, Subject } from 'rxjs';
 
 interface TradeData {
   date: Date;
@@ -14,7 +15,10 @@ interface TradeData {
   styleUrls: ['./trade-history-chart.component.scss'],
   encapsulation: ViewEncapsulation.None
 })
-export class TradeHistoryChartComponent implements OnInit {
+export class TradeHistoryChartComponent implements OnInit, AfterViewInit {
+  data: any[];
+  viewInitialized = new Subject<void>();
+
   width: any;
   height: number;
   margin: any;
@@ -52,19 +56,41 @@ export class TradeHistoryChartComponent implements OnInit {
   yAxis3: any;
   height3: number;
   margin3: { top: number; right: number; bottom: number; left: number; };
-
+  context2: any;
   enableYScaling = true;
   constructor(private el: ElementRef) { }
 
   ngOnInit() {
   }
 
+
+
+  ngAfterViewInit() {
+    this.viewInitialized.next();
+  }
+
   @Input('data')
   set chartData(data: any) {
-    console.log(data);
-    if (data) {
-      this.buildChart(data);
+
+    this.viewInitialized.subscribe(() => {
+      this.data = data;
+      console.log(data);
+      if (data) {
+        this.buildChart(data);
+      }
+
+    });
+  }
+
+  getPrevious(values: any[], index: number) {
+    // console.log(values,index);
+    for (let i = index; i >= 0; i--) {
+      if (values[i]) {
+        return values[i];
+      }
     }
+
+    return null;
   }
 
   buildChart(data) {
@@ -81,17 +107,17 @@ export class TradeHistoryChartComponent implements OnInit {
       quantity: +d.quantity
     })).sort((a, b) => a.date - b.date);
 
-    this.profitData = this.sellData.map((d, i) => ({
-      date: d.date,
-      profit: +this.buyData[i].price - (d.price * 1.15),
-    }));
-
-    console.log(this.profitData);
+    this.profitData = this.sellData.map((d, i) => {
+      return {
+        date: d.date,
+        profit: (d.price -d.price * 0.15) - this.getPrevious(this.buyData, i).price
+      };
+    });
 
     this.svg = d3.select(this.chartElement.nativeElement);
-    this.margin = { top: 20, right: 40, bottom: 110, left: 20 };
-    this.margin2 = { top: 430, right: 40, bottom: 20, left: 20 };
-    this.margin3 = { top: 330, right: 40, bottom: 20, left: 20 };
+    this.margin = { top: 20, right: 40, bottom: 310, left: 20 };
+    this.margin2 = { top: 530, right: 40, bottom: 20, left: 20 };
+    this.margin3 = { top: 330, right: 20, bottom: 110, left: 40 };
     this.width = +this.svg.attr('width') - this.margin.left - this.margin.right;
     this.height = +this.svg.attr('height') - this.margin.top - this.margin.bottom;
     this.height2 = +this.svg.attr('height') - this.margin2.top - this.margin2.bottom;
@@ -111,6 +137,7 @@ export class TradeHistoryChartComponent implements OnInit {
 
     this.xScale = d3.scaleTime().domain([xMin, xMax]).range([0, this.width]);
     this.xScale2 = d3.scaleTime().domain([xMin, xMax]).range([0, this.width]);
+    this.xScale3 = d3.scaleTime().domain([xMin, xMax]).range([0, this.width]);
     this.yScale = d3.scaleLinear().domain([yMin - 5, yMax]).range([this.height, 0]);
     this.yScale2 = d3.scaleLinear().domain([yMin - 5, yMax]).range([this.height2, 0]);
     this.yScale3 = d3.scaleLinear().domain([profitMin - 5, profitMax]).range([this.height3, 0]);
@@ -129,7 +156,7 @@ export class TradeHistoryChartComponent implements OnInit {
     this.yAxis2 = d3.axisLeft(this.yScale2);
     this.yAxis3 = d3.axisLeft(this.yScale3);
 
-
+    console.log(this.height, this.height2, this.height3);
     this.brush = d3.brushX()
       .extent([[0, 0], [this.width, this.height2]])
       .on('brush end', this.brushed.bind(this));
@@ -141,8 +168,8 @@ export class TradeHistoryChartComponent implements OnInit {
       .x((d: any) => this.xScale2(d.date))
       .y((d: any) => this.yScale2(d.price));
     this.profitLine = d3.line()
-      .y((d: any) => this.yScale3(d.profit))
       .x((d: any) => this.xScale3(d.date))
+      .y((d: any) => this.yScale3(d.profit))
 
     this.svg.append('defs')
       .append('clipPath')
@@ -155,9 +182,14 @@ export class TradeHistoryChartComponent implements OnInit {
       .attr('class', 'focus')
       .attr('transform', 'translate(' + this.margin.left + ',' + this.margin.top + ')');
 
+    this.context2 = this.svg.append('g')
+      .attr('class', 'context')
+      .attr('transform', 'translate(' + this.margin3.left + ',' + this.margin3.top + ')');
+
     this.context = this.svg.append('g')
       .attr('class', 'context')
       .attr('transform', 'translate(' + this.margin2.left + ',' + this.margin2.top + ')');
+
 
     this.focus
       .append('path')
@@ -175,15 +207,6 @@ export class TradeHistoryChartComponent implements OnInit {
       .attr('stroke', 'red')
       .attr('stroke-width', '1.5')
       .attr('d', this.line);
-    this.focus
-      .append('path')
-      .data([this.profitData])
-      .style('fill', 'none')
-      .attr('class', 'profitLine')
-      .attr('stroke', 'green')
-      .attr('stroke-width', '1')
-      .attr('d', this.profitLine);
-
 
     this.context.append('path')
       .datum(this.sellData)
@@ -197,12 +220,10 @@ export class TradeHistoryChartComponent implements OnInit {
       .style('fill', 'none')
       .attr('stroke', 'steelblue')
       .attr('d', this.line2);
-
     this.context.append('g')
       .attr('class', 'axis axis--x')
       .attr('transform', `translate(0,${this.height2})`)
       .call(this.xAxis2);
-
     this.context.append('g')
       .attr('class', 'brush')
       .call(this.brush)
@@ -232,27 +253,51 @@ export class TradeHistoryChartComponent implements OnInit {
       .attr('height', d => this.height - this.yVolumeScale(d.quantity))
       .attr('fill-opacity', '0.5')
       .attr('fill', '#03a678');
-
-
     this.focus.append('g')
       .attr('class', 'axis axis--x')
       .attr('transform', `translate(0, ${this.height})`)
       .call(this.xAxis);
-
-    this.focus.append('g')
-      .attr('class', 'axis axis--y2')
-      // .attr('transform', `translate(${this.height},0)`)
-      .call(this.yAxis2);
-
     this.focus.append('g')
       .attr('class', 'axis axis--y')
       .attr('transform', `translate(${this.width}, 0)`)
       .call(this.yAxis);
 
+    this.context2
+      .append('g')
+      .attr('class', 'profit')
+      .selectAll('rect')
+      .data(this.profitData)
+      .join('rect')
+      .attr('x', d => this.xScale3(d.date))
+      .attr('y', d => this.yScale3(Math.max(0, d.profit)))
+      .attr('width', this.width / this.profitData.length)
+      .attr('height', d => Math.abs(this.yScale3(d.profit) - this.yScale3(0)))
+      // .attr('fill-opacity', '0.5')
+      .attr('fill', d => {
+        return (+d.profit) > 0 ? '#79ea86' : '	#e75757';
+      });
+    // this.context2
+    //   .append('path')
+    //   .data([this.profitData])
+    //   .style('fill', 'none')
+    //   .attr('class', 'profit')
+    //   .attr('stroke', 'red')
+    //   .attr('stroke-width', '1.5')
+    //   .attr('d', this.profitLine);   
+    this.context2.append('g')
+      .attr('class', 'axis axis--y3')
+      // .attr('transform', `translate(${this.height3},0)`)
+      .call(this.yAxis3);
+    this.context2.append('g')
+      .attr('class', 'axis axis--x3')
+      .attr('transform', `translate(0, ${this.height3})`)
+      .call(this.xAxis3);
+
+
     this.svg.append('rect')
       .attr('class', 'zoom')
       .attr('width', this.width)
-      .attr('height', this.height)
+      .attr('height', this.height + this.height3 + 40)
       .attr('transform', `translate( ${this.margin.left}, ${this.margin.top})`)
       .call(this.zoom)
       .transition()
@@ -260,8 +305,7 @@ export class TradeHistoryChartComponent implements OnInit {
       .call(this.zoom.transform, d3.zoomIdentity
         .scale(this.width / (this.xScale(focusDate1) - this.xScale(focusDate0)))
         .translate(-this.xScale(focusDate0), 0)
-      );
-
+      )
 
 
 
@@ -305,11 +349,17 @@ export class TradeHistoryChartComponent implements OnInit {
     if (d3.event.sourceEvent && d3.event.sourceEvent.type === 'zoom') { return; } // ignore brush-by-zoom
     const s = d3.event.selection || this.xScale2.range();
     this.xScale.domain(s.map(this.xScale2.invert, this.xScale2));
+    this.xScale3.domain(s.map(this.xScale2.invert, this.xScale2));
 
     this.focus.select('.buyLine').attr('d', this.line);
     this.focus.select('.sellLine').attr('d', this.line);
     this.focus.select('.axis--x').call(this.xAxis);
     this.focus.select('.axis--y').call(this.yAxis);
+
+    // this.context2.select('.profit').attr('d', this.profitLine);
+    this.context2.select('.axis--x3').call(this.xAxis3);
+    this.context2.select('.axis--y3').call(this.yAxis3);
+
     this.svg.select('.zoom').call(this.zoom.transform, d3.zoomIdentity
       .scale(this.width / (s[1] - s[0]))
       .translate(-s[0], 0));
@@ -317,20 +367,12 @@ export class TradeHistoryChartComponent implements OnInit {
   }
 
   zoomed() {
-    // const t = d3.event.transform;
-    // const xt = t.rescaleX(this.xScale);
-    // const yt = t.rescaleY(this.yScale);
-    // this.svg.selectAll('.demand rect').attr('x', (d: any) => xt(d.date)).attr('width', 2);
-    // this.svg.selectAll('.supply rect').attr('x', (d: any) => xt(d.date)).attr('width', 2);
-    // this.svg.select('.buyLine').attr('d', this.line.x((d: any) => xt(d.date)));
-    // this.svg.select('.sellLine').attr('d', this.line.x((d: any) => xt(d.date)));
-    // this.svg.selectAll('.axis--x').call(this.xAxis.scale(xt));
-    // this.svg.selectAll('.axis--y').call(this.yAxis.scale(yt));
-
     if (d3.event.sourceEvent && d3.event.sourceEvent.type === 'brush') { return; } // ignore zoom-by-brush
     const t = d3.event.transform;
     this.xScale.domain(t.rescaleX(this.xScale2).domain());
+    this.xScale3.domain(t.rescaleX(this.xScale2).domain());
     const domain = this.xScale.domain();
+    const profitDomain = this.xScale3.domain();
 
     const data = this.sellData.concat(this.buyData);
     // const xt = t.rescaleX(this.xScale);
@@ -343,28 +385,34 @@ export class TradeHistoryChartComponent implements OnInit {
         if (d.date > domain[0] && d.date < domain[1]) {
           return d.price;
         }
-      //   this.yScale3.domain([d3.min(this.profitData.map((d) => {
-      //   }))]);
-      //   if (d.date > domain[0] && d.date < domain[1]) {
-      //     return parseFloat(d.profit);
-      //   }
-      // })), d3.max(this.profitData.map((d) => {
-      //   if (d.date > domain[0] && d.date < domain[1]) {
-      //     return d.profit;
-      //   }
       }))]);
       this.focus.select('.axis--y').call(this.yAxis);
-      // this.focus.select('.axis--y2').call(this.yAxis2);
+
+
+      // profit y domain
+      this.yScale3.domain([d3.min(this.profitData.map((d) => {
+        if (d.date > profitDomain[0] && d.date < profitDomain[1]) {
+          return d.profit;
+        }
+      })), d3.max(this.profitData.map((d) => {
+        if (d.date > profitDomain[0] && d.date < profitDomain[1]) {
+          return d.profit;
+        }
+      }))]);
+      this.context2.select('.axis--y3').call(this.yAxis3);
     }
     const scale = d3.event.transform.k;
     const bandWidth = Math.max(Math.abs(Math.log10(scale)), 1) * 1;
-    console.log(bandWidth);
+    // console.log(bandWidth);
     this.focus.selectAll('.demand rect').attr('x', (d: any) => this.xScale(d.date) + bandWidth).attr('width', bandWidth);
     this.focus.selectAll('.supply rect').attr('x', (d: any) => this.xScale(d.date)).attr('width', bandWidth);
     this.focus.select('.sellLine').attr('d', this.line);
-    this.focus.select('.profitLine').attr('d', this.profitLine);
     this.focus.select('.buyLine').attr('d', this.line);
     this.focus.select('.axis--x').call(this.xAxis);
+
+    this.context2.selectAll('.profit rect').attr('x', (d: any) => this.xScale(d.date)).attr('width',5);
+    // this.context2.select('.profit').attr('d', this.profitLine);
+    this.context2.select('.axis--x3').call(this.xAxis);
 
     this.context.select('.brush').call(this.brush.move, this.xScale.range().map(t.invertX, t));
 

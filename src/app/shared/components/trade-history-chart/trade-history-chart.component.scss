@@ -1,8 +1,9 @@
 .buyLine,
 .sellLine,
 .buyVolume,
-.sellVolume {
-  fill: steelblue;
+.sellVolume,
+.profit {
+  // fill: steelblue;
   clip-path: url(#clip);
 }
 

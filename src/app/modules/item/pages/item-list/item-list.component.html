@@ -31,7 +31,7 @@
     </tbody>
   </table>
   <div class="d-flex justify-content-between p-2" *ngIf="collectionSize">
-    <ngb-pagination [collectionSize]="collectionSize" [(page)]="itemListOffset" [pageSize]="listSize" maxSize="5" (pageChange)="pageChanged()" [rotate]="true">
+    <ngb-pagination [collectionSize]="collectionSize" [(page)]="itemListOffset" [pageSize]="listSize" maxSize="10" (pageChange)="pageChanged()" [rotate]="true">
     </ngb-pagination>
   
     <select class="custom-select" style="width: auto" [(ngModel)]="listSize" (change)="pageChanged()">
