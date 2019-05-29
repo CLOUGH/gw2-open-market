@@ -110,14 +110,14 @@ export class TradeHistoryChartComponent implements OnInit, AfterViewInit {
     this.profitData = this.sellData.map((d, i) => {
       return {
         date: d.date,
-        profit: (d.price -d.price * 0.15) - this.getPrevious(this.buyData, i).price
+        profit: (d.price - d.price * 0.15) - this.getPrevious(this.buyData, i).price
       };
     });
 
     this.svg = d3.select(this.chartElement.nativeElement);
-    this.margin = { top: 20, right: 40, bottom: 310, left: 20 };
-    this.margin2 = { top: 530, right: 40, bottom: 20, left: 20 };
-    this.margin3 = { top: 330, right: 20, bottom: 110, left: 40 };
+    this.margin = { top: 20, right: 50, bottom: 310, left: 20 };
+    this.margin2 = { top: 530, right: 50, bottom: 20, left: 20 };
+    this.margin3 = { top: 330, right: 20, bottom: 110, left: 50 };
     this.width = +this.svg.attr('width') - this.margin.left - this.margin.right;
     this.height = +this.svg.attr('height') - this.margin.top - this.margin.bottom;
     this.height2 = +this.svg.attr('height') - this.margin2.top - this.margin2.bottom;
@@ -376,31 +376,32 @@ export class TradeHistoryChartComponent implements OnInit, AfterViewInit {
 
     const data = this.sellData.concat(this.buyData);
     // const xt = t.rescaleX(this.xScale);
-    if (this.enableYScaling) {
-      this.yScale.domain([d3.min(data.map((d) => {
-        if (d.date > domain[0] && d.date < domain[1]) {
-          return parseFloat(d.price);
-        }
-      })), d3.max(data.map((d) => {
-        if (d.date > domain[0] && d.date < domain[1]) {
-          return d.price;
-        }
-      }))]);
-      this.focus.select('.axis--y').call(this.yAxis);
+    this.yScale.domain([d3.min(data.map((d) => {
+      if (d.date > domain[0] && d.date < domain[1]) {
+        return parseFloat(d.price);
+      }
+    })), d3.max(data.map((d) => {
+      if (d.date > domain[0] && d.date < domain[1]) {
+        return d.price;
+      }
+    }))]);
+    this.focus.select('.axis--y').call(this.yAxis);
 
 
-      // profit y domain
-      this.yScale3.domain([d3.min(this.profitData.map((d) => {
-        if (d.date > profitDomain[0] && d.date < profitDomain[1]) {
-          return d.profit;
-        }
-      })), d3.max(this.profitData.map((d) => {
-        if (d.date > profitDomain[0] && d.date < profitDomain[1]) {
-          return d.profit;
-        }
-      }))]);
-      this.context2.select('.axis--y3').call(this.yAxis3);
-    }
+    // profit y domain
+    const profitYScaleMinMax = [d3.min(this.profitData.map((d) => {
+      if (d.date > profitDomain[0] && d.date < profitDomain[1]) {
+        return d.profit;
+      }
+    })), d3.max(this.profitData.map((d) => {
+      if (d.date > profitDomain[0] && d.date < profitDomain[1]) {
+        return d.profit;
+      }
+    }))];
+
+    // console.log('[min, max]', profitYScaleMinMax);
+    this.yScale3.domain(profitYScaleMinMax);
+    this.context2.select('.axis--y3').call(this.yAxis3);
     const scale = d3.event.transform.k;
     const bandWidth = Math.max(Math.abs(Math.log10(scale)), 1) * 1;
     // console.log(bandWidth);
@@ -410,8 +411,13 @@ export class TradeHistoryChartComponent implements OnInit, AfterViewInit {
     this.focus.select('.buyLine').attr('d', this.line);
     this.focus.select('.axis--x').call(this.xAxis);
 
-    this.context2.selectAll('.profit rect').attr('x', (d: any) => this.xScale(d.date)).attr('width',5);
-    // this.context2.select('.profit').attr('d', this.profitLine);
+    this.context2.selectAll('.profit rect')
+      .attr('x', (d: any) => this.xScale(d.date))
+      .attr('y', d => this.yScale3(Math.max(0, d.profit)))
+      .attr('height', d => {
+        return Math.abs(this.yScale3(d.profit) - this.yScale3(profitYScaleMinMax[0] < 0 ? 0 : profitYScaleMinMax[0]))
+      })
+      .attr('width', bandWidth);
     this.context2.select('.axis--x3').call(this.xAxis);
 
     this.context.select('.brush').call(this.brush.move, this.xScale.range().map(t.invertX, t));
