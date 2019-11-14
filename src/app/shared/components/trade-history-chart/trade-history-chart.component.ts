@@ -283,7 +283,7 @@ export class TradeHistoryChartComponent implements OnInit, AfterViewInit {
     //   .attr('class', 'profit')
     //   .attr('stroke', 'red')
     //   .attr('stroke-width', '1.5')
-    //   .attr('d', this.profitLine);   
+    //   .attr('d', this.profitLine);
     this.context2.append('g')
       .attr('class', 'axis axis--y3')
       // .attr('transform', `translate(${this.height3},0)`)

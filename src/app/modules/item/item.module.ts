@@ -9,6 +9,7 @@ import { FormsModule } from '@angular/forms';
 import { LoadingComponent } from 'src/app/shared/components/loading/loading.component';
 import { CoinComponent } from 'src/app/shared/components/coin/coin.component';
 import { TradeHistoryChartComponent } from 'src/app/shared/components/trade-history-chart/trade-history-chart.component';
+import { TabsModule } from 'ngx-bootstrap';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { TradeHistoryChartComponent } from 'src/app/shared/components/trade-hist
     CommonModule,
     ItemRoutingModule,
     NgbPaginationModule,
-    FormsModule
+    FormsModule,
+    TabsModule.forRoot(),
   ]
 })
 export class ItemModule { }
