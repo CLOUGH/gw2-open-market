@@ -1,7 +1,7 @@
 import { Component, OnInit, Input, ElementRef, ViewChild, ViewEncapsulation, AfterViewInit } from '@angular/core';
 import * as d3 from 'd3';
 import { Listing } from 'src/app/core/models/listing';
-import * as moment from 'moment';
+import moment from 'moment';
 import { Observable, of, Subject } from 'rxjs';
 
 interface TradeData {

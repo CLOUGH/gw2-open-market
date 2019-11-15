@@ -1,6 +1,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { LandingComponent } from './landing.component';
+import { NgbCarouselModule } from '@ng-bootstrap/ng-bootstrap';
 
 describe('LandingComponent', () => {
   let component: LandingComponent;
@@ -8,7 +9,8 @@ describe('LandingComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ LandingComponent ]
+      declarations: [ LandingComponent ],
+      imports: [NgbCarouselModule]
     })
     .compileComponents();
   }));
