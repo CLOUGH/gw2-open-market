@@ -1,0 +1,6009 @@
+{
+    "sell-or-buy": "buy",
+    "count": 1000,
+    "page": 1,
+    "last_page": 2,
+    "total": 1844,
+    "results": [
+        {
+            "listing_datetime": "2019-11-14 14:09:06 UTC",
+            "unit_price": 40115,
+            "quantity": 249,
+            "listings": 74
+        },
+        {
+            "listing_datetime": "2019-11-14 12:18:39 UTC",
+            "unit_price": 40114,
+            "quantity": 248,
+            "listings": 73
+        },
+        {
+            "listing_datetime": "2019-11-14 10:53:39 UTC",
+            "unit_price": 40114,
+            "quantity": 248,
+            "listings": 73
+        },
+        {
+            "listing_datetime": "2019-11-14 09:07:17 UTC",
+            "unit_price": 40114,
+            "quantity": 248,
+            "listings": 73
+        },
+        {
+            "listing_datetime": "2019-11-14 07:21:19 UTC",
+            "unit_price": 40114,
+            "quantity": 249,
+            "listings": 73
+        },
+        {
+            "listing_datetime": "2019-11-14 05:54:37 UTC",
+            "unit_price": 40114,
+            "quantity": 250,
+            "listings": 73
+        },
+        {
+            "listing_datetime": "2019-11-14 04:11:35 UTC",
+            "unit_price": 40114,
+            "quantity": 251,
+            "listings": 73
+        },
+        {
+            "listing_datetime": "2019-11-14 02:22:26 UTC",
+            "unit_price": 40114,
+            "quantity": 251,
+            "listings": 73
+        },
+        {
+            "listing_datetime": "2019-11-14 00:51:54 UTC",
+            "unit_price": 40114,
+            "quantity": 253,
+            "listings": 73
+        },
+        {
+            "listing_datetime": "2019-11-13 23:02:52 UTC",
+            "unit_price": 40114,
+            "quantity": 254,
+            "listings": 73
+        },
+        {
+            "listing_datetime": "2019-11-13 21:14:45 UTC",
+            "unit_price": 40114,
+            "quantity": 254,
+            "listings": 73
+        },
+        {
+            "listing_datetime": "2019-11-13 19:46:40 UTC",
+            "unit_price": 40113,
+            "quantity": 257,
+            "listings": 73
+        },
+        {
+            "listing_datetime": "2019-11-13 17:58:00 UTC",
+            "unit_price": 40113,
+            "quantity": 258,
+            "listings": 73
+        },
+        {
+            "listing_datetime": "2019-11-13 16:10:46 UTC",
+            "unit_price": 40113,
+            "quantity": 260,
+            "listings": 73
+        },
+        {
+            "listing_datetime": "2019-11-13 14:46:18 UTC",
+            "unit_price": 40112,
+            "quantity": 257,
+            "listings": 71
+        },
+        {
+            "listing_datetime": "2019-11-13 12:59:09 UTC",
+            "unit_price": 40122,
+            "quantity": 258,
+            "listings": 72
+        },
+        {
+            "listing_datetime": "2019-11-13 11:17:04 UTC",
+            "unit_price": 40112,
+            "quantity": 258,
+            "listings": 71
+        },
+        {
+            "listing_datetime": "2019-11-13 09:48:03 UTC",
+            "unit_price": 40112,
+            "quantity": 258,
+            "listings": 71
+        },
+        {
+            "listing_datetime": "2019-11-13 07:59:51 UTC",
+            "unit_price": 40111,
+            "quantity": 259,
+            "listings": 71
+        },
+        {
+            "listing_datetime": "2019-11-13 06:12:22 UTC",
+            "unit_price": 40107,
+            "quantity": 258,
+            "listings": 70
+        },
+        {
+            "listing_datetime": "2019-11-13 04:41:08 UTC",
+            "unit_price": 40107,
+            "quantity": 258,
+            "listings": 70
+        },
+        {
+            "listing_datetime": "2019-11-13 03:00:22 UTC",
+            "unit_price": 40107,
+            "quantity": 259,
+            "listings": 70
+        },
+        {
+            "listing_datetime": "2019-11-13 01:13:08 UTC",
+            "unit_price": 40107,
+            "quantity": 259,
+            "listings": 70
+        },
+        {
+            "listing_datetime": "2019-11-12 23:45:21 UTC",
+            "unit_price": 40107,
+            "quantity": 260,
+            "listings": 70
+        },
+        {
+            "listing_datetime": "2019-11-12 21:57:49 UTC",
+            "unit_price": 40106,
+            "quantity": 259,
+            "listings": 70
+        },
+        {
+            "listing_datetime": "2019-11-12 20:09:16 UTC",
+            "unit_price": 40106,
+            "quantity": 261,
+            "listings": 70
+        },
+        {
+            "listing_datetime": "2019-11-12 18:47:45 UTC",
+            "unit_price": 40105,
+            "quantity": 261,
+            "listings": 70
+        },
+        {
+            "listing_datetime": "2019-11-12 16:57:40 UTC",
+            "unit_price": 40106,
+            "quantity": 262,
+            "listings": 71
+        },
+        {
+            "listing_datetime": "2019-11-12 15:09:00 UTC",
+            "unit_price": 40105,
+            "quantity": 261,
+            "listings": 70
+        },
+        {
+            "listing_datetime": "2019-11-12 13:38:53 UTC",
+            "unit_price": 40105,
+            "quantity": 261,
+            "listings": 70
+        },
+        {
+            "listing_datetime": "2019-11-12 11:47:35 UTC",
+            "unit_price": 40105,
+            "quantity": 261,
+            "listings": 70
+        },
+        {
+            "listing_datetime": "2019-11-12 10:00:43 UTC",
+            "unit_price": 40105,
+            "quantity": 261,
+            "listings": 70
+        },
+        {
+            "listing_datetime": "2019-11-12 08:34:52 UTC",
+            "unit_price": 40106,
+            "quantity": 262,
+            "listings": 71
+        },
+        {
+            "listing_datetime": "2019-11-12 06:37:35 UTC",
+            "unit_price": 40106,
+            "quantity": 263,
+            "listings": 72
+        },
+        {
+            "listing_datetime": "2019-11-12 04:48:41 UTC",
+            "unit_price": 40104,
+            "quantity": 259,
+            "listings": 70
+        },
+        {
+            "listing_datetime": "2019-11-12 03:19:27 UTC",
+            "unit_price": 40104,
+            "quantity": 259,
+            "listings": 70
+        },
+        {
+            "listing_datetime": "2019-11-12 01:36:45 UTC",
+            "unit_price": 40104,
+            "quantity": 259,
+            "listings": 70
+        },
+        {
+            "listing_datetime": "2019-11-11 23:48:05 UTC",
+            "unit_price": 40104,
+            "quantity": 259,
+            "listings": 70
+        },
+        {
+            "listing_datetime": "2019-11-11 22:19:39 UTC",
+            "unit_price": 40104,
+            "quantity": 261,
+            "listings": 70
+        },
+        {
+            "listing_datetime": "2019-11-11 20:27:53 UTC",
+            "unit_price": 40105,
+            "quantity": 263,
+            "listings": 71
+        },
+        {
+            "listing_datetime": "2019-11-11 18:35:21 UTC",
+            "unit_price": 40104,
+            "quantity": 264,
+            "listings": 70
+        },
+        {
+            "listing_datetime": "2019-11-11 17:08:14 UTC",
+            "unit_price": 40107,
+            "quantity": 265,
+            "listings": 71
+        },
+        {
+            "listing_datetime": "2019-11-11 15:15:14 UTC",
+            "unit_price": 40107,
+            "quantity": 265,
+            "listings": 71
+        },
+        {
+            "listing_datetime": "2019-11-11 13:22:42 UTC",
+            "unit_price": 40108,
+            "quantity": 266,
+            "listings": 72
+        },
+        {
+            "listing_datetime": "2019-11-11 11:55:32 UTC",
+            "unit_price": 40110,
+            "quantity": 269,
+            "listings": 74
+        },
+        {
+            "listing_datetime": "2019-11-11 10:07:41 UTC",
+            "unit_price": 40110,
+            "quantity": 269,
+            "listings": 74
+        },
+        {
+            "listing_datetime": "2019-11-11 08:20:39 UTC",
+            "unit_price": 40110,
+            "quantity": 269,
+            "listings": 74
+        },
+        {
+            "listing_datetime": "2019-11-11 06:52:32 UTC",
+            "unit_price": 40110,
+            "quantity": 270,
+            "listings": 74
+        },
+        {
+            "listing_datetime": "2019-11-11 05:01:48 UTC",
+            "unit_price": 40109,
+            "quantity": 267,
+            "listings": 73
+        },
+        {
+            "listing_datetime": "2019-11-11 03:14:23 UTC",
+            "unit_price": 40108,
+            "quantity": 267,
+            "listings": 73
+        },
+        {
+            "listing_datetime": "2019-11-11 01:46:04 UTC",
+            "unit_price": 41000,
+            "quantity": 268,
+            "listings": 74
+        },
+        {
+            "listing_datetime": "2019-11-10 23:59:50 UTC",
+            "unit_price": 41000,
+            "quantity": 268,
+            "listings": 74
+        },
+        {
+            "listing_datetime": "2019-11-10 22:06:49 UTC",
+            "unit_price": 41000,
+            "quantity": 268,
+            "listings": 74
+        },
+        {
+            "listing_datetime": "2019-11-10 20:39:12 UTC",
+            "unit_price": 41000,
+            "quantity": 268,
+            "listings": 74
+        },
+        {
+            "listing_datetime": "2019-11-10 18:46:06 UTC",
+            "unit_price": 41000,
+            "quantity": 269,
+            "listings": 74
+        },
+        {
+            "listing_datetime": "2019-11-10 16:52:37 UTC",
+            "unit_price": 41005,
+            "quantity": 272,
+            "listings": 77
+        },
+        {
+            "listing_datetime": "2019-11-10 15:28:20 UTC",
+            "unit_price": 41002,
+            "quantity": 271,
+            "listings": 76
+        },
+        {
+            "listing_datetime": "2019-11-10 13:33:39 UTC",
+            "unit_price": 41002,
+            "quantity": 273,
+            "listings": 76
+        },
+        {
+            "listing_datetime": "2019-11-10 11:44:50 UTC",
+            "unit_price": 41001,
+            "quantity": 271,
+            "listings": 76
+        },
+        {
+            "listing_datetime": "2019-11-10 10:16:34 UTC",
+            "unit_price": 41000,
+            "quantity": 270,
+            "listings": 75
+        },
+        {
+            "listing_datetime": "2019-11-10 08:20:31 UTC",
+            "unit_price": 41000,
+            "quantity": 270,
+            "listings": 75
+        },
+        {
+            "listing_datetime": "2019-11-10 06:33:45 UTC",
+            "unit_price": 41002,
+            "quantity": 271,
+            "listings": 76
+        },
+        {
+            "listing_datetime": "2019-11-10 05:05:38 UTC",
+            "unit_price": 41002,
+            "quantity": 271,
+            "listings": 76
+        },
+        {
+            "listing_datetime": "2019-11-10 03:14:21 UTC",
+            "unit_price": 41001,
+            "quantity": 271,
+            "listings": 76
+        },
+        {
+            "listing_datetime": "2019-11-10 01:22:30 UTC",
+            "unit_price": 41001,
+            "quantity": 271,
+            "listings": 76
+        },
+        {
+            "listing_datetime": "2019-11-09 23:55:17 UTC",
+            "unit_price": 41001,
+            "quantity": 271,
+            "listings": 76
+        },
+        {
+            "listing_datetime": "2019-11-09 22:17:29 UTC",
+            "unit_price": 41001,
+            "quantity": 271,
+            "listings": 76
+        },
+        {
+            "listing_datetime": "2019-11-09 20:28:17 UTC",
+            "unit_price": 41001,
+            "quantity": 271,
+            "listings": 76
+        },
+        {
+            "listing_datetime": "2019-11-09 18:57:51 UTC",
+            "unit_price": 41000,
+            "quantity": 271,
+            "listings": 76
+        },
+        {
+            "listing_datetime": "2019-11-09 17:04:14 UTC",
+            "unit_price": 40106,
+            "quantity": 267,
+            "listings": 73
+        },
+        {
+            "listing_datetime": "2019-11-09 15:14:30 UTC",
+            "unit_price": 40105,
+            "quantity": 268,
+            "listings": 72
+        },
+        {
+            "listing_datetime": "2019-11-09 13:48:04 UTC",
+            "unit_price": 40104,
+            "quantity": 265,
+            "listings": 71
+        },
+        {
+            "listing_datetime": "2019-11-09 11:55:54 UTC",
+            "unit_price": 40104,
+            "quantity": 266,
+            "listings": 71
+        },
+        {
+            "listing_datetime": "2019-11-09 10:05:06 UTC",
+            "unit_price": 40104,
+            "quantity": 268,
+            "listings": 72
+        },
+        {
+            "listing_datetime": "2019-11-09 08:37:43 UTC",
+            "unit_price": 40105,
+            "quantity": 269,
+            "listings": 73
+        },
+        {
+            "listing_datetime": "2019-11-09 06:48:13 UTC",
+            "unit_price": 40106,
+            "quantity": 270,
+            "listings": 74
+        },
+        {
+            "listing_datetime": "2019-11-09 05:03:50 UTC",
+            "unit_price": 40104,
+            "quantity": 268,
+            "listings": 72
+        },
+        {
+            "listing_datetime": "2019-11-09 03:37:32 UTC",
+            "unit_price": 40106,
+            "quantity": 269,
+            "listings": 73
+        },
+        {
+            "listing_datetime": "2019-11-09 01:46:53 UTC",
+            "unit_price": 40106,
+            "quantity": 269,
+            "listings": 73
+        },
+        {
+            "listing_datetime": "2019-11-08 23:57:46 UTC",
+            "unit_price": 40106,
+            "quantity": 269,
+            "listings": 73
+        },
+        {
+            "listing_datetime": "2019-11-08 22:27:37 UTC",
+            "unit_price": 40106,
+            "quantity": 270,
+            "listings": 74
+        },
+        {
+            "listing_datetime": "2019-11-08 20:46:36 UTC",
+            "unit_price": 40107,
+            "quantity": 271,
+            "listings": 75
+        },
+        {
+            "listing_datetime": "2019-11-08 18:49:58 UTC",
+            "unit_price": 40106,
+            "quantity": 270,
+            "listings": 73
+        },
+        {
+            "listing_datetime": "2019-11-08 17:21:10 UTC",
+            "unit_price": 40106,
+            "quantity": 270,
+            "listings": 73
+        },
+        {
+            "listing_datetime": "2019-11-08 15:30:14 UTC",
+            "unit_price": 40106,
+            "quantity": 272,
+            "listings": 73
+        },
+        {
+            "listing_datetime": "2019-11-08 13:38:03 UTC",
+            "unit_price": 40104,
+            "quantity": 268,
+            "listings": 72
+        },
+        {
+            "listing_datetime": "2019-11-08 12:11:32 UTC",
+            "unit_price": 40104,
+            "quantity": 269,
+            "listings": 72
+        },
+        {
+            "listing_datetime": "2019-11-08 10:17:18 UTC",
+            "unit_price": 40104,
+            "quantity": 270,
+            "listings": 72
+        },
+        {
+            "listing_datetime": "2019-11-08 08:28:14 UTC",
+            "unit_price": 40104,
+            "quantity": 271,
+            "listings": 72
+        },
+        {
+            "listing_datetime": "2019-11-08 06:59:05 UTC",
+            "unit_price": 40104,
+            "quantity": 271,
+            "listings": 72
+        },
+        {
+            "listing_datetime": "2019-11-08 05:07:46 UTC",
+            "unit_price": 40105,
+            "quantity": 272,
+            "listings": 73
+        },
+        {
+            "listing_datetime": "2019-11-08 03:21:06 UTC",
+            "unit_price": 40104,
+            "quantity": 271,
+            "listings": 72
+        },
+        {
+            "listing_datetime": "2019-11-08 01:49:07 UTC",
+            "unit_price": 40104,
+            "quantity": 272,
+            "listings": 72
+        },
+        {
+            "listing_datetime": "2019-11-07 23:53:47 UTC",
+            "unit_price": 40104,
+            "quantity": 272,
+            "listings": 72
+        },
+        {
+            "listing_datetime": "2019-11-07 21:59:42 UTC",
+            "unit_price": 40104,
+            "quantity": 272,
+            "listings": 72
+        },
+        {
+            "listing_datetime": "2019-11-07 20:25:36 UTC",
+            "unit_price": 40104,
+            "quantity": 274,
+            "listings": 72
+        },
+        {
+            "listing_datetime": "2019-11-07 18:41:15 UTC",
+            "unit_price": 40500,
+            "quantity": 277,
+            "listings": 75
+        },
+        {
+            "listing_datetime": "2019-11-07 16:50:56 UTC",
+            "unit_price": 40501,
+            "quantity": 279,
+            "listings": 76
+        },
+        {
+            "listing_datetime": "2019-11-07 15:24:00 UTC",
+            "unit_price": 41000,
+            "quantity": 281,
+            "listings": 77
+        },
+        {
+            "listing_datetime": "2019-11-07 13:34:10 UTC",
+            "unit_price": 40500,
+            "quantity": 278,
+            "listings": 76
+        },
+        {
+            "listing_datetime": "2019-11-07 11:45:21 UTC",
+            "unit_price": 40501,
+            "quantity": 279,
+            "listings": 77
+        },
+        {
+            "listing_datetime": "2019-11-07 10:19:57 UTC",
+            "unit_price": 40501,
+            "quantity": 279,
+            "listings": 77
+        },
+        {
+            "listing_datetime": "2019-11-07 08:29:47 UTC",
+            "unit_price": 40500,
+            "quantity": 278,
+            "listings": 76
+        },
+        {
+            "listing_datetime": "2019-11-07 06:38:50 UTC",
+            "unit_price": 40210,
+            "quantity": 279,
+            "listings": 77
+        },
+        {
+            "listing_datetime": "2019-11-07 05:08:48 UTC",
+            "unit_price": 40503,
+            "quantity": 280,
+            "listings": 78
+        },
+        {
+            "listing_datetime": "2019-11-07 03:15:56 UTC",
+            "unit_price": 40210,
+            "quantity": 279,
+            "listings": 77
+        },
+        {
+            "listing_datetime": "2019-11-07 01:31:49 UTC",
+            "unit_price": 40207,
+            "quantity": 277,
+            "listings": 75
+        },
+        {
+            "listing_datetime": "2019-11-07 00:03:00 UTC",
+            "unit_price": 40207,
+            "quantity": 277,
+            "listings": 75
+        },
+        {
+            "listing_datetime": "2019-11-06 22:07:53 UTC",
+            "unit_price": 40207,
+            "quantity": 278,
+            "listings": 75
+        },
+        {
+            "listing_datetime": "2019-11-06 20:17:21 UTC",
+            "unit_price": 40208,
+            "quantity": 280,
+            "listings": 76
+        },
+        {
+            "listing_datetime": "2019-11-06 18:44:59 UTC",
+            "unit_price": 40303,
+            "quantity": 282,
+            "listings": 77
+        },
+        {
+            "listing_datetime": "2019-11-06 16:55:57 UTC",
+            "unit_price": 40209,
+            "quantity": 283,
+            "listings": 77
+        },
+        {
+            "listing_datetime": "2019-11-06 15:02:27 UTC",
+            "unit_price": 40208,
+            "quantity": 283,
+            "listings": 76
+        },
+        {
+            "listing_datetime": "2019-11-06 13:30:29 UTC",
+            "unit_price": 40207,
+            "quantity": 279,
+            "listings": 75
+        },
+        {
+            "listing_datetime": "2019-11-06 11:35:54 UTC",
+            "unit_price": 40207,
+            "quantity": 279,
+            "listings": 75
+        },
+        {
+            "listing_datetime": "2019-11-06 09:41:36 UTC",
+            "unit_price": 40207,
+            "quantity": 279,
+            "listings": 75
+        },
+        {
+            "listing_datetime": "2019-11-06 08:16:26 UTC",
+            "unit_price": 40207,
+            "quantity": 280,
+            "listings": 75
+        },
+        {
+            "listing_datetime": "2019-11-06 06:25:57 UTC",
+            "unit_price": 40207,
+            "quantity": 280,
+            "listings": 75
+        },
+        {
+            "listing_datetime": "2019-11-06 04:39:11 UTC",
+            "unit_price": 40505,
+            "quantity": 283,
+            "listings": 77
+        },
+        {
+            "listing_datetime": "2019-11-06 03:09:04 UTC",
+            "unit_price": 40605,
+            "quantity": 284,
+            "listings": 78
+        },
+        {
+            "listing_datetime": "2019-11-06 01:14:01 UTC",
+            "unit_price": 40605,
+            "quantity": 284,
+            "listings": 78
+        },
+        {
+            "listing_datetime": "2019-11-05 23:23:25 UTC",
+            "unit_price": 40506,
+            "quantity": 286,
+            "listings": 79
+        },
+        {
+            "listing_datetime": "2019-11-05 21:50:55 UTC",
+            "unit_price": 40506,
+            "quantity": 286,
+            "listings": 79
+        },
+        {
+            "listing_datetime": "2019-11-05 19:54:28 UTC",
+            "unit_price": 40506,
+            "quantity": 287,
+            "listings": 80
+        },
+        {
+            "listing_datetime": "2019-11-05 17:52:17 UTC",
+            "unit_price": 40505,
+            "quantity": 288,
+            "listings": 80
+        },
+        {
+            "listing_datetime": "2019-11-05 16:14:37 UTC",
+            "unit_price": 40505,
+            "quantity": 289,
+            "listings": 80
+        },
+        {
+            "listing_datetime": "2019-11-05 14:30:16 UTC",
+            "unit_price": 40503,
+            "quantity": 283,
+            "listings": 78
+        },
+        {
+            "listing_datetime": "2019-11-05 12:41:45 UTC",
+            "unit_price": 40502,
+            "quantity": 282,
+            "listings": 77
+        },
+        {
+            "listing_datetime": "2019-11-05 11:11:50 UTC",
+            "unit_price": 40503,
+            "quantity": 283,
+            "listings": 78
+        },
+        {
+            "listing_datetime": "2019-11-05 09:20:39 UTC",
+            "unit_price": 40503,
+            "quantity": 288,
+            "listings": 79
+        },
+        {
+            "listing_datetime": "2019-11-05 07:34:34 UTC",
+            "unit_price": 40503,
+            "quantity": 288,
+            "listings": 79
+        },
+        {
+            "listing_datetime": "2019-11-05 06:11:22 UTC",
+            "unit_price": 40503,
+            "quantity": 288,
+            "listings": 79
+        },
+        {
+            "listing_datetime": "2019-11-05 04:20:14 UTC",
+            "unit_price": 40503,
+            "quantity": 290,
+            "listings": 79
+        },
+        {
+            "listing_datetime": "2019-11-05 02:26:17 UTC",
+            "unit_price": 40503,
+            "quantity": 290,
+            "listings": 79
+        },
+        {
+            "listing_datetime": "2019-11-05 00:53:50 UTC",
+            "unit_price": 40503,
+            "quantity": 290,
+            "listings": 79
+        },
+        {
+            "listing_datetime": "2019-11-04 23:00:28 UTC",
+            "unit_price": 40503,
+            "quantity": 291,
+            "listings": 79
+        },
+        {
+            "listing_datetime": "2019-11-04 21:09:32 UTC",
+            "unit_price": 40502,
+            "quantity": 295,
+            "listings": 80
+        },
+        {
+            "listing_datetime": "2019-11-04 19:40:41 UTC",
+            "unit_price": 40503,
+            "quantity": 297,
+            "listings": 81
+        },
+        {
+            "listing_datetime": "2019-11-04 17:49:49 UTC",
+            "unit_price": 40402,
+            "quantity": 297,
+            "listings": 81
+        },
+        {
+            "listing_datetime": "2019-11-04 16:02:53 UTC",
+            "unit_price": 40402,
+            "quantity": 299,
+            "listings": 82
+        },
+        {
+            "listing_datetime": "2019-11-04 14:33:51 UTC",
+            "unit_price": 40403,
+            "quantity": 300,
+            "listings": 83
+        },
+        {
+            "listing_datetime": "2019-11-04 12:46:27 UTC",
+            "unit_price": 40402,
+            "quantity": 299,
+            "listings": 82
+        },
+        {
+            "listing_datetime": "2019-11-04 10:48:09 UTC",
+            "unit_price": 40403,
+            "quantity": 300,
+            "listings": 83
+        },
+        {
+            "listing_datetime": "2019-11-04 09:18:45 UTC",
+            "unit_price": 40402,
+            "quantity": 299,
+            "listings": 82
+        },
+        {
+            "listing_datetime": "2019-11-04 07:26:54 UTC",
+            "unit_price": 40401,
+            "quantity": 294,
+            "listings": 81
+        },
+        {
+            "listing_datetime": "2019-11-04 05:30:39 UTC",
+            "unit_price": 40401,
+            "quantity": 294,
+            "listings": 81
+        },
+        {
+            "listing_datetime": "2019-11-04 04:03:29 UTC",
+            "unit_price": 40402,
+            "quantity": 296,
+            "listings": 83
+        },
+        {
+            "listing_datetime": "2019-11-04 02:13:37 UTC",
+            "unit_price": 40402,
+            "quantity": 297,
+            "listings": 84
+        },
+        {
+            "listing_datetime": "2019-11-04 00:23:15 UTC",
+            "unit_price": 40401,
+            "quantity": 297,
+            "listings": 84
+        },
+        {
+            "listing_datetime": "2019-11-03 22:52:33 UTC",
+            "unit_price": 40307,
+            "quantity": 296,
+            "listings": 84
+        },
+        {
+            "listing_datetime": "2019-11-03 21:00:19 UTC",
+            "unit_price": 40107,
+            "quantity": 294,
+            "listings": 85
+        },
+        {
+            "listing_datetime": "2019-11-03 19:11:59 UTC",
+            "unit_price": 40102,
+            "quantity": 211,
+            "listings": 81
+        },
+        {
+            "listing_datetime": "2019-11-03 17:39:33 UTC",
+            "unit_price": 40301,
+            "quantity": 213,
+            "listings": 82
+        },
+        {
+            "listing_datetime": "2019-11-03 15:48:20 UTC",
+            "unit_price": 40101,
+            "quantity": 214,
+            "listings": 82
+        },
+        {
+            "listing_datetime": "2019-11-03 13:50:07 UTC",
+            "unit_price": 40101,
+            "quantity": 215,
+            "listings": 81
+        },
+        {
+            "listing_datetime": "2019-11-03 12:19:01 UTC",
+            "unit_price": 40101,
+            "quantity": 216,
+            "listings": 81
+        },
+        {
+            "listing_datetime": "2019-11-03 10:37:41 UTC",
+            "unit_price": 40000,
+            "quantity": 221,
+            "listings": 84
+        },
+        {
+            "listing_datetime": "2019-11-03 08:47:46 UTC",
+            "unit_price": 39506,
+            "quantity": 219,
+            "listings": 82
+        },
+        {
+            "listing_datetime": "2019-11-03 07:21:14 UTC",
+            "unit_price": 39506,
+            "quantity": 221,
+            "listings": 82
+        },
+        {
+            "listing_datetime": "2019-11-03 05:30:14 UTC",
+            "unit_price": 39506,
+            "quantity": 221,
+            "listings": 82
+        },
+        {
+            "listing_datetime": "2019-11-03 03:42:22 UTC",
+            "unit_price": 39500,
+            "quantity": 220,
+            "listings": 81
+        },
+        {
+            "listing_datetime": "2019-11-03 02:19:51 UTC",
+            "unit_price": 39500,
+            "quantity": 220,
+            "listings": 81
+        },
+        {
+            "listing_datetime": "2019-11-03 00:27:33 UTC",
+            "unit_price": 39142,
+            "quantity": 219,
+            "listings": 80
+        },
+        {
+            "listing_datetime": "2019-11-02 22:33:51 UTC",
+            "unit_price": 39146,
+            "quantity": 222,
+            "listings": 83
+        },
+        {
+            "listing_datetime": "2019-11-02 21:02:58 UTC",
+            "unit_price": 39143,
+            "quantity": 222,
+            "listings": 83
+        },
+        {
+            "listing_datetime": "2019-11-02 19:12:01 UTC",
+            "unit_price": 39141,
+            "quantity": 221,
+            "listings": 82
+        },
+        {
+            "listing_datetime": "2019-11-02 17:26:21 UTC",
+            "unit_price": 39040,
+            "quantity": 219,
+            "listings": 80
+        },
+        {
+            "listing_datetime": "2019-11-02 15:59:56 UTC",
+            "unit_price": 39040,
+            "quantity": 220,
+            "listings": 80
+        },
+        {
+            "listing_datetime": "2019-11-02 14:11:17 UTC",
+            "unit_price": 39039,
+            "quantity": 221,
+            "listings": 80
+        },
+        {
+            "listing_datetime": "2019-11-02 12:20:00 UTC",
+            "unit_price": 39037,
+            "quantity": 215,
+            "listings": 79
+        },
+        {
+            "listing_datetime": "2019-11-02 10:53:59 UTC",
+            "unit_price": 39017,
+            "quantity": 231,
+            "listings": 79
+        },
+        {
+            "listing_datetime": "2019-11-02 09:06:50 UTC",
+            "unit_price": 39014,
+            "quantity": 221,
+            "listings": 77
+        },
+        {
+            "listing_datetime": "2019-11-02 07:16:34 UTC",
+            "unit_price": 39013,
+            "quantity": 222,
+            "listings": 77
+        },
+        {
+            "listing_datetime": "2019-11-02 05:41:54 UTC",
+            "unit_price": 39012,
+            "quantity": 226,
+            "listings": 78
+        },
+        {
+            "listing_datetime": "2019-11-02 03:47:34 UTC",
+            "unit_price": 39013,
+            "quantity": 228,
+            "listings": 80
+        },
+        {
+            "listing_datetime": "2019-11-02 01:50:19 UTC",
+            "unit_price": 39011,
+            "quantity": 227,
+            "listings": 79
+        },
+        {
+            "listing_datetime": "2019-11-02 00:19:44 UTC",
+            "unit_price": 39010,
+            "quantity": 230,
+            "listings": 81
+        },
+        {
+            "listing_datetime": "2019-11-01 22:27:27 UTC",
+            "unit_price": 39007,
+            "quantity": 218,
+            "listings": 79
+        },
+        {
+            "listing_datetime": "2019-11-01 20:40:09 UTC",
+            "unit_price": 39004,
+            "quantity": 216,
+            "listings": 77
+        },
+        {
+            "listing_datetime": "2019-11-01 19:12:20 UTC",
+            "unit_price": 39001,
+            "quantity": 211,
+            "listings": 75
+        },
+        {
+            "listing_datetime": "2019-11-01 17:21:00 UTC",
+            "unit_price": 38472,
+            "quantity": 209,
+            "listings": 74
+        },
+        {
+            "listing_datetime": "2019-11-01 15:36:10 UTC",
+            "unit_price": 38768,
+            "quantity": 213,
+            "listings": 76
+        },
+        {
+            "listing_datetime": "2019-11-01 14:04:25 UTC",
+            "unit_price": 38474,
+            "quantity": 214,
+            "listings": 76
+        },
+        {
+            "listing_datetime": "2019-11-01 12:13:22 UTC",
+            "unit_price": 38473,
+            "quantity": 213,
+            "listings": 75
+        },
+        {
+            "listing_datetime": "2019-11-01 10:20:29 UTC",
+            "unit_price": 38474,
+            "quantity": 214,
+            "listings": 76
+        },
+        {
+            "listing_datetime": "2019-11-01 08:48:26 UTC",
+            "unit_price": 38472,
+            "quantity": 210,
+            "listings": 75
+        },
+        {
+            "listing_datetime": "2019-11-01 07:09:33 UTC",
+            "unit_price": 38371,
+            "quantity": 208,
+            "listings": 73
+        },
+        {
+            "listing_datetime": "2019-11-01 05:22:01 UTC",
+            "unit_price": 38370,
+            "quantity": 208,
+            "listings": 73
+        },
+        {
+            "listing_datetime": "2019-11-01 03:55:01 UTC",
+            "unit_price": 38370,
+            "quantity": 208,
+            "listings": 73
+        },
+        {
+            "listing_datetime": "2019-11-01 02:07:24 UTC",
+            "unit_price": 38369,
+            "quantity": 208,
+            "listings": 73
+        },
+        {
+            "listing_datetime": "2019-11-01 00:21:57 UTC",
+            "unit_price": 37566,
+            "quantity": 206,
+            "listings": 70
+        },
+        {
+            "listing_datetime": "2019-10-31 22:45:53 UTC",
+            "unit_price": 37567,
+            "quantity": 205,
+            "listings": 70
+        },
+        {
+            "listing_datetime": "2019-10-31 20:40:35 UTC",
+            "unit_price": 37566,
+            "quantity": 206,
+            "listings": 71
+        },
+        {
+            "listing_datetime": "2019-10-31 18:51:03 UTC",
+            "unit_price": 37565,
+            "quantity": 212,
+            "listings": 71
+        },
+        {
+            "listing_datetime": "2019-10-31 17:18:43 UTC",
+            "unit_price": 37565,
+            "quantity": 214,
+            "listings": 71
+        },
+        {
+            "listing_datetime": "2019-10-31 15:24:26 UTC",
+            "unit_price": 37565,
+            "quantity": 217,
+            "listings": 72
+        },
+        {
+            "listing_datetime": "2019-10-31 13:38:17 UTC",
+            "unit_price": 37565,
+            "quantity": 217,
+            "listings": 72
+        },
+        {
+            "listing_datetime": "2019-10-31 12:11:08 UTC",
+            "unit_price": 37565,
+            "quantity": 217,
+            "listings": 72
+        },
+        {
+            "listing_datetime": "2019-10-31 10:20:58 UTC",
+            "unit_price": 37559,
+            "quantity": 214,
+            "listings": 71
+        },
+        {
+            "listing_datetime": "2019-10-31 08:28:14 UTC",
+            "unit_price": 37559,
+            "quantity": 215,
+            "listings": 71
+        },
+        {
+            "listing_datetime": "2019-10-31 06:58:46 UTC",
+            "unit_price": 37560,
+            "quantity": 216,
+            "listings": 72
+        },
+        {
+            "listing_datetime": "2019-10-31 05:15:26 UTC",
+            "unit_price": 37566,
+            "quantity": 217,
+            "listings": 73
+        },
+        {
+            "listing_datetime": "2019-10-31 03:24:59 UTC",
+            "unit_price": 37560,
+            "quantity": 217,
+            "listings": 73
+        },
+        {
+            "listing_datetime": "2019-10-31 01:50:34 UTC",
+            "unit_price": 37561,
+            "quantity": 218,
+            "listings": 74
+        },
+        {
+            "listing_datetime": "2019-10-30 23:19:46 UTC",
+            "unit_price": 37559,
+            "quantity": 217,
+            "listings": 72
+        },
+        {
+            "listing_datetime": "2019-10-30 21:19:47 UTC",
+            "unit_price": 37556,
+            "quantity": 217,
+            "listings": 72
+        },
+        {
+            "listing_datetime": "2019-10-30 18:14:50 UTC",
+            "unit_price": 37552,
+            "quantity": 212,
+            "listings": 72
+        },
+        {
+            "listing_datetime": "2019-10-30 16:17:35 UTC",
+            "unit_price": 37551,
+            "quantity": 212,
+            "listings": 71
+        },
+        {
+            "listing_datetime": "2019-10-30 14:27:34 UTC",
+            "unit_price": 37551,
+            "quantity": 214,
+            "listings": 71
+        },
+        {
+            "listing_datetime": "2019-10-30 12:58:13 UTC",
+            "unit_price": 37555,
+            "quantity": 215,
+            "listings": 72
+        },
+        {
+            "listing_datetime": "2019-10-30 11:09:40 UTC",
+            "unit_price": 37557,
+            "quantity": 218,
+            "listings": 75
+        },
+        {
+            "listing_datetime": "2019-10-30 09:28:17 UTC",
+            "unit_price": 37557,
+            "quantity": 219,
+            "listings": 75
+        },
+        {
+            "listing_datetime": "2019-10-30 07:59:46 UTC",
+            "unit_price": 37557,
+            "quantity": 221,
+            "listings": 75
+        },
+        {
+            "listing_datetime": "2019-10-30 06:09:45 UTC",
+            "unit_price": 37557,
+            "quantity": 221,
+            "listings": 75
+        },
+        {
+            "listing_datetime": "2019-10-30 04:19:09 UTC",
+            "unit_price": 37557,
+            "quantity": 221,
+            "listings": 75
+        },
+        {
+            "listing_datetime": "2019-10-30 02:44:18 UTC",
+            "unit_price": 37557,
+            "quantity": 218,
+            "listings": 75
+        },
+        {
+            "listing_datetime": "2019-10-30 00:59:19 UTC",
+            "unit_price": 37558,
+            "quantity": 221,
+            "listings": 78
+        },
+        {
+            "listing_datetime": "2019-10-29 23:04:51 UTC",
+            "unit_price": 37556,
+            "quantity": 222,
+            "listings": 79
+        },
+        {
+            "listing_datetime": "2019-10-29 21:23:16 UTC",
+            "unit_price": 37550,
+            "quantity": 221,
+            "listings": 77
+        },
+        {
+            "listing_datetime": "2019-10-29 17:41:52 UTC",
+            "unit_price": 37545,
+            "quantity": 224,
+            "listings": 77
+        },
+        {
+            "listing_datetime": "2019-10-29 14:42:39 UTC",
+            "unit_price": 36901,
+            "quantity": 225,
+            "listings": 78
+        },
+        {
+            "listing_datetime": "2019-10-29 13:17:28 UTC",
+            "unit_price": 36900,
+            "quantity": 226,
+            "listings": 78
+        },
+        {
+            "listing_datetime": "2019-10-29 11:25:39 UTC",
+            "unit_price": 36899,
+            "quantity": 227,
+            "listings": 78
+        },
+        {
+            "listing_datetime": "2019-10-29 09:36:45 UTC",
+            "unit_price": 36901,
+            "quantity": 229,
+            "listings": 80
+        },
+        {
+            "listing_datetime": "2019-10-29 08:05:37 UTC",
+            "unit_price": 36901,
+            "quantity": 243,
+            "listings": 82
+        },
+        {
+            "listing_datetime": "2019-10-29 06:13:14 UTC",
+            "unit_price": 36900,
+            "quantity": 248,
+            "listings": 84
+        },
+        {
+            "listing_datetime": "2019-10-29 04:24:14 UTC",
+            "unit_price": 36900,
+            "quantity": 250,
+            "listings": 85
+        },
+        {
+            "listing_datetime": "2019-10-29 02:56:00 UTC",
+            "unit_price": 36900,
+            "quantity": 250,
+            "listings": 86
+        },
+        {
+            "listing_datetime": "2019-10-29 01:05:42 UTC",
+            "unit_price": 36900,
+            "quantity": 250,
+            "listings": 86
+        },
+        {
+            "listing_datetime": "2019-10-28 22:54:41 UTC",
+            "unit_price": 36898,
+            "quantity": 253,
+            "listings": 85
+        },
+        {
+            "listing_datetime": "2019-10-28 21:24:43 UTC",
+            "unit_price": 36899,
+            "quantity": 255,
+            "listings": 86
+        },
+        {
+            "listing_datetime": "2019-10-28 19:41:42 UTC",
+            "unit_price": 36895,
+            "quantity": 253,
+            "listings": 84
+        },
+        {
+            "listing_datetime": "2019-10-28 17:54:24 UTC",
+            "unit_price": 36789,
+            "quantity": 246,
+            "listings": 82
+        },
+        {
+            "listing_datetime": "2019-10-28 16:26:42 UTC",
+            "unit_price": 36787,
+            "quantity": 245,
+            "listings": 81
+        },
+        {
+            "listing_datetime": "2019-10-28 14:36:43 UTC",
+            "unit_price": 37685,
+            "quantity": 246,
+            "listings": 81
+        },
+        {
+            "listing_datetime": "2019-10-28 12:47:38 UTC",
+            "unit_price": 37686,
+            "quantity": 249,
+            "listings": 82
+        },
+        {
+            "listing_datetime": "2019-10-28 11:20:55 UTC",
+            "unit_price": 37685,
+            "quantity": 253,
+            "listings": 83
+        },
+        {
+            "listing_datetime": "2019-10-28 09:30:07 UTC",
+            "unit_price": 37685,
+            "quantity": 253,
+            "listings": 83
+        },
+        {
+            "listing_datetime": "2019-10-28 07:36:50 UTC",
+            "unit_price": 37685,
+            "quantity": 254,
+            "listings": 84
+        },
+        {
+            "listing_datetime": "2019-10-28 06:10:07 UTC",
+            "unit_price": 37685,
+            "quantity": 254,
+            "listings": 84
+        },
+        {
+            "listing_datetime": "2019-10-28 04:18:35 UTC",
+            "unit_price": 36785,
+            "quantity": 253,
+            "listings": 83
+        },
+        {
+            "listing_datetime": "2019-10-28 02:30:34 UTC",
+            "unit_price": 36783,
+            "quantity": 253,
+            "listings": 83
+        },
+        {
+            "listing_datetime": "2019-10-28 00:59:56 UTC",
+            "unit_price": 36780,
+            "quantity": 258,
+            "listings": 85
+        },
+        {
+            "listing_datetime": "2019-10-27 23:05:30 UTC",
+            "unit_price": 36675,
+            "quantity": 254,
+            "listings": 84
+        },
+        {
+            "listing_datetime": "2019-10-27 21:15:34 UTC",
+            "unit_price": 36669,
+            "quantity": 260,
+            "listings": 85
+        },
+        {
+            "listing_datetime": "2019-10-27 19:44:15 UTC",
+            "unit_price": 40000,
+            "quantity": 261,
+            "listings": 87
+        },
+        {
+            "listing_datetime": "2019-10-27 17:52:45 UTC",
+            "unit_price": 33159,
+            "quantity": 258,
+            "listings": 84
+        },
+        {
+            "listing_datetime": "2019-10-27 15:55:38 UTC",
+            "unit_price": 33141,
+            "quantity": 250,
+            "listings": 81
+        },
+        {
+            "listing_datetime": "2019-10-27 14:24:28 UTC",
+            "unit_price": 33038,
+            "quantity": 247,
+            "listings": 82
+        },
+        {
+            "listing_datetime": "2019-10-27 12:29:19 UTC",
+            "unit_price": 33034,
+            "quantity": 243,
+            "listings": 81
+        },
+        {
+            "listing_datetime": "2019-10-27 10:30:19 UTC",
+            "unit_price": 33025,
+            "quantity": 254,
+            "listings": 81
+        },
+        {
+            "listing_datetime": "2019-10-27 09:03:20 UTC",
+            "unit_price": 33024,
+            "quantity": 256,
+            "listings": 82
+        },
+        {
+            "listing_datetime": "2019-10-27 07:09:18 UTC",
+            "unit_price": 33025,
+            "quantity": 258,
+            "listings": 82
+        },
+        {
+            "listing_datetime": "2019-10-27 05:18:56 UTC",
+            "unit_price": 33025,
+            "quantity": 258,
+            "listings": 82
+        },
+        {
+            "listing_datetime": "2019-10-27 03:47:57 UTC",
+            "unit_price": 33021,
+            "quantity": 253,
+            "listings": 80
+        },
+        {
+            "listing_datetime": "2019-10-27 02:00:00 UTC",
+            "unit_price": 32816,
+            "quantity": 261,
+            "listings": 81
+        },
+        {
+            "listing_datetime": "2019-10-26 22:40:56 UTC",
+            "unit_price": 32607,
+            "quantity": 236,
+            "listings": 78
+        },
+        {
+            "listing_datetime": "2019-10-26 20:47:40 UTC",
+            "unit_price": 32608,
+            "quantity": 238,
+            "listings": 79
+        },
+        {
+            "listing_datetime": "2019-10-26 18:53:31 UTC",
+            "unit_price": 32603,
+            "quantity": 244,
+            "listings": 76
+        },
+        {
+            "listing_datetime": "2019-10-26 17:23:33 UTC",
+            "unit_price": 32603,
+            "quantity": 248,
+            "listings": 80
+        },
+        {
+            "listing_datetime": "2019-10-26 15:43:49 UTC",
+            "unit_price": 32599,
+            "quantity": 237,
+            "listings": 77
+        },
+        {
+            "listing_datetime": "2019-10-26 13:53:25 UTC",
+            "unit_price": 32598,
+            "quantity": 237,
+            "listings": 78
+        },
+        {
+            "listing_datetime": "2019-10-26 12:24:22 UTC",
+            "unit_price": 32597,
+            "quantity": 236,
+            "listings": 77
+        },
+        {
+            "listing_datetime": "2019-10-26 10:32:57 UTC",
+            "unit_price": 32592,
+            "quantity": 234,
+            "listings": 76
+        },
+        {
+            "listing_datetime": "2019-10-26 08:42:11 UTC",
+            "unit_price": 32590,
+            "quantity": 232,
+            "listings": 76
+        },
+        {
+            "listing_datetime": "2019-10-26 07:14:39 UTC",
+            "unit_price": 32586,
+            "quantity": 240,
+            "listings": 76
+        },
+        {
+            "listing_datetime": "2019-10-26 05:23:36 UTC",
+            "unit_price": 32585,
+            "quantity": 241,
+            "listings": 77
+        },
+        {
+            "listing_datetime": "2019-10-26 03:30:24 UTC",
+            "unit_price": 32584,
+            "quantity": 240,
+            "listings": 76
+        },
+        {
+            "listing_datetime": "2019-10-26 02:02:12 UTC",
+            "unit_price": 32582,
+            "quantity": 240,
+            "listings": 76
+        },
+        {
+            "listing_datetime": "2019-10-26 00:10:17 UTC",
+            "unit_price": 32506,
+            "quantity": 226,
+            "listings": 71
+        },
+        {
+            "listing_datetime": "2019-10-25 22:24:33 UTC",
+            "unit_price": 30272,
+            "quantity": 198,
+            "listings": 67
+        },
+        {
+            "listing_datetime": "2019-10-25 20:56:04 UTC",
+            "unit_price": 30165,
+            "quantity": 237,
+            "listings": 65
+        },
+        {
+            "listing_datetime": "2019-10-25 19:03:06 UTC",
+            "unit_price": 30160,
+            "quantity": 176,
+            "listings": 63
+        },
+        {
+            "listing_datetime": "2019-10-25 17:09:38 UTC",
+            "unit_price": 30159,
+            "quantity": 172,
+            "listings": 62
+        },
+        {
+            "listing_datetime": "2019-10-25 15:37:26 UTC",
+            "unit_price": 30160,
+            "quantity": 174,
+            "listings": 64
+        },
+        {
+            "listing_datetime": "2019-10-25 13:51:22 UTC",
+            "unit_price": 30159,
+            "quantity": 174,
+            "listings": 63
+        },
+        {
+            "listing_datetime": "2019-10-25 11:57:21 UTC",
+            "unit_price": 30159,
+            "quantity": 174,
+            "listings": 64
+        },
+        {
+            "listing_datetime": "2019-10-25 10:25:52 UTC",
+            "unit_price": 30159,
+            "quantity": 174,
+            "listings": 64
+        },
+        {
+            "listing_datetime": "2019-10-25 08:31:43 UTC",
+            "unit_price": 37716,
+            "quantity": 174,
+            "listings": 64
+        },
+        {
+            "listing_datetime": "2019-10-25 06:39:30 UTC",
+            "unit_price": 30158,
+            "quantity": 173,
+            "listings": 63
+        },
+        {
+            "listing_datetime": "2019-10-25 05:12:57 UTC",
+            "unit_price": 30158,
+            "quantity": 176,
+            "listings": 64
+        },
+        {
+            "listing_datetime": "2019-10-25 03:20:10 UTC",
+            "unit_price": 30057,
+            "quantity": 174,
+            "listings": 62
+        },
+        {
+            "listing_datetime": "2019-10-25 01:31:21 UTC",
+            "unit_price": 30055,
+            "quantity": 171,
+            "listings": 61
+        },
+        {
+            "listing_datetime": "2019-10-25 00:03:02 UTC",
+            "unit_price": 30054,
+            "quantity": 172,
+            "listings": 62
+        },
+        {
+            "listing_datetime": "2019-10-24 22:11:10 UTC",
+            "unit_price": 30054,
+            "quantity": 181,
+            "listings": 63
+        },
+        {
+            "listing_datetime": "2019-10-24 20:25:06 UTC",
+            "unit_price": 30053,
+            "quantity": 183,
+            "listings": 63
+        },
+        {
+            "listing_datetime": "2019-10-24 18:52:58 UTC",
+            "unit_price": 30052,
+            "quantity": 183,
+            "listings": 63
+        },
+        {
+            "listing_datetime": "2019-10-24 16:58:47 UTC",
+            "unit_price": 29201,
+            "quantity": 178,
+            "listings": 58
+        },
+        {
+            "listing_datetime": "2019-10-24 15:06:47 UTC",
+            "unit_price": 30001,
+            "quantity": 182,
+            "listings": 60
+        },
+        {
+            "listing_datetime": "2019-10-24 13:34:44 UTC",
+            "unit_price": 30003,
+            "quantity": 184,
+            "listings": 62
+        },
+        {
+            "listing_datetime": "2019-10-24 11:54:11 UTC",
+            "unit_price": 30002,
+            "quantity": 183,
+            "listings": 61
+        },
+        {
+            "listing_datetime": "2019-10-24 10:06:44 UTC",
+            "unit_price": 30002,
+            "quantity": 183,
+            "listings": 61
+        },
+        {
+            "listing_datetime": "2019-10-24 08:40:11 UTC",
+            "unit_price": 30002,
+            "quantity": 183,
+            "listings": 61
+        },
+        {
+            "listing_datetime": "2019-10-24 06:49:44 UTC",
+            "unit_price": 31124,
+            "quantity": 186,
+            "listings": 64
+        },
+        {
+            "listing_datetime": "2019-10-24 05:00:55 UTC",
+            "unit_price": 30004,
+            "quantity": 185,
+            "listings": 63
+        },
+        {
+            "listing_datetime": "2019-10-24 03:34:09 UTC",
+            "unit_price": 30004,
+            "quantity": 185,
+            "listings": 63
+        },
+        {
+            "listing_datetime": "2019-10-24 01:41:20 UTC",
+            "unit_price": 30003,
+            "quantity": 184,
+            "listings": 62
+        },
+        {
+            "listing_datetime": "2019-10-23 23:47:54 UTC",
+            "unit_price": 30003,
+            "quantity": 184,
+            "listings": 62
+        },
+        {
+            "listing_datetime": "2019-10-23 22:16:59 UTC",
+            "unit_price": 30002,
+            "quantity": 183,
+            "listings": 61
+        },
+        {
+            "listing_datetime": "2019-10-23 20:20:47 UTC",
+            "unit_price": 29201,
+            "quantity": 181,
+            "listings": 59
+        },
+        {
+            "listing_datetime": "2019-10-23 18:31:07 UTC",
+            "unit_price": 29204,
+            "quantity": 180,
+            "listings": 58
+        },
+        {
+            "listing_datetime": "2019-10-23 17:02:30 UTC",
+            "unit_price": 29204,
+            "quantity": 180,
+            "listings": 58
+        },
+        {
+            "listing_datetime": "2019-10-23 15:09:51 UTC",
+            "unit_price": 34000,
+            "quantity": 181,
+            "listings": 59
+        },
+        {
+            "listing_datetime": "2019-10-23 13:23:30 UTC",
+            "unit_price": 34100,
+            "quantity": 182,
+            "listings": 60
+        },
+        {
+            "listing_datetime": "2019-10-23 11:52:57 UTC",
+            "unit_price": 34000,
+            "quantity": 181,
+            "listings": 59
+        },
+        {
+            "listing_datetime": "2019-10-23 09:59:56 UTC",
+            "unit_price": 30603,
+            "quantity": 184,
+            "listings": 62
+        },
+        {
+            "listing_datetime": "2019-10-23 08:04:31 UTC",
+            "unit_price": 30603,
+            "quantity": 184,
+            "listings": 62
+        },
+        {
+            "listing_datetime": "2019-10-23 06:33:19 UTC",
+            "unit_price": 29203,
+            "quantity": 183,
+            "listings": 61
+        },
+        {
+            "listing_datetime": "2019-10-23 04:39:49 UTC",
+            "unit_price": 29203,
+            "quantity": 183,
+            "listings": 61
+        },
+        {
+            "listing_datetime": "2019-10-23 02:45:46 UTC",
+            "unit_price": 29201,
+            "quantity": 181,
+            "listings": 59
+        },
+        {
+            "listing_datetime": "2019-10-23 01:18:22 UTC",
+            "unit_price": 29200,
+            "quantity": 181,
+            "listings": 59
+        },
+        {
+            "listing_datetime": "2019-10-22 23:26:50 UTC",
+            "unit_price": 29199,
+            "quantity": 181,
+            "listings": 59
+        },
+        {
+            "listing_datetime": "2019-10-22 21:37:12 UTC",
+            "unit_price": 29199,
+            "quantity": 183,
+            "listings": 59
+        },
+        {
+            "listing_datetime": "2019-10-22 20:07:19 UTC",
+            "unit_price": 29200,
+            "quantity": 184,
+            "listings": 60
+        },
+        {
+            "listing_datetime": "2019-10-22 18:08:00 UTC",
+            "unit_price": 30100,
+            "quantity": 185,
+            "listings": 61
+        },
+        {
+            "listing_datetime": "2019-10-22 16:14:12 UTC",
+            "unit_price": 29205,
+            "quantity": 188,
+            "listings": 64
+        },
+        {
+            "listing_datetime": "2019-10-22 14:40:20 UTC",
+            "unit_price": 29200,
+            "quantity": 186,
+            "listings": 62
+        },
+        {
+            "listing_datetime": "2019-10-22 12:45:58 UTC",
+            "unit_price": 29200,
+            "quantity": 189,
+            "listings": 63
+        },
+        {
+            "listing_datetime": "2019-10-22 10:50:44 UTC",
+            "unit_price": 29198,
+            "quantity": 187,
+            "listings": 62
+        },
+        {
+            "listing_datetime": "2019-10-22 09:18:25 UTC",
+            "unit_price": 29198,
+            "quantity": 187,
+            "listings": 62
+        },
+        {
+            "listing_datetime": "2019-10-22 07:37:46 UTC",
+            "unit_price": 28698,
+            "quantity": 186,
+            "listings": 61
+        },
+        {
+            "listing_datetime": "2019-10-22 05:51:39 UTC",
+            "unit_price": 28698,
+            "quantity": 186,
+            "listings": 61
+        },
+        {
+            "listing_datetime": "2019-10-22 04:21:37 UTC",
+            "unit_price": 28698,
+            "quantity": 186,
+            "listings": 61
+        },
+        {
+            "listing_datetime": "2019-10-22 02:31:31 UTC",
+            "unit_price": 28696,
+            "quantity": 187,
+            "listings": 60
+        },
+        {
+            "listing_datetime": "2019-10-22 00:44:46 UTC",
+            "unit_price": 28693,
+            "quantity": 185,
+            "listings": 61
+        },
+        {
+            "listing_datetime": "2019-10-21 23:19:51 UTC",
+            "unit_price": 28693,
+            "quantity": 186,
+            "listings": 62
+        },
+        {
+            "listing_datetime": "2019-10-21 21:29:26 UTC",
+            "unit_price": 28693,
+            "quantity": 188,
+            "listings": 62
+        },
+        {
+            "listing_datetime": "2019-10-21 19:33:05 UTC",
+            "unit_price": 28693,
+            "quantity": 188,
+            "listings": 62
+        },
+        {
+            "listing_datetime": "2019-10-21 18:00:49 UTC",
+            "unit_price": 28692,
+            "quantity": 185,
+            "listings": 62
+        },
+        {
+            "listing_datetime": "2019-10-21 16:06:11 UTC",
+            "unit_price": 28689,
+            "quantity": 183,
+            "listings": 61
+        },
+        {
+            "listing_datetime": "2019-10-21 14:13:39 UTC",
+            "unit_price": 28687,
+            "quantity": 180,
+            "listings": 60
+        },
+        {
+            "listing_datetime": "2019-10-21 12:45:07 UTC",
+            "unit_price": 30000,
+            "quantity": 182,
+            "listings": 62
+        },
+        {
+            "listing_datetime": "2019-10-21 10:52:44 UTC",
+            "unit_price": 30000,
+            "quantity": 182,
+            "listings": 62
+        },
+        {
+            "listing_datetime": "2019-10-21 09:07:39 UTC",
+            "unit_price": 30000,
+            "quantity": 182,
+            "listings": 62
+        },
+        {
+            "listing_datetime": "2019-10-21 07:39:14 UTC",
+            "unit_price": 28689,
+            "quantity": 185,
+            "listings": 64
+        },
+        {
+            "listing_datetime": "2019-10-21 05:51:14 UTC",
+            "unit_price": 28688,
+            "quantity": 184,
+            "listings": 63
+        },
+        {
+            "listing_datetime": "2019-10-21 03:57:04 UTC",
+            "unit_price": 28687,
+            "quantity": 183,
+            "listings": 62
+        },
+        {
+            "listing_datetime": "2019-10-21 02:25:48 UTC",
+            "unit_price": 28685,
+            "quantity": 182,
+            "listings": 61
+        },
+        {
+            "listing_datetime": "2019-10-21 00:37:34 UTC",
+            "unit_price": 28585,
+            "quantity": 181,
+            "listings": 60
+        },
+        {
+            "listing_datetime": "2019-10-20 22:41:32 UTC",
+            "unit_price": 28583,
+            "quantity": 180,
+            "listings": 59
+        },
+        {
+            "listing_datetime": "2019-10-20 21:16:06 UTC",
+            "unit_price": 28584,
+            "quantity": 182,
+            "listings": 60
+        },
+        {
+            "listing_datetime": "2019-10-20 19:24:54 UTC",
+            "unit_price": 37500,
+            "quantity": 183,
+            "listings": 60
+        },
+        {
+            "listing_datetime": "2019-10-20 17:33:30 UTC",
+            "unit_price": 28580,
+            "quantity": 177,
+            "listings": 58
+        },
+        {
+            "listing_datetime": "2019-10-20 16:01:21 UTC",
+            "unit_price": 28577,
+            "quantity": 177,
+            "listings": 57
+        },
+        {
+            "listing_datetime": "2019-10-20 14:05:17 UTC",
+            "unit_price": 28166,
+            "quantity": 187,
+            "listings": 60
+        },
+        {
+            "listing_datetime": "2019-10-20 12:14:42 UTC",
+            "unit_price": 28165,
+            "quantity": 186,
+            "listings": 59
+        },
+        {
+            "listing_datetime": "2019-10-20 10:42:04 UTC",
+            "unit_price": 28064,
+            "quantity": 185,
+            "listings": 58
+        },
+        {
+            "listing_datetime": "2019-10-20 08:47:21 UTC",
+            "unit_price": 31900,
+            "quantity": 187,
+            "listings": 60
+        },
+        {
+            "listing_datetime": "2019-10-20 06:52:18 UTC",
+            "unit_price": 31900,
+            "quantity": 188,
+            "listings": 61
+        },
+        {
+            "listing_datetime": "2019-10-20 05:19:01 UTC",
+            "unit_price": 31905,
+            "quantity": 188,
+            "listings": 61
+        },
+        {
+            "listing_datetime": "2019-10-20 03:37:44 UTC",
+            "unit_price": 31900,
+            "quantity": 188,
+            "listings": 61
+        },
+        {
+            "listing_datetime": "2019-10-20 01:47:41 UTC",
+            "unit_price": 28167,
+            "quantity": 191,
+            "listings": 64
+        },
+        {
+            "listing_datetime": "2019-10-20 00:17:54 UTC",
+            "unit_price": 28065,
+            "quantity": 207,
+            "listings": 68
+        },
+        {
+            "listing_datetime": "2019-10-19 22:22:17 UTC",
+            "unit_price": 28061,
+            "quantity": 204,
+            "listings": 65
+        },
+        {
+            "listing_datetime": "2019-10-19 20:28:03 UTC",
+            "unit_price": 28051,
+            "quantity": 205,
+            "listings": 66
+        },
+        {
+            "listing_datetime": "2019-10-19 18:58:38 UTC",
+            "unit_price": 28051,
+            "quantity": 205,
+            "listings": 66
+        },
+        {
+            "listing_datetime": "2019-10-19 16:58:22 UTC",
+            "unit_price": 28146,
+            "quantity": 206,
+            "listings": 66
+        },
+        {
+            "listing_datetime": "2019-10-19 14:54:16 UTC",
+            "unit_price": 28050,
+            "quantity": 209,
+            "listings": 69
+        },
+        {
+            "listing_datetime": "2019-10-19 13:15:17 UTC",
+            "unit_price": 28049,
+            "quantity": 219,
+            "listings": 72
+        },
+        {
+            "listing_datetime": "2019-10-19 11:18:09 UTC",
+            "unit_price": 28042,
+            "quantity": 213,
+            "listings": 67
+        },
+        {
+            "listing_datetime": "2019-10-19 09:30:36 UTC",
+            "unit_price": 28042,
+            "quantity": 219,
+            "listings": 68
+        },
+        {
+            "listing_datetime": "2019-10-19 08:04:25 UTC",
+            "unit_price": 28041,
+            "quantity": 209,
+            "listings": 67
+        },
+        {
+            "listing_datetime": "2019-10-19 06:15:54 UTC",
+            "unit_price": 28041,
+            "quantity": 211,
+            "listings": 68
+        },
+        {
+            "listing_datetime": "2019-10-19 04:30:05 UTC",
+            "unit_price": 28040,
+            "quantity": 211,
+            "listings": 68
+        },
+        {
+            "listing_datetime": "2019-10-19 03:03:56 UTC",
+            "unit_price": 28042,
+            "quantity": 213,
+            "listings": 70
+        },
+        {
+            "listing_datetime": "2019-10-19 01:17:38 UTC",
+            "unit_price": 27934,
+            "quantity": 214,
+            "listings": 71
+        },
+        {
+            "listing_datetime": "2019-10-18 23:26:09 UTC",
+            "unit_price": 27926,
+            "quantity": 212,
+            "listings": 67
+        },
+        {
+            "listing_datetime": "2019-10-18 21:56:24 UTC",
+            "unit_price": 27931,
+            "quantity": 215,
+            "listings": 69
+        },
+        {
+            "listing_datetime": "2019-10-18 20:01:11 UTC",
+            "unit_price": 27919,
+            "quantity": 211,
+            "listings": 67
+        },
+        {
+            "listing_datetime": "2019-10-18 18:06:09 UTC",
+            "unit_price": 27919,
+            "quantity": 214,
+            "listings": 68
+        },
+        {
+            "listing_datetime": "2019-10-18 16:36:16 UTC",
+            "unit_price": 27918,
+            "quantity": 216,
+            "listings": 69
+        },
+        {
+            "listing_datetime": "2019-10-18 14:47:29 UTC",
+            "unit_price": 27914,
+            "quantity": 214,
+            "listings": 66
+        },
+        {
+            "listing_datetime": "2019-10-18 12:59:37 UTC",
+            "unit_price": 27910,
+            "quantity": 216,
+            "listings": 65
+        },
+        {
+            "listing_datetime": "2019-10-18 11:32:18 UTC",
+            "unit_price": 27907,
+            "quantity": 206,
+            "listings": 64
+        },
+        {
+            "listing_datetime": "2019-10-18 09:41:49 UTC",
+            "unit_price": 27802,
+            "quantity": 203,
+            "listings": 63
+        },
+        {
+            "listing_datetime": "2019-10-18 07:57:33 UTC",
+            "unit_price": 28002,
+            "quantity": 204,
+            "listings": 64
+        },
+        {
+            "listing_datetime": "2019-10-18 06:23:55 UTC",
+            "unit_price": 28002,
+            "quantity": 204,
+            "listings": 64
+        },
+        {
+            "listing_datetime": "2019-10-18 04:33:28 UTC",
+            "unit_price": 27799,
+            "quantity": 198,
+            "listings": 62
+        },
+        {
+            "listing_datetime": "2019-10-18 02:42:12 UTC",
+            "unit_price": 27698,
+            "quantity": 210,
+            "listings": 63
+        },
+        {
+            "listing_datetime": "2019-10-18 01:11:46 UTC",
+            "unit_price": 27698,
+            "quantity": 210,
+            "listings": 63
+        },
+        {
+            "listing_datetime": "2019-10-17 23:30:31 UTC",
+            "unit_price": 27595,
+            "quantity": 206,
+            "listings": 61
+        },
+        {
+            "listing_datetime": "2019-10-17 21:39:22 UTC",
+            "unit_price": 27594,
+            "quantity": 207,
+            "listings": 62
+        },
+        {
+            "listing_datetime": "2019-10-17 20:10:32 UTC",
+            "unit_price": 27590,
+            "quantity": 204,
+            "listings": 60
+        },
+        {
+            "listing_datetime": "2019-10-17 18:17:34 UTC",
+            "unit_price": 27589,
+            "quantity": 200,
+            "listings": 60
+        },
+        {
+            "listing_datetime": "2019-10-17 16:26:41 UTC",
+            "unit_price": 27590,
+            "quantity": 206,
+            "listings": 62
+        },
+        {
+            "listing_datetime": "2019-10-17 15:01:18 UTC",
+            "unit_price": 27587,
+            "quantity": 213,
+            "listings": 62
+        },
+        {
+            "listing_datetime": "2019-10-17 13:03:32 UTC",
+            "unit_price": 27581,
+            "quantity": 211,
+            "listings": 61
+        },
+        {
+            "listing_datetime": "2019-10-17 11:09:32 UTC",
+            "unit_price": 27580,
+            "quantity": 212,
+            "listings": 61
+        },
+        {
+            "listing_datetime": "2019-10-17 09:36:27 UTC",
+            "unit_price": 27578,
+            "quantity": 211,
+            "listings": 60
+        },
+        {
+            "listing_datetime": "2019-10-17 07:46:19 UTC",
+            "unit_price": 27500,
+            "quantity": 195,
+            "listings": 58
+        },
+        {
+            "listing_datetime": "2019-10-17 05:58:04 UTC",
+            "unit_price": 25595,
+            "quantity": 194,
+            "listings": 57
+        },
+        {
+            "listing_datetime": "2019-10-17 04:30:17 UTC",
+            "unit_price": 25596,
+            "quantity": 197,
+            "listings": 59
+        },
+        {
+            "listing_datetime": "2019-10-17 02:41:36 UTC",
+            "unit_price": 25590,
+            "quantity": 203,
+            "listings": 59
+        },
+        {
+            "listing_datetime": "2019-10-17 00:52:24 UTC",
+            "unit_price": 25577,
+            "quantity": 174,
+            "listings": 54
+        },
+        {
+            "listing_datetime": "2019-10-16 23:22:47 UTC",
+            "unit_price": 25576,
+            "quantity": 176,
+            "listings": 55
+        },
+        {
+            "listing_datetime": "2019-10-16 21:40:55 UTC",
+            "unit_price": 25567,
+            "quantity": 177,
+            "listings": 54
+        },
+        {
+            "listing_datetime": "2019-10-16 19:17:02 UTC",
+            "unit_price": 25564,
+            "quantity": 184,
+            "listings": 55
+        },
+        {
+            "listing_datetime": "2019-10-16 17:42:58 UTC",
+            "unit_price": 25562,
+            "quantity": 185,
+            "listings": 56
+        },
+        {
+            "listing_datetime": "2019-10-16 15:48:50 UTC",
+            "unit_price": 25458,
+            "quantity": 177,
+            "listings": 57
+        },
+        {
+            "listing_datetime": "2019-10-16 13:55:01 UTC",
+            "unit_price": 25357,
+            "quantity": 168,
+            "listings": 56
+        },
+        {
+            "listing_datetime": "2019-10-16 12:28:27 UTC",
+            "unit_price": 25357,
+            "quantity": 168,
+            "listings": 56
+        },
+        {
+            "listing_datetime": "2019-10-16 10:38:48 UTC",
+            "unit_price": 25358,
+            "quantity": 170,
+            "listings": 58
+        },
+        {
+            "listing_datetime": "2019-10-16 08:50:08 UTC",
+            "unit_price": 25354,
+            "quantity": 165,
+            "listings": 53
+        },
+        {
+            "listing_datetime": "2019-10-16 07:21:14 UTC",
+            "unit_price": 25351,
+            "quantity": 149,
+            "listings": 50
+        },
+        {
+            "listing_datetime": "2019-10-16 05:26:41 UTC",
+            "unit_price": 25350,
+            "quantity": 151,
+            "listings": 52
+        },
+        {
+            "listing_datetime": "2019-10-16 03:40:33 UTC",
+            "unit_price": 25445,
+            "quantity": 152,
+            "listings": 53
+        },
+        {
+            "listing_datetime": "2019-10-16 02:07:06 UTC",
+            "unit_price": 25344,
+            "quantity": 151,
+            "listings": 52
+        },
+        {
+            "listing_datetime": "2019-10-16 00:07:54 UTC",
+            "unit_price": 25341,
+            "quantity": 148,
+            "listings": 51
+        },
+        {
+            "listing_datetime": "2019-10-15 22:11:14 UTC",
+            "unit_price": 25337,
+            "quantity": 154,
+            "listings": 49
+        },
+        {
+            "listing_datetime": "2019-10-15 20:22:22 UTC",
+            "unit_price": 25224,
+            "quantity": 133,
+            "listings": 44
+        },
+        {
+            "listing_datetime": "2019-10-15 16:34:45 UTC",
+            "unit_price": 50501,
+            "quantity": 127,
+            "listings": 49
+        },
+        {
+            "listing_datetime": "2019-10-15 14:26:08 UTC",
+            "unit_price": 111109,
+            "quantity": 137,
+            "listings": 59
+        },
+        {
+            "listing_datetime": "2019-10-15 12:57:56 UTC",
+            "unit_price": 111109,
+            "quantity": 136,
+            "listings": 58
+        },
+        {
+            "listing_datetime": "2019-10-15 11:06:08 UTC",
+            "unit_price": 111109,
+            "quantity": 136,
+            "listings": 58
+        },
+        {
+            "listing_datetime": "2019-10-15 09:16:05 UTC",
+            "unit_price": 111109,
+            "quantity": 136,
+            "listings": 58
+        },
+        {
+            "listing_datetime": "2019-10-15 07:52:37 UTC",
+            "unit_price": 111109,
+            "quantity": 136,
+            "listings": 58
+        },
+        {
+            "listing_datetime": "2019-10-15 06:01:16 UTC",
+            "unit_price": 111109,
+            "quantity": 136,
+            "listings": 58
+        },
+        {
+            "listing_datetime": "2019-10-15 04:11:38 UTC",
+            "unit_price": 111109,
+            "quantity": 136,
+            "listings": 58
+        },
+        {
+            "listing_datetime": "2019-10-15 02:41:55 UTC",
+            "unit_price": 111109,
+            "quantity": 136,
+            "listings": 58
+        },
+        {
+            "listing_datetime": "2019-10-15 00:49:35 UTC",
+            "unit_price": 111109,
+            "quantity": 136,
+            "listings": 58
+        },
+        {
+            "listing_datetime": "2019-10-14 23:00:38 UTC",
+            "unit_price": 111109,
+            "quantity": 136,
+            "listings": 58
+        },
+        {
+            "listing_datetime": "2019-10-14 21:17:59 UTC",
+            "unit_price": 111109,
+            "quantity": 136,
+            "listings": 58
+        },
+        {
+            "listing_datetime": "2019-10-14 19:26:43 UTC",
+            "unit_price": 111109,
+            "quantity": 136,
+            "listings": 58
+        },
+        {
+            "listing_datetime": "2019-10-14 17:34:27 UTC",
+            "unit_price": 111109,
+            "quantity": 136,
+            "listings": 58
+        },
+        {
+            "listing_datetime": "2019-10-14 16:06:38 UTC",
+            "unit_price": 111109,
+            "quantity": 136,
+            "listings": 58
+        },
+        {
+            "listing_datetime": "2019-10-14 14:24:42 UTC",
+            "unit_price": 111109,
+            "quantity": 136,
+            "listings": 58
+        },
+        {
+            "listing_datetime": "2019-10-14 12:35:17 UTC",
+            "unit_price": 111109,
+            "quantity": 136,
+            "listings": 58
+        },
+        {
+            "listing_datetime": "2019-10-14 11:06:36 UTC",
+            "unit_price": 111109,
+            "quantity": 136,
+            "listings": 58
+        },
+        {
+            "listing_datetime": "2019-10-14 09:16:14 UTC",
+            "unit_price": 111109,
+            "quantity": 136,
+            "listings": 58
+        },
+        {
+            "listing_datetime": "2019-10-14 07:28:50 UTC",
+            "unit_price": 111109,
+            "quantity": 136,
+            "listings": 58
+        },
+        {
+            "listing_datetime": "2019-10-14 06:03:22 UTC",
+            "unit_price": 111109,
+            "quantity": 136,
+            "listings": 58
+        },
+        {
+            "listing_datetime": "2019-10-14 04:12:21 UTC",
+            "unit_price": 111109,
+            "quantity": 136,
+            "listings": 58
+        },
+        {
+            "listing_datetime": "2019-10-14 02:19:53 UTC",
+            "unit_price": 111109,
+            "quantity": 136,
+            "listings": 58
+        },
+        {
+            "listing_datetime": "2019-10-14 00:52:19 UTC",
+            "unit_price": 111109,
+            "quantity": 136,
+            "listings": 58
+        },
+        {
+            "listing_datetime": "2019-10-13 22:58:58 UTC",
+            "unit_price": 111109,
+            "quantity": 136,
+            "listings": 58
+        },
+        {
+            "listing_datetime": "2019-10-13 21:11:29 UTC",
+            "unit_price": 111109,
+            "quantity": 136,
+            "listings": 58
+        },
+        {
+            "listing_datetime": "2019-10-13 19:40:21 UTC",
+            "unit_price": 111109,
+            "quantity": 136,
+            "listings": 58
+        },
+        {
+            "listing_datetime": "2019-10-13 17:43:13 UTC",
+            "unit_price": 111109,
+            "quantity": 136,
+            "listings": 58
+        },
+        {
+            "listing_datetime": "2019-10-13 15:51:26 UTC",
+            "unit_price": 111109,
+            "quantity": 137,
+            "listings": 59
+        },
+        {
+            "listing_datetime": "2019-10-13 14:20:21 UTC",
+            "unit_price": 111109,
+            "quantity": 137,
+            "listings": 59
+        },
+        {
+            "listing_datetime": "2019-10-13 12:35:06 UTC",
+            "unit_price": 111109,
+            "quantity": 137,
+            "listings": 59
+        },
+        {
+            "listing_datetime": "2019-10-13 10:41:51 UTC",
+            "unit_price": 111109,
+            "quantity": 137,
+            "listings": 59
+        },
+        {
+            "listing_datetime": "2019-10-13 09:12:54 UTC",
+            "unit_price": 111109,
+            "quantity": 137,
+            "listings": 59
+        },
+        {
+            "listing_datetime": "2019-10-13 07:22:04 UTC",
+            "unit_price": 111109,
+            "quantity": 137,
+            "listings": 59
+        },
+        {
+            "listing_datetime": "2019-10-13 05:27:23 UTC",
+            "unit_price": 111109,
+            "quantity": 137,
+            "listings": 59
+        },
+        {
+            "listing_datetime": "2019-10-13 04:05:22 UTC",
+            "unit_price": 111109,
+            "quantity": 137,
+            "listings": 59
+        },
+        {
+            "listing_datetime": "2019-10-13 02:14:06 UTC",
+            "unit_price": 111109,
+            "quantity": 137,
+            "listings": 59
+        },
+        {
+            "listing_datetime": "2019-10-13 00:22:27 UTC",
+            "unit_price": 111109,
+            "quantity": 137,
+            "listings": 59
+        },
+        {
+            "listing_datetime": "2019-10-12 22:51:59 UTC",
+            "unit_price": 111109,
+            "quantity": 137,
+            "listings": 59
+        },
+        {
+            "listing_datetime": "2019-10-12 20:56:54 UTC",
+            "unit_price": 111109,
+            "quantity": 137,
+            "listings": 59
+        },
+        {
+            "listing_datetime": "2019-10-12 19:06:22 UTC",
+            "unit_price": 111109,
+            "quantity": 137,
+            "listings": 59
+        },
+        {
+            "listing_datetime": "2019-10-12 17:29:34 UTC",
+            "unit_price": 111109,
+            "quantity": 137,
+            "listings": 59
+        },
+        {
+            "listing_datetime": "2019-10-12 15:31:49 UTC",
+            "unit_price": 111109,
+            "quantity": 137,
+            "listings": 59
+        },
+        {
+            "listing_datetime": "2019-10-12 13:35:22 UTC",
+            "unit_price": 111109,
+            "quantity": 137,
+            "listings": 59
+        },
+        {
+            "listing_datetime": "2019-10-12 12:03:30 UTC",
+            "unit_price": 111109,
+            "quantity": 137,
+            "listings": 59
+        },
+        {
+            "listing_datetime": "2019-10-12 10:21:00 UTC",
+            "unit_price": 111109,
+            "quantity": 137,
+            "listings": 59
+        },
+        {
+            "listing_datetime": "2019-10-12 08:29:52 UTC",
+            "unit_price": 111109,
+            "quantity": 137,
+            "listings": 59
+        },
+        {
+            "listing_datetime": "2019-10-12 07:02:07 UTC",
+            "unit_price": 111109,
+            "quantity": 137,
+            "listings": 59
+        },
+        {
+            "listing_datetime": "2019-10-12 05:05:17 UTC",
+            "unit_price": 111109,
+            "quantity": 137,
+            "listings": 59
+        },
+        {
+            "listing_datetime": "2019-10-12 03:13:54 UTC",
+            "unit_price": 111109,
+            "quantity": 137,
+            "listings": 59
+        },
+        {
+            "listing_datetime": "2019-10-12 01:46:21 UTC",
+            "unit_price": 111108,
+            "quantity": 137,
+            "listings": 59
+        },
+        {
+            "listing_datetime": "2019-10-12 00:00:00 UTC",
+            "unit_price": 111107,
+            "quantity": 139,
+            "listings": 60
+        },
+        {
+            "listing_datetime": "2019-10-11 00:00:00 UTC",
+            "unit_price": 111102,
+            "quantity": 139,
+            "listings": 61
+        },
+        {
+            "listing_datetime": "2019-10-10 00:00:00 UTC",
+            "unit_price": 111097,
+            "quantity": 139,
+            "listings": 61
+        },
+        {
+            "listing_datetime": "2019-10-09 00:00:00 UTC",
+            "unit_price": 111093,
+            "quantity": 139,
+            "listings": 61
+        },
+        {
+            "listing_datetime": "2019-10-08 00:00:00 UTC",
+            "unit_price": 111090,
+            "quantity": 140,
+            "listings": 62
+        },
+        {
+            "listing_datetime": "2019-10-07 00:00:00 UTC",
+            "unit_price": 106015,
+            "quantity": 139,
+            "listings": 61
+        },
+        {
+            "listing_datetime": "2019-10-06 00:00:00 UTC",
+            "unit_price": 105091,
+            "quantity": 138,
+            "listings": 60
+        },
+        {
+            "listing_datetime": "2019-10-05 00:00:00 UTC",
+            "unit_price": 101363,
+            "quantity": 141,
+            "listings": 62
+        },
+        {
+            "listing_datetime": "2019-10-04 00:00:00 UTC",
+            "unit_price": 100344,
+            "quantity": 140,
+            "listings": 61
+        },
+        {
+            "listing_datetime": "2019-10-03 00:00:00 UTC",
+            "unit_price": 100340,
+            "quantity": 138,
+            "listings": 59
+        },
+        {
+            "listing_datetime": "2019-10-02 00:00:00 UTC",
+            "unit_price": 100339,
+            "quantity": 137,
+            "listings": 59
+        },
+        {
+            "listing_datetime": "2019-10-01 00:00:00 UTC",
+            "unit_price": 100338,
+            "quantity": 137,
+            "listings": 59
+        },
+        {
+            "listing_datetime": "2019-09-30 00:00:00 UTC",
+            "unit_price": 100335,
+            "quantity": 138,
+            "listings": 58
+        },
+        {
+            "listing_datetime": "2019-09-29 00:00:00 UTC",
+            "unit_price": 100334,
+            "quantity": 139,
+            "listings": 59
+        },
+        {
+            "listing_datetime": "2019-09-28 00:00:00 UTC",
+            "unit_price": 100330,
+            "quantity": 137,
+            "listings": 59
+        },
+        {
+            "listing_datetime": "2019-09-27 00:00:00 UTC",
+            "unit_price": 100328,
+            "quantity": 136,
+            "listings": 58
+        },
+        {
+            "listing_datetime": "2019-09-26 00:00:00 UTC",
+            "unit_price": 100328,
+            "quantity": 136,
+            "listings": 58
+        },
+        {
+            "listing_datetime": "2019-09-25 00:00:00 UTC",
+            "unit_price": 100326,
+            "quantity": 135,
+            "listings": 57
+        },
+        {
+            "listing_datetime": "2019-09-24 00:00:00 UTC",
+            "unit_price": 100324,
+            "quantity": 135,
+            "listings": 57
+        },
+        {
+            "listing_datetime": "2019-09-23 00:00:00 UTC",
+            "unit_price": 100320,
+            "quantity": 133,
+            "listings": 55
+        },
+        {
+            "listing_datetime": "2019-09-22 00:00:00 UTC",
+            "unit_price": 100320,
+            "quantity": 133,
+            "listings": 55
+        },
+        {
+            "listing_datetime": "2019-09-21 00:00:00 UTC",
+            "unit_price": 100319,
+            "quantity": 132,
+            "listings": 54
+        },
+        {
+            "listing_datetime": "2019-09-20 00:00:00 UTC",
+            "unit_price": 100319,
+            "quantity": 132,
+            "listings": 54
+        },
+        {
+            "listing_datetime": "2019-09-19 00:00:00 UTC",
+            "unit_price": 100319,
+            "quantity": 131,
+            "listings": 53
+        },
+        {
+            "listing_datetime": "2019-09-18 00:00:00 UTC",
+            "unit_price": 110071,
+            "quantity": 130,
+            "listings": 52
+        },
+        {
+            "listing_datetime": "2019-09-17 00:00:00 UTC",
+            "unit_price": 120588,
+            "quantity": 132,
+            "listings": 54
+        },
+        {
+            "listing_datetime": "2019-09-16 00:00:00 UTC",
+            "unit_price": 122502,
+            "quantity": 137,
+            "listings": 59
+        },
+        {
+            "listing_datetime": "2019-09-15 00:00:00 UTC",
+            "unit_price": 122502,
+            "quantity": 137,
+            "listings": 59
+        },
+        {
+            "listing_datetime": "2019-09-14 00:00:00 UTC",
+            "unit_price": 122502,
+            "quantity": 137,
+            "listings": 59
+        },
+        {
+            "listing_datetime": "2019-09-13 00:00:00 UTC",
+            "unit_price": 122502,
+            "quantity": 137,
+            "listings": 59
+        },
+        {
+            "listing_datetime": "2019-09-12 00:00:00 UTC",
+            "unit_price": 122857,
+            "quantity": 138,
+            "listings": 60
+        },
+        {
+            "listing_datetime": "2019-09-11 00:00:00 UTC",
+            "unit_price": 123000,
+            "quantity": 139,
+            "listings": 61
+        },
+        {
+            "listing_datetime": "2019-09-10 00:00:00 UTC",
+            "unit_price": 123000,
+            "quantity": 139,
+            "listings": 61
+        },
+        {
+            "listing_datetime": "2019-09-09 00:00:00 UTC",
+            "unit_price": 122500,
+            "quantity": 138,
+            "listings": 60
+        },
+        {
+            "listing_datetime": "2019-09-08 00:00:00 UTC",
+            "unit_price": 121966,
+            "quantity": 136,
+            "listings": 58
+        },
+        {
+            "listing_datetime": "2019-09-07 00:00:00 UTC",
+            "unit_price": 121528,
+            "quantity": 135,
+            "listings": 57
+        },
+        {
+            "listing_datetime": "2019-09-06 00:00:00 UTC",
+            "unit_price": 121528,
+            "quantity": 136,
+            "listings": 58
+        },
+        {
+            "listing_datetime": "2019-09-05 00:00:00 UTC",
+            "unit_price": 121528,
+            "quantity": 136,
+            "listings": 58
+        },
+        {
+            "listing_datetime": "2019-09-04 00:00:00 UTC",
+            "unit_price": 121528,
+            "quantity": 133,
+            "listings": 58
+        },
+        {
+            "listing_datetime": "2019-09-03 00:00:00 UTC",
+            "unit_price": 121529,
+            "quantity": 134,
+            "listings": 59
+        },
+        {
+            "listing_datetime": "2019-09-02 00:00:00 UTC",
+            "unit_price": 121528,
+            "quantity": 133,
+            "listings": 58
+        },
+        {
+            "listing_datetime": "2019-09-01 00:00:00 UTC",
+            "unit_price": 121528,
+            "quantity": 132,
+            "listings": 57
+        },
+        {
+            "listing_datetime": "2019-08-31 00:00:00 UTC",
+            "unit_price": 121527,
+            "quantity": 131,
+            "listings": 56
+        },
+        {
+            "listing_datetime": "2019-08-30 00:00:00 UTC",
+            "unit_price": 121527,
+            "quantity": 131,
+            "listings": 56
+        },
+        {
+            "listing_datetime": "2019-08-29 00:00:00 UTC",
+            "unit_price": 121527,
+            "quantity": 131,
+            "listings": 56
+        },
+        {
+            "listing_datetime": "2019-08-28 00:00:00 UTC",
+            "unit_price": 124277,
+            "quantity": 135,
+            "listings": 60
+        },
+        {
+            "listing_datetime": "2019-08-27 00:00:00 UTC",
+            "unit_price": 130000,
+            "quantity": 136,
+            "listings": 61
+        },
+        {
+            "listing_datetime": "2019-08-26 00:00:00 UTC",
+            "unit_price": 121704,
+            "quantity": 136,
+            "listings": 61
+        },
+        {
+            "listing_datetime": "2019-08-25 00:00:00 UTC",
+            "unit_price": 121602,
+            "quantity": 134,
+            "listings": 59
+        },
+        {
+            "listing_datetime": "2019-08-24 00:00:00 UTC",
+            "unit_price": 120727,
+            "quantity": 132,
+            "listings": 57
+        },
+        {
+            "listing_datetime": "2019-08-23 00:00:00 UTC",
+            "unit_price": 120125,
+            "quantity": 130,
+            "listings": 55
+        },
+        {
+            "listing_datetime": "2019-08-22 00:00:00 UTC",
+            "unit_price": 120124,
+            "quantity": 130,
+            "listings": 55
+        },
+        {
+            "listing_datetime": "2019-08-21 00:00:00 UTC",
+            "unit_price": 120124,
+            "quantity": 130,
+            "listings": 55
+        },
+        {
+            "listing_datetime": "2019-08-20 00:00:00 UTC",
+            "unit_price": 120124,
+            "quantity": 130,
+            "listings": 55
+        },
+        {
+            "listing_datetime": "2019-08-19 00:00:00 UTC",
+            "unit_price": 120124,
+            "quantity": 130,
+            "listings": 55
+        },
+        {
+            "listing_datetime": "2019-08-18 00:00:00 UTC",
+            "unit_price": 120124,
+            "quantity": 130,
+            "listings": 55
+        },
+        {
+            "listing_datetime": "2019-08-17 00:00:00 UTC",
+            "unit_price": 120123,
+            "quantity": 130,
+            "listings": 55
+        },
+        {
+            "listing_datetime": "2019-08-16 00:00:00 UTC",
+            "unit_price": 120122,
+            "quantity": 129,
+            "listings": 54
+        },
+        {
+            "listing_datetime": "2019-08-15 00:00:00 UTC",
+            "unit_price": 120122,
+            "quantity": 129,
+            "listings": 54
+        },
+        {
+            "listing_datetime": "2019-08-14 00:00:00 UTC",
+            "unit_price": 120050,
+            "quantity": 128,
+            "listings": 53
+        },
+        {
+            "listing_datetime": "2019-08-13 00:00:00 UTC",
+            "unit_price": 120022,
+            "quantity": 128,
+            "listings": 53
+        },
+        {
+            "listing_datetime": "2019-08-12 00:00:00 UTC",
+            "unit_price": 119853,
+            "quantity": 128,
+            "listings": 53
+        },
+        {
+            "listing_datetime": "2019-08-11 00:00:00 UTC",
+            "unit_price": 119828,
+            "quantity": 129,
+            "listings": 54
+        },
+        {
+            "listing_datetime": "2019-08-10 00:00:00 UTC",
+            "unit_price": 119827,
+            "quantity": 128,
+            "listings": 53
+        },
+        {
+            "listing_datetime": "2019-08-09 00:00:00 UTC",
+            "unit_price": 119827,
+            "quantity": 128,
+            "listings": 53
+        },
+        {
+            "listing_datetime": "2019-08-08 00:00:00 UTC",
+            "unit_price": 119827,
+            "quantity": 128,
+            "listings": 53
+        },
+        {
+            "listing_datetime": "2019-08-07 00:00:00 UTC",
+            "unit_price": 119829,
+            "quantity": 129,
+            "listings": 54
+        },
+        {
+            "listing_datetime": "2019-08-06 00:00:00 UTC",
+            "unit_price": 120503,
+            "quantity": 129,
+            "listings": 54
+        },
+        {
+            "listing_datetime": "2019-08-05 00:00:00 UTC",
+            "unit_price": 121402,
+            "quantity": 130,
+            "listings": 55
+        },
+        {
+            "listing_datetime": "2019-08-04 00:00:00 UTC",
+            "unit_price": 139942,
+            "quantity": 132,
+            "listings": 57
+        },
+        {
+            "listing_datetime": "2019-08-03 00:00:00 UTC",
+            "unit_price": 139942,
+            "quantity": 132,
+            "listings": 57
+        },
+        {
+            "listing_datetime": "2019-08-02 00:00:00 UTC",
+            "unit_price": 139942,
+            "quantity": 132,
+            "listings": 57
+        },
+        {
+            "listing_datetime": "2019-08-01 00:00:00 UTC",
+            "unit_price": 130656,
+            "quantity": 131,
+            "listings": 56
+        },
+        {
+            "listing_datetime": "2019-07-31 00:00:00 UTC",
+            "unit_price": 129942,
+            "quantity": 131,
+            "listings": 56
+        },
+        {
+            "listing_datetime": "2019-07-30 00:00:00 UTC",
+            "unit_price": 122012,
+            "quantity": 130,
+            "listings": 55
+        },
+        {
+            "listing_datetime": "2019-07-29 00:00:00 UTC",
+            "unit_price": 121402,
+            "quantity": 130,
+            "listings": 55
+        },
+        {
+            "listing_datetime": "2019-07-28 00:00:00 UTC",
+            "unit_price": 121402,
+            "quantity": 130,
+            "listings": 55
+        },
+        {
+            "listing_datetime": "2019-07-27 00:00:00 UTC",
+            "unit_price": 121402,
+            "quantity": 130,
+            "listings": 55
+        },
+        {
+            "listing_datetime": "2019-07-26 00:00:00 UTC",
+            "unit_price": 121402,
+            "quantity": 130,
+            "listings": 55
+        },
+        {
+            "listing_datetime": "2019-07-25 00:00:00 UTC",
+            "unit_price": 121402,
+            "quantity": 130,
+            "listings": 55
+        },
+        {
+            "listing_datetime": "2019-07-24 00:00:00 UTC",
+            "unit_price": 121402,
+            "quantity": 131,
+            "listings": 56
+        },
+        {
+            "listing_datetime": "2019-07-23 00:00:00 UTC",
+            "unit_price": 124830,
+            "quantity": 132,
+            "listings": 57
+        },
+        {
+            "listing_datetime": "2019-07-22 00:00:00 UTC",
+            "unit_price": 131000,
+            "quantity": 133,
+            "listings": 58
+        },
+        {
+            "listing_datetime": "2019-07-21 00:00:00 UTC",
+            "unit_price": 124835,
+            "quantity": 133,
+            "listings": 58
+        },
+        {
+            "listing_datetime": "2019-07-20 00:00:00 UTC",
+            "unit_price": 121411,
+            "quantity": 134,
+            "listings": 59
+        },
+        {
+            "listing_datetime": "2019-07-19 00:00:00 UTC",
+            "unit_price": 121410,
+            "quantity": 135,
+            "listings": 60
+        },
+        {
+            "listing_datetime": "2019-07-18 00:00:00 UTC",
+            "unit_price": 121409,
+            "quantity": 135,
+            "listings": 60
+        },
+        {
+            "listing_datetime": "2019-07-17 00:00:00 UTC",
+            "unit_price": 121407,
+            "quantity": 134,
+            "listings": 59
+        },
+        {
+            "listing_datetime": "2019-07-16 00:00:00 UTC",
+            "unit_price": 121407,
+            "quantity": 134,
+            "listings": 59
+        },
+        {
+            "listing_datetime": "2019-07-15 00:00:00 UTC",
+            "unit_price": 121407,
+            "quantity": 134,
+            "listings": 59
+        },
+        {
+            "listing_datetime": "2019-07-14 00:00:00 UTC",
+            "unit_price": 121407,
+            "quantity": 134,
+            "listings": 59
+        },
+        {
+            "listing_datetime": "2019-07-13 00:00:00 UTC",
+            "unit_price": 121407,
+            "quantity": 134,
+            "listings": 59
+        },
+        {
+            "listing_datetime": "2019-07-12 00:00:00 UTC",
+            "unit_price": 121407,
+            "quantity": 134,
+            "listings": 59
+        },
+        {
+            "listing_datetime": "2019-07-11 00:00:00 UTC",
+            "unit_price": 121407,
+            "quantity": 134,
+            "listings": 59
+        },
+        {
+            "listing_datetime": "2019-07-10 00:00:00 UTC",
+            "unit_price": 121406,
+            "quantity": 135,
+            "listings": 59
+        },
+        {
+            "listing_datetime": "2019-07-09 00:00:00 UTC",
+            "unit_price": 121405,
+            "quantity": 134,
+            "listings": 59
+        },
+        {
+            "listing_datetime": "2019-07-08 00:00:00 UTC",
+            "unit_price": 121403,
+            "quantity": 133,
+            "listings": 58
+        },
+        {
+            "listing_datetime": "2019-07-07 00:00:00 UTC",
+            "unit_price": 121402,
+            "quantity": 133,
+            "listings": 58
+        },
+        {
+            "listing_datetime": "2019-07-06 00:00:00 UTC",
+            "unit_price": 121402,
+            "quantity": 133,
+            "listings": 58
+        },
+        {
+            "listing_datetime": "2019-07-05 00:00:00 UTC",
+            "unit_price": 122603,
+            "quantity": 134,
+            "listings": 59
+        },
+        {
+            "listing_datetime": "2019-07-04 00:00:00 UTC",
+            "unit_price": 122603,
+            "quantity": 134,
+            "listings": 59
+        },
+        {
+            "listing_datetime": "2019-07-03 00:00:00 UTC",
+            "unit_price": 122603,
+            "quantity": 134,
+            "listings": 59
+        },
+        {
+            "listing_datetime": "2019-07-02 00:00:00 UTC",
+            "unit_price": 122603,
+            "quantity": 134,
+            "listings": 59
+        },
+        {
+            "listing_datetime": "2019-07-01 00:00:00 UTC",
+            "unit_price": 122603,
+            "quantity": 134,
+            "listings": 59
+        },
+        {
+            "listing_datetime": "2019-06-30 00:00:00 UTC",
+            "unit_price": 122603,
+            "quantity": 134,
+            "listings": 59
+        },
+        {
+            "listing_datetime": "2019-06-29 00:00:00 UTC",
+            "unit_price": 122603,
+            "quantity": 135,
+            "listings": 60
+        },
+        {
+            "listing_datetime": "2019-06-28 00:00:00 UTC",
+            "unit_price": 122603,
+            "quantity": 135,
+            "listings": 60
+        },
+        {
+            "listing_datetime": "2019-06-27 00:00:00 UTC",
+            "unit_price": 121495,
+            "quantity": 134,
+            "listings": 59
+        },
+        {
+            "listing_datetime": "2019-06-26 00:00:00 UTC",
+            "unit_price": 121401,
+            "quantity": 134,
+            "listings": 59
+        },
+        {
+            "listing_datetime": "2019-06-25 00:00:00 UTC",
+            "unit_price": 120887,
+            "quantity": 133,
+            "listings": 58
+        },
+        {
+            "listing_datetime": "2019-06-24 00:00:00 UTC",
+            "unit_price": 120701,
+            "quantity": 132,
+            "listings": 57
+        },
+        {
+            "listing_datetime": "2019-06-23 00:00:00 UTC",
+            "unit_price": 120701,
+            "quantity": 132,
+            "listings": 57
+        },
+        {
+            "listing_datetime": "2019-06-22 00:00:00 UTC",
+            "unit_price": 120701,
+            "quantity": 133,
+            "listings": 58
+        },
+        {
+            "listing_datetime": "2019-06-21 00:00:00 UTC",
+            "unit_price": 120702,
+            "quantity": 133,
+            "listings": 58
+        },
+        {
+            "listing_datetime": "2019-06-20 00:00:00 UTC",
+            "unit_price": 120701,
+            "quantity": 132,
+            "listings": 57
+        },
+        {
+            "listing_datetime": "2019-06-19 00:00:00 UTC",
+            "unit_price": 120714,
+            "quantity": 132,
+            "listings": 57
+        },
+        {
+            "listing_datetime": "2019-06-18 00:00:00 UTC",
+            "unit_price": 120706,
+            "quantity": 132,
+            "listings": 57
+        },
+        {
+            "listing_datetime": "2019-06-17 00:00:00 UTC",
+            "unit_price": 120687,
+            "quantity": 132,
+            "listings": 57
+        },
+        {
+            "listing_datetime": "2019-06-16 00:00:00 UTC",
+            "unit_price": 120609,
+            "quantity": 132,
+            "listings": 57
+        },
+        {
+            "listing_datetime": "2019-06-15 00:00:00 UTC",
+            "unit_price": 120664,
+            "quantity": 132,
+            "listings": 57
+        },
+        {
+            "listing_datetime": "2019-06-14 00:00:00 UTC",
+            "unit_price": 120635,
+            "quantity": 133,
+            "listings": 58
+        },
+        {
+            "listing_datetime": "2019-06-13 00:00:00 UTC",
+            "unit_price": 120606,
+            "quantity": 134,
+            "listings": 59
+        },
+        {
+            "listing_datetime": "2019-06-12 00:00:00 UTC",
+            "unit_price": 120581,
+            "quantity": 134,
+            "listings": 59
+        },
+        {
+            "listing_datetime": "2019-06-11 00:00:00 UTC",
+            "unit_price": 120500,
+            "quantity": 132,
+            "listings": 57
+        },
+        {
+            "listing_datetime": "2019-06-10 00:00:00 UTC",
+            "unit_price": 120400,
+            "quantity": 131,
+            "listings": 56
+        },
+        {
+            "listing_datetime": "2019-06-09 00:00:00 UTC",
+            "unit_price": 120419,
+            "quantity": 131,
+            "listings": 56
+        },
+        {
+            "listing_datetime": "2019-06-08 00:00:00 UTC",
+            "unit_price": 120369,
+            "quantity": 130,
+            "listings": 55
+        },
+        {
+            "listing_datetime": "2019-06-07 00:00:00 UTC",
+            "unit_price": 120431,
+            "quantity": 130,
+            "listings": 55
+        },
+        {
+            "listing_datetime": "2019-06-06 00:00:00 UTC",
+            "unit_price": 121535,
+            "quantity": 131,
+            "listings": 56
+        },
+        {
+            "listing_datetime": "2019-06-05 00:00:00 UTC",
+            "unit_price": 123565,
+            "quantity": 130,
+            "listings": 55
+        },
+        {
+            "listing_datetime": "2019-06-04 00:00:00 UTC",
+            "unit_price": 120362,
+            "quantity": 129,
+            "listings": 54
+        },
+        {
+            "listing_datetime": "2019-06-03 00:00:00 UTC",
+            "unit_price": 120362,
+            "quantity": 127,
+            "listings": 52
+        },
+        {
+            "listing_datetime": "2019-06-02 00:00:00 UTC",
+            "unit_price": 120362,
+            "quantity": 127,
+            "listings": 52
+        },
+        {
+            "listing_datetime": "2019-06-01 00:00:00 UTC",
+            "unit_price": 120363,
+            "quantity": 127,
+            "listings": 52
+        },
+        {
+            "listing_datetime": "2019-05-31 00:00:00 UTC",
+            "unit_price": 120364,
+            "quantity": 128,
+            "listings": 53
+        },
+        {
+            "listing_datetime": "2019-05-30 00:00:00 UTC",
+            "unit_price": 120363,
+            "quantity": 128,
+            "listings": 53
+        },
+        {
+            "listing_datetime": "2019-05-29 00:00:00 UTC",
+            "unit_price": 120362,
+            "quantity": 128,
+            "listings": 53
+        },
+        {
+            "listing_datetime": "2019-05-28 00:00:00 UTC",
+            "unit_price": 120362,
+            "quantity": 128,
+            "listings": 53
+        },
+        {
+            "listing_datetime": "2019-05-27 00:00:00 UTC",
+            "unit_price": 120362,
+            "quantity": 128,
+            "listings": 53
+        },
+        {
+            "listing_datetime": "2019-05-26 00:00:00 UTC",
+            "unit_price": 120362,
+            "quantity": 128,
+            "listings": 53
+        },
+        {
+            "listing_datetime": "2019-05-25 00:00:00 UTC",
+            "unit_price": 121647,
+            "quantity": 129,
+            "listings": 54
+        },
+        {
+            "listing_datetime": "2019-05-24 00:00:00 UTC",
+            "unit_price": 128054,
+            "quantity": 131,
+            "listings": 56
+        },
+        {
+            "listing_datetime": "2019-05-23 00:00:00 UTC",
+            "unit_price": 122589,
+            "quantity": 132,
+            "listings": 57
+        },
+        {
+            "listing_datetime": "2019-05-22 00:00:00 UTC",
+            "unit_price": 120777,
+            "quantity": 132,
+            "listings": 57
+        },
+        {
+            "listing_datetime": "2019-05-21 00:00:00 UTC",
+            "unit_price": 120770,
+            "quantity": 132,
+            "listings": 57
+        },
+        {
+            "listing_datetime": "2019-05-20 00:00:00 UTC",
+            "unit_price": 120760,
+            "quantity": 134,
+            "listings": 59
+        },
+        {
+            "listing_datetime": "2019-05-19 00:00:00 UTC",
+            "unit_price": 120415,
+            "quantity": 133,
+            "listings": 58
+        },
+        {
+            "listing_datetime": "2019-05-18 00:00:00 UTC",
+            "unit_price": 120362,
+            "quantity": 133,
+            "listings": 58
+        },
+        {
+            "listing_datetime": "2019-05-17 00:00:00 UTC",
+            "unit_price": 120357,
+            "quantity": 133,
+            "listings": 58
+        },
+        {
+            "listing_datetime": "2019-05-16 00:00:00 UTC",
+            "unit_price": 120353,
+            "quantity": 133,
+            "listings": 58
+        },
+        {
+            "listing_datetime": "2019-05-15 00:00:00 UTC",
+            "unit_price": 120348,
+            "quantity": 133,
+            "listings": 58
+        },
+        {
+            "listing_datetime": "2019-05-14 00:00:00 UTC",
+            "unit_price": 120345,
+            "quantity": 134,
+            "listings": 59
+        },
+        {
+            "listing_datetime": "2019-05-13 00:00:00 UTC",
+            "unit_price": 120340,
+            "quantity": 134,
+            "listings": 59
+        },
+        {
+            "listing_datetime": "2019-05-12 00:00:00 UTC",
+            "unit_price": 120265,
+            "quantity": 134,
+            "listings": 59
+        },
+        {
+            "listing_datetime": "2019-05-11 00:00:00 UTC",
+            "unit_price": 120233,
+            "quantity": 134,
+            "listings": 59
+        },
+        {
+            "listing_datetime": "2019-05-10 00:00:00 UTC",
+            "unit_price": 120229,
+            "quantity": 133,
+            "listings": 58
+        },
+        {
+            "listing_datetime": "2019-05-09 00:00:00 UTC",
+            "unit_price": 120223,
+            "quantity": 132,
+            "listings": 57
+        },
+        {
+            "listing_datetime": "2019-05-08 00:00:00 UTC",
+            "unit_price": 120216,
+            "quantity": 131,
+            "listings": 56
+        },
+        {
+            "listing_datetime": "2019-05-07 00:00:00 UTC",
+            "unit_price": 120216,
+            "quantity": 131,
+            "listings": 56
+        },
+        {
+            "listing_datetime": "2019-05-06 00:00:00 UTC",
+            "unit_price": 120215,
+            "quantity": 131,
+            "listings": 56
+        },
+        {
+            "listing_datetime": "2019-05-05 00:00:00 UTC",
+            "unit_price": 120215,
+            "quantity": 131,
+            "listings": 56
+        },
+        {
+            "listing_datetime": "2019-05-04 00:00:00 UTC",
+            "unit_price": 120200,
+            "quantity": 131,
+            "listings": 56
+        },
+        {
+            "listing_datetime": "2019-05-03 00:00:00 UTC",
+            "unit_price": 120111,
+            "quantity": 131,
+            "listings": 56
+        },
+        {
+            "listing_datetime": "2019-05-02 00:00:00 UTC",
+            "unit_price": 120108,
+            "quantity": 131,
+            "listings": 56
+        },
+        {
+            "listing_datetime": "2019-05-01 00:00:00 UTC",
+            "unit_price": 120103,
+            "quantity": 130,
+            "listings": 55
+        },
+        {
+            "listing_datetime": "2019-04-30 00:00:00 UTC",
+            "unit_price": 120101,
+            "quantity": 131,
+            "listings": 56
+        },
+        {
+            "listing_datetime": "2019-04-29 00:00:00 UTC",
+            "unit_price": 120099,
+            "quantity": 131,
+            "listings": 56
+        },
+        {
+            "listing_datetime": "2019-04-28 00:00:00 UTC",
+            "unit_price": 120097,
+            "quantity": 131,
+            "listings": 56
+        },
+        {
+            "listing_datetime": "2019-04-27 00:00:00 UTC",
+            "unit_price": 120094,
+            "quantity": 131,
+            "listings": 56
+        },
+        {
+            "listing_datetime": "2019-04-26 00:00:00 UTC",
+            "unit_price": 120094,
+            "quantity": 132,
+            "listings": 57
+        },
+        {
+            "listing_datetime": "2019-04-25 00:00:00 UTC",
+            "unit_price": 120092,
+            "quantity": 131,
+            "listings": 56
+        },
+        {
+            "listing_datetime": "2019-04-24 00:00:00 UTC",
+            "unit_price": 120092,
+            "quantity": 131,
+            "listings": 56
+        },
+        {
+            "listing_datetime": "2019-04-23 00:00:00 UTC",
+            "unit_price": 120090,
+            "quantity": 132,
+            "listings": 57
+        },
+        {
+            "listing_datetime": "2019-04-22 00:00:00 UTC",
+            "unit_price": 120090,
+            "quantity": 132,
+            "listings": 57
+        },
+        {
+            "listing_datetime": "2019-04-21 00:00:00 UTC",
+            "unit_price": 120089,
+            "quantity": 132,
+            "listings": 57
+        },
+        {
+            "listing_datetime": "2019-04-20 00:00:00 UTC",
+            "unit_price": 120088,
+            "quantity": 131,
+            "listings": 56
+        },
+        {
+            "listing_datetime": "2019-04-19 00:00:00 UTC",
+            "unit_price": 134188,
+            "quantity": 131,
+            "listings": 56
+        },
+        {
+            "listing_datetime": "2019-04-18 00:00:00 UTC",
+            "unit_price": 139828,
+            "quantity": 132,
+            "listings": 57
+        },
+        {
+            "listing_datetime": "2019-04-17 00:00:00 UTC",
+            "unit_price": 139828,
+            "quantity": 132,
+            "listings": 57
+        },
+        {
+            "listing_datetime": "2019-04-16 00:00:00 UTC",
+            "unit_price": 139828,
+            "quantity": 132,
+            "listings": 57
+        },
+        {
+            "listing_datetime": "2019-04-15 00:00:00 UTC",
+            "unit_price": 139828,
+            "quantity": 131,
+            "listings": 56
+        },
+        {
+            "listing_datetime": "2019-04-14 00:00:00 UTC",
+            "unit_price": 142928,
+            "quantity": 131,
+            "listings": 56
+        },
+        {
+            "listing_datetime": "2019-04-13 00:00:00 UTC",
+            "unit_price": 139841,
+            "quantity": 130,
+            "listings": 55
+        },
+        {
+            "listing_datetime": "2019-04-12 00:00:00 UTC",
+            "unit_price": 124112,
+            "quantity": 129,
+            "listings": 54
+        },
+        {
+            "listing_datetime": "2019-04-11 00:00:00 UTC",
+            "unit_price": 122319,
+            "quantity": 130,
+            "listings": 55
+        },
+        {
+            "listing_datetime": "2019-04-10 00:00:00 UTC",
+            "unit_price": 131424,
+            "quantity": 134,
+            "listings": 59
+        },
+        {
+            "listing_datetime": "2019-04-09 00:00:00 UTC",
+            "unit_price": 131320,
+            "quantity": 134,
+            "listings": 59
+        },
+        {
+            "listing_datetime": "2019-04-08 00:00:00 UTC",
+            "unit_price": 131260,
+            "quantity": 134,
+            "listings": 59
+        },
+        {
+            "listing_datetime": "2019-04-07 00:00:00 UTC",
+            "unit_price": 131253,
+            "quantity": 133,
+            "listings": 58
+        },
+        {
+            "listing_datetime": "2019-04-06 00:00:00 UTC",
+            "unit_price": 130000,
+            "quantity": 131,
+            "listings": 56
+        },
+        {
+            "listing_datetime": "2019-04-05 00:00:00 UTC",
+            "unit_price": 130000,
+            "quantity": 131,
+            "listings": 56
+        },
+        {
+            "listing_datetime": "2019-04-04 00:00:00 UTC",
+            "unit_price": 131152,
+            "quantity": 134,
+            "listings": 59
+        },
+        {
+            "listing_datetime": "2019-04-03 00:00:00 UTC",
+            "unit_price": 131240,
+            "quantity": 134,
+            "listings": 59
+        },
+        {
+            "listing_datetime": "2019-04-02 00:00:00 UTC",
+            "unit_price": 131240,
+            "quantity": 135,
+            "listings": 60
+        },
+        {
+            "listing_datetime": "2019-04-01 00:00:00 UTC",
+            "unit_price": 131239,
+            "quantity": 135,
+            "listings": 60
+        },
+        {
+            "listing_datetime": "2019-03-31 00:00:00 UTC",
+            "unit_price": 131150,
+            "quantity": 135,
+            "listings": 60
+        },
+        {
+            "listing_datetime": "2019-03-30 00:00:00 UTC",
+            "unit_price": 130006,
+            "quantity": 136,
+            "listings": 61
+        },
+        {
+            "listing_datetime": "2019-03-29 00:00:00 UTC",
+            "unit_price": 130007,
+            "quantity": 136,
+            "listings": 61
+        },
+        {
+            "listing_datetime": "2019-03-28 00:00:00 UTC",
+            "unit_price": 130007,
+            "quantity": 136,
+            "listings": 61
+        },
+        {
+            "listing_datetime": "2019-03-27 00:00:00 UTC",
+            "unit_price": 130006,
+            "quantity": 137,
+            "listings": 62
+        },
+        {
+            "listing_datetime": "2019-03-26 00:00:00 UTC",
+            "unit_price": 130006,
+            "quantity": 138,
+            "listings": 63
+        },
+        {
+            "listing_datetime": "2019-03-25 00:00:00 UTC",
+            "unit_price": 130003,
+            "quantity": 138,
+            "listings": 63
+        },
+        {
+            "listing_datetime": "2019-03-24 00:00:00 UTC",
+            "unit_price": 129643,
+            "quantity": 137,
+            "listings": 62
+        },
+        {
+            "listing_datetime": "2019-03-23 00:00:00 UTC",
+            "unit_price": 125000,
+            "quantity": 137,
+            "listings": 62
+        },
+        {
+            "listing_datetime": "2019-03-22 00:00:00 UTC",
+            "unit_price": 120126,
+            "quantity": 136,
+            "listings": 61
+        },
+        {
+            "listing_datetime": "2019-03-21 00:00:00 UTC",
+            "unit_price": 119906,
+            "quantity": 135,
+            "listings": 60
+        },
+        {
+            "listing_datetime": "2019-03-20 00:00:00 UTC",
+            "unit_price": 119825,
+            "quantity": 134,
+            "listings": 59
+        },
+        {
+            "listing_datetime": "2019-03-19 00:00:00 UTC",
+            "unit_price": 119823,
+            "quantity": 133,
+            "listings": 58
+        },
+        {
+            "listing_datetime": "2019-03-18 00:00:00 UTC",
+            "unit_price": 119823,
+            "quantity": 133,
+            "listings": 58
+        },
+        {
+            "listing_datetime": "2019-03-17 00:00:00 UTC",
+            "unit_price": 119823,
+            "quantity": 133,
+            "listings": 58
+        },
+        {
+            "listing_datetime": "2019-03-16 00:00:00 UTC",
+            "unit_price": 119822,
+            "quantity": 133,
+            "listings": 58
+        },
+        {
+            "listing_datetime": "2019-03-15 00:00:00 UTC",
+            "unit_price": 119822,
+            "quantity": 133,
+            "listings": 58
+        },
+        {
+            "listing_datetime": "2019-03-14 00:00:00 UTC",
+            "unit_price": 119822,
+            "quantity": 133,
+            "listings": 58
+        },
+        {
+            "listing_datetime": "2019-03-13 00:00:00 UTC",
+            "unit_price": 119822,
+            "quantity": 134,
+            "listings": 59
+        },
+        {
+            "listing_datetime": "2019-03-12 00:00:00 UTC",
+            "unit_price": 119819,
+            "quantity": 135,
+            "listings": 60
+        },
+        {
+            "listing_datetime": "2019-03-11 00:00:00 UTC",
+            "unit_price": 119188,
+            "quantity": 135,
+            "listings": 60
+        },
+        {
+            "listing_datetime": "2019-03-10 00:00:00 UTC",
+            "unit_price": 117565,
+            "quantity": 134,
+            "listings": 59
+        },
+        {
+            "listing_datetime": "2019-03-09 00:00:00 UTC",
+            "unit_price": 117513,
+            "quantity": 134,
+            "listings": 59
+        },
+        {
+            "listing_datetime": "2019-03-08 00:00:00 UTC",
+            "unit_price": 117512,
+            "quantity": 133,
+            "listings": 58
+        },
+        {
+            "listing_datetime": "2019-03-07 00:00:00 UTC",
+            "unit_price": 117511,
+            "quantity": 134,
+            "listings": 57
+        },
+        {
+            "listing_datetime": "2019-03-06 00:00:00 UTC",
+            "unit_price": 117511,
+            "quantity": 136,
+            "listings": 59
+        },
+        {
+            "listing_datetime": "2019-03-05 00:00:00 UTC",
+            "unit_price": 117511,
+            "quantity": 137,
+            "listings": 60
+        },
+        {
+            "listing_datetime": "2019-03-04 00:00:00 UTC",
+            "unit_price": 117511,
+            "quantity": 137,
+            "listings": 60
+        },
+        {
+            "listing_datetime": "2019-03-03 00:00:00 UTC",
+            "unit_price": 117510,
+            "quantity": 137,
+            "listings": 60
+        },
+        {
+            "listing_datetime": "2019-03-02 00:00:00 UTC",
+            "unit_price": 117508,
+            "quantity": 139,
+            "listings": 62
+        },
+        {
+            "listing_datetime": "2019-03-01 00:00:00 UTC",
+            "unit_price": 117507,
+            "quantity": 138,
+            "listings": 61
+        },
+        {
+            "listing_datetime": "2019-02-28 00:00:00 UTC",
+            "unit_price": 117505,
+            "quantity": 138,
+            "listings": 61
+        },
+        {
+            "listing_datetime": "2019-02-27 00:00:00 UTC",
+            "unit_price": 117504,
+            "quantity": 137,
+            "listings": 60
+        },
+        {
+            "listing_datetime": "2019-02-26 00:00:00 UTC",
+            "unit_price": 117502,
+            "quantity": 136,
+            "listings": 59
+        },
+        {
+            "listing_datetime": "2019-02-25 00:00:00 UTC",
+            "unit_price": 117501,
+            "quantity": 138,
+            "listings": 61
+        },
+        {
+            "listing_datetime": "2019-02-24 00:00:00 UTC",
+            "unit_price": 112617,
+            "quantity": 137,
+            "listings": 60
+        },
+        {
+            "listing_datetime": "2019-02-23 00:00:00 UTC",
+            "unit_price": 111521,
+            "quantity": 136,
+            "listings": 59
+        },
+        {
+            "listing_datetime": "2019-02-22 00:00:00 UTC",
+            "unit_price": 111518,
+            "quantity": 135,
+            "listings": 58
+        },
+        {
+            "listing_datetime": "2019-02-21 00:00:00 UTC",
+            "unit_price": 111516,
+            "quantity": 135,
+            "listings": 58
+        },
+        {
+            "listing_datetime": "2019-02-20 00:00:00 UTC",
+            "unit_price": 111511,
+            "quantity": 138,
+            "listings": 61
+        },
+        {
+            "listing_datetime": "2019-02-19 00:00:00 UTC",
+            "unit_price": 111506,
+            "quantity": 137,
+            "listings": 60
+        },
+        {
+            "listing_datetime": "2019-02-18 00:00:00 UTC",
+            "unit_price": 111501,
+            "quantity": 137,
+            "listings": 60
+        },
+        {
+            "listing_datetime": "2019-02-17 00:00:00 UTC",
+            "unit_price": 106757,
+            "quantity": 136,
+            "listings": 60
+        },
+        {
+            "listing_datetime": "2019-02-16 00:00:00 UTC",
+            "unit_price": 105026,
+            "quantity": 135,
+            "listings": 60
+        },
+        {
+            "listing_datetime": "2019-02-15 00:00:00 UTC",
+            "unit_price": 105017,
+            "quantity": 136,
+            "listings": 61
+        },
+        {
+            "listing_datetime": "2019-02-14 00:00:00 UTC",
+            "unit_price": 105008,
+            "quantity": 136,
+            "listings": 61
+        },
+        {
+            "listing_datetime": "2019-02-13 00:00:00 UTC",
+            "unit_price": 102678,
+            "quantity": 139,
+            "listings": 64
+        },
+        {
+            "listing_datetime": "2019-02-12 00:00:00 UTC",
+            "unit_price": 101512,
+            "quantity": 145,
+            "listings": 70
+        },
+        {
+            "listing_datetime": "2019-02-11 00:00:00 UTC",
+            "unit_price": 101487,
+            "quantity": 145,
+            "listings": 70
+        },
+        {
+            "listing_datetime": "2019-02-10 00:00:00 UTC",
+            "unit_price": 101466,
+            "quantity": 143,
+            "listings": 68
+        },
+        {
+            "listing_datetime": "2019-02-09 00:00:00 UTC",
+            "unit_price": 101457,
+            "quantity": 141,
+            "listings": 66
+        },
+        {
+            "listing_datetime": "2019-02-08 00:00:00 UTC",
+            "unit_price": 101447,
+            "quantity": 140,
+            "listings": 62
+        },
+        {
+            "listing_datetime": "2019-02-07 00:00:00 UTC",
+            "unit_price": 101440,
+            "quantity": 140,
+            "listings": 61
+        },
+        {
+            "listing_datetime": "2019-02-06 00:00:00 UTC",
+            "unit_price": 101439,
+            "quantity": 140,
+            "listings": 61
+        },
+        {
+            "listing_datetime": "2019-02-05 00:00:00 UTC",
+            "unit_price": 101412,
+            "quantity": 141,
+            "listings": 62
+        },
+        {
+            "listing_datetime": "2019-02-04 00:00:00 UTC",
+            "unit_price": 101151,
+            "quantity": 141,
+            "listings": 62
+        },
+        {
+            "listing_datetime": "2019-02-03 00:00:00 UTC",
+            "unit_price": 101135,
+            "quantity": 144,
+            "listings": 65
+        },
+        {
+            "listing_datetime": "2019-02-02 00:00:00 UTC",
+            "unit_price": 101130,
+            "quantity": 142,
+            "listings": 63
+        },
+        {
+            "listing_datetime": "2019-02-01 00:00:00 UTC",
+            "unit_price": 101123,
+            "quantity": 141,
+            "listings": 62
+        },
+        {
+            "listing_datetime": "2019-01-31 00:00:00 UTC",
+            "unit_price": 101120,
+            "quantity": 142,
+            "listings": 63
+        },
+        {
+            "listing_datetime": "2019-01-30 00:00:00 UTC",
+            "unit_price": 101119,
+            "quantity": 146,
+            "listings": 67
+        },
+        {
+            "listing_datetime": "2019-01-29 00:00:00 UTC",
+            "unit_price": 101117,
+            "quantity": 146,
+            "listings": 67
+        },
+        {
+            "listing_datetime": "2019-01-28 00:00:00 UTC",
+            "unit_price": 100732,
+            "quantity": 145,
+            "listings": 66
+        },
+        {
+            "listing_datetime": "2019-01-27 00:00:00 UTC",
+            "unit_price": 100340,
+            "quantity": 142,
+            "listings": 63
+        },
+        {
+            "listing_datetime": "2019-01-26 00:00:00 UTC",
+            "unit_price": 100334,
+            "quantity": 138,
+            "listings": 59
+        },
+        {
+            "listing_datetime": "2019-01-25 00:00:00 UTC",
+            "unit_price": 100333,
+            "quantity": 137,
+            "listings": 58
+        },
+        {
+            "listing_datetime": "2019-01-24 00:00:00 UTC",
+            "unit_price": 100333,
+            "quantity": 140,
+            "listings": 60
+        },
+        {
+            "listing_datetime": "2019-01-22 00:00:00 UTC",
+            "unit_price": 100327,
+            "quantity": 150,
+            "listings": 66
+        },
+        {
+            "listing_datetime": "2019-01-21 00:00:00 UTC",
+            "unit_price": 100326,
+            "quantity": 150,
+            "listings": 66
+        },
+        {
+            "listing_datetime": "2019-01-20 00:00:00 UTC",
+            "unit_price": 101063,
+            "quantity": 149,
+            "listings": 65
+        },
+        {
+            "listing_datetime": "2019-01-19 00:00:00 UTC",
+            "unit_price": 100298,
+            "quantity": 148,
+            "listings": 64
+        },
+        {
+            "listing_datetime": "2019-01-18 00:00:00 UTC",
+            "unit_price": 100216,
+            "quantity": 147,
+            "listings": 63
+        },
+        {
+            "listing_datetime": "2019-01-17 00:00:00 UTC",
+            "unit_price": 100214,
+            "quantity": 149,
+            "listings": 65
+        },
+        {
+            "listing_datetime": "2019-01-16 00:00:00 UTC",
+            "unit_price": 100212,
+            "quantity": 147,
+            "listings": 63
+        },
+        {
+            "listing_datetime": "2019-01-15 00:00:00 UTC",
+            "unit_price": 100210,
+            "quantity": 147,
+            "listings": 63
+        },
+        {
+            "listing_datetime": "2019-01-14 00:00:00 UTC",
+            "unit_price": 100210,
+            "quantity": 148,
+            "listings": 64
+        },
+        {
+            "listing_datetime": "2019-01-13 00:00:00 UTC",
+            "unit_price": 104606,
+            "quantity": 148,
+            "listings": 64
+        },
+        {
+            "listing_datetime": "2019-01-12 00:00:00 UTC",
+            "unit_price": 118190,
+            "quantity": 151,
+            "listings": 67
+        },
+        {
+            "listing_datetime": "2019-01-11 00:00:00 UTC",
+            "unit_price": 105195,
+            "quantity": 152,
+            "listings": 67
+        },
+        {
+            "listing_datetime": "2019-01-10 00:00:00 UTC",
+            "unit_price": 100106,
+            "quantity": 148,
+            "listings": 63
+        },
+        {
+            "listing_datetime": "2019-01-09 00:00:00 UTC",
+            "unit_price": 150005,
+            "quantity": 146,
+            "listings": 63
+        },
+        {
+            "listing_datetime": "2019-01-08 00:00:00 UTC",
+            "unit_price": 150005,
+            "quantity": 146,
+            "listings": 63
+        },
+        {
+            "listing_datetime": "2019-01-07 00:00:00 UTC",
+            "unit_price": 150007,
+            "quantity": 149,
+            "listings": 66
+        },
+        {
+            "listing_datetime": "2019-01-06 00:00:00 UTC",
+            "unit_price": 150060,
+            "quantity": 151,
+            "listings": 67
+        },
+        {
+            "listing_datetime": "2019-01-05 00:00:00 UTC",
+            "unit_price": 150007,
+            "quantity": 157,
+            "listings": 68
+        },
+        {
+            "listing_datetime": "2019-01-04 00:00:00 UTC",
+            "unit_price": 150005,
+            "quantity": 168,
+            "listings": 70
+        },
+        {
+            "listing_datetime": "2019-01-03 00:00:00 UTC",
+            "unit_price": 150003,
+            "quantity": 187,
+            "listings": 75
+        },
+        {
+            "listing_datetime": "2019-01-02 00:00:00 UTC",
+            "unit_price": 131515,
+            "quantity": 188,
+            "listings": 75
+        },
+        {
+            "listing_datetime": "2019-01-01 00:00:00 UTC",
+            "unit_price": 90535,
+            "quantity": 191,
+            "listings": 74
+        },
+        {
+            "listing_datetime": "2018-12-31 00:00:00 UTC",
+            "unit_price": 81595,
+            "quantity": 187,
+            "listings": 72
+        },
+        {
+            "listing_datetime": "2018-12-30 00:00:00 UTC",
+            "unit_price": 80010,
+            "quantity": 188,
+            "listings": 72
+        },
+        {
+            "listing_datetime": "2018-12-29 00:00:00 UTC",
+            "unit_price": 80005,
+            "quantity": 185,
+            "listings": 71
+        },
+        {
+            "listing_datetime": "2018-12-28 00:00:00 UTC",
+            "unit_price": 79139,
+            "quantity": 173,
+            "listings": 67
+        },
+        {
+            "listing_datetime": "2018-12-27 00:00:00 UTC",
+            "unit_price": 79066,
+            "quantity": 164,
+            "listings": 65
+        },
+        {
+            "listing_datetime": "2018-12-26 00:00:00 UTC",
+            "unit_price": 77784,
+            "quantity": 164,
+            "listings": 65
+        },
+        {
+            "listing_datetime": "2018-12-25 00:00:00 UTC",
+            "unit_price": 77783,
+            "quantity": 168,
+            "listings": 66
+        },
+        {
+            "listing_datetime": "2018-12-24 00:00:00 UTC",
+            "unit_price": 77792,
+            "quantity": 177,
+            "listings": 69
+        },
+        {
+            "listing_datetime": "2018-12-23 00:00:00 UTC",
+            "unit_price": 77973,
+            "quantity": 189,
+            "listings": 74
+        },
+        {
+            "listing_datetime": "2018-12-22 00:00:00 UTC",
+            "unit_price": 77780,
+            "quantity": 195,
+            "listings": 74
+        },
+        {
+            "listing_datetime": "2018-12-21 00:00:00 UTC",
+            "unit_price": 77779,
+            "quantity": 194,
+            "listings": 73
+        },
+        {
+            "listing_datetime": "2018-12-20 00:00:00 UTC",
+            "unit_price": 77782,
+            "quantity": 195,
+            "listings": 75
+        },
+        {
+            "listing_datetime": "2018-12-19 00:00:00 UTC",
+            "unit_price": 77780,
+            "quantity": 194,
+            "listings": 75
+        },
+        {
+            "listing_datetime": "2018-12-18 00:00:00 UTC",
+            "unit_price": 80170,
+            "quantity": 201,
+            "listings": 77
+        },
+        {
+            "listing_datetime": "2018-12-17 00:00:00 UTC",
+            "unit_price": 72115,
+            "quantity": 200,
+            "listings": 77
+        },
+        {
+            "listing_datetime": "2018-12-16 00:00:00 UTC",
+            "unit_price": 56040,
+            "quantity": 193,
+            "listings": 73
+        },
+        {
+            "listing_datetime": "2018-12-15 00:00:00 UTC",
+            "unit_price": 49237,
+            "quantity": 190,
+            "listings": 71
+        },
+        {
+            "listing_datetime": "2018-12-14 00:00:00 UTC",
+            "unit_price": 49128,
+            "quantity": 188,
+            "listings": 69
+        },
+        {
+            "listing_datetime": "2018-12-13 00:00:00 UTC",
+            "unit_price": 49514,
+            "quantity": 202,
+            "listings": 70
+        },
+        {
+            "listing_datetime": "2018-12-12 00:00:00 UTC",
+            "unit_price": 48964,
+            "quantity": 320,
+            "listings": 72
+        },
+        {
+            "listing_datetime": "2018-12-11 00:00:00 UTC",
+            "unit_price": 48877,
+            "quantity": 199,
+            "listings": 71
+        },
+        {
+            "listing_datetime": "2018-12-10 00:00:00 UTC",
+            "unit_price": 48792,
+            "quantity": 209,
+            "listings": 71
+        },
+        {
+            "listing_datetime": "2018-12-09 00:00:00 UTC",
+            "unit_price": 49183,
+            "quantity": 197,
+            "listings": 64
+        },
+        {
+            "listing_datetime": "2018-12-08 00:00:00 UTC",
+            "unit_price": 48407,
+            "quantity": 181,
+            "listings": 64
+        },
+        {
+            "listing_datetime": "2018-12-07 00:00:00 UTC",
+            "unit_price": 56311,
+            "quantity": 192,
+            "listings": 65
+        },
+        {
+            "listing_datetime": "2018-12-06 00:00:00 UTC",
+            "unit_price": 58413,
+            "quantity": 203,
+            "listings": 67
+        },
+        {
+            "listing_datetime": "2018-12-05 00:00:00 UTC",
+            "unit_price": 58416,
+            "quantity": 239,
+            "listings": 72
+        },
+        {
+            "listing_datetime": "2018-12-04 00:00:00 UTC",
+            "unit_price": 57887,
+            "quantity": 245,
+            "listings": 73
+        },
+        {
+            "listing_datetime": "2018-12-03 00:00:00 UTC",
+            "unit_price": 49330,
+            "quantity": 209,
+            "listings": 70
+        },
+        {
+            "listing_datetime": "2018-12-02 00:00:00 UTC",
+            "unit_price": 48735,
+            "quantity": 213,
+            "listings": 69
+        },
+        {
+            "listing_datetime": "2018-12-01 00:00:00 UTC",
+            "unit_price": 48396,
+            "quantity": 233,
+            "listings": 73
+        },
+        {
+            "listing_datetime": "2018-11-30 00:00:00 UTC",
+            "unit_price": 48238,
+            "quantity": 241,
+            "listings": 71
+        },
+        {
+            "listing_datetime": "2018-11-29 00:00:00 UTC",
+            "unit_price": 48100,
+            "quantity": 249,
+            "listings": 74
+        },
+        {
+            "listing_datetime": "2018-11-28 00:00:00 UTC",
+            "unit_price": 47831,
+            "quantity": 249,
+            "listings": 72
+        },
+        {
+            "listing_datetime": "2018-11-27 00:00:00 UTC",
+            "unit_price": 47403,
+            "quantity": 232,
+            "listings": 65
+        },
+        {
+            "listing_datetime": "2018-11-26 00:00:00 UTC",
+            "unit_price": 47087,
+            "quantity": 186,
+            "listings": 59
+        },
+        {
+            "listing_datetime": "2018-11-25 00:00:00 UTC",
+            "unit_price": 47084,
+            "quantity": 180,
+            "listings": 59
+        },
+        {
+            "listing_datetime": "2018-11-24 00:00:00 UTC",
+            "unit_price": 55034,
+            "quantity": 152,
+            "listings": 55
+        },
+        {
+            "listing_datetime": "2018-11-23 00:00:00 UTC",
+            "unit_price": 55547,
+            "quantity": 151,
+            "listings": 53
+        },
+        {
+            "listing_datetime": "2018-11-22 00:00:00 UTC",
+            "unit_price": 57412,
+            "quantity": 162,
+            "listings": 54
+        },
+        {
+            "listing_datetime": "2018-11-21 00:00:00 UTC",
+            "unit_price": 55366,
+            "quantity": 175,
+            "listings": 55
+        },
+        {
+            "listing_datetime": "2018-11-20 00:00:00 UTC",
+            "unit_price": 55423,
+            "quantity": 174,
+            "listings": 55
+        },
+        {
+            "listing_datetime": "2018-11-19 00:00:00 UTC",
+            "unit_price": 48011,
+            "quantity": 141,
+            "listings": 52
+        },
+        {
+            "listing_datetime": "2018-11-18 00:00:00 UTC",
+            "unit_price": 50446,
+            "quantity": 152,
+            "listings": 52
+        },
+        {
+            "listing_datetime": "2018-11-17 00:00:00 UTC",
+            "unit_price": 52644,
+            "quantity": 178,
+            "listings": 58
+        },
+        {
+            "listing_datetime": "2018-11-16 00:00:00 UTC",
+            "unit_price": 48963,
+            "quantity": 180,
+            "listings": 61
+        },
+        {
+            "listing_datetime": "2018-11-15 00:00:00 UTC",
+            "unit_price": 46940,
+            "quantity": 137,
+            "listings": 53
+        },
+        {
+            "listing_datetime": "2018-11-14 00:00:00 UTC",
+            "unit_price": 62566,
+            "quantity": 115,
+            "listings": 62
+        },
+        {
+            "listing_datetime": "2018-11-13 00:00:00 UTC",
+            "unit_price": 65263,
+            "quantity": 123,
+            "listings": 66
+        },
+        {
+            "listing_datetime": "2018-11-12 00:00:00 UTC",
+            "unit_price": 67276,
+            "quantity": 128,
+            "listings": 71
+        },
+        {
+            "listing_datetime": "2018-11-11 00:00:00 UTC",
+            "unit_price": 68406,
+            "quantity": 136,
+            "listings": 75
+        },
+        {
+            "listing_datetime": "2018-11-10 00:00:00 UTC",
+            "unit_price": 68937,
+            "quantity": 159,
+            "listings": 78
+        },
+        {
+            "listing_datetime": "2018-11-09 00:00:00 UTC",
+            "unit_price": 68823,
+            "quantity": 166,
+            "listings": 79
+        },
+        {
+            "listing_datetime": "2018-11-08 00:00:00 UTC",
+            "unit_price": 68562,
+            "quantity": 162,
+            "listings": 82
+        },
+        {
+            "listing_datetime": "2018-11-07 00:00:00 UTC",
+            "unit_price": 68498,
+            "quantity": 177,
+            "listings": 87
+        },
+        {
+            "listing_datetime": "2018-11-06 00:00:00 UTC",
+            "unit_price": 67881,
+            "quantity": 175,
+            "listings": 87
+        },
+        {
+            "listing_datetime": "2018-11-05 00:00:00 UTC",
+            "unit_price": 67808,
+            "quantity": 177,
+            "listings": 84
+        },
+        {
+            "listing_datetime": "2018-11-04 00:00:00 UTC",
+            "unit_price": 67627,
+            "quantity": 169,
+            "listings": 81
+        },
+        {
+            "listing_datetime": "2018-11-03 00:00:00 UTC",
+            "unit_price": 67452,
+            "quantity": 163,
+            "listings": 81
+        },
+        {
+            "listing_datetime": "2018-11-02 00:00:00 UTC",
+            "unit_price": 67996,
+            "quantity": 159,
+            "listings": 81
+        },
+        {
+            "listing_datetime": "2018-11-01 00:00:00 UTC",
+            "unit_price": 65706,
+            "quantity": 147,
+            "listings": 79
+        },
+        {
+            "listing_datetime": "2018-10-31 00:00:00 UTC",
+            "unit_price": 65370,
+            "quantity": 152,
+            "listings": 85
+        },
+        {
+            "listing_datetime": "2018-10-30 00:00:00 UTC",
+            "unit_price": 65576,
+            "quantity": 153,
+            "listings": 84
+        },
+        {
+            "listing_datetime": "2018-10-29 00:00:00 UTC",
+            "unit_price": 62971,
+            "quantity": 160,
+            "listings": 78
+        },
+        {
+            "listing_datetime": "2018-10-27 00:00:00 UTC",
+            "unit_price": 62064,
+            "quantity": 156,
+            "listings": 68
+        },
+        {
+            "listing_datetime": "2018-10-26 00:00:00 UTC",
+            "unit_price": 62061,
+            "quantity": 148,
+            "listings": 65
+        },
+        {
+            "listing_datetime": "2018-10-25 00:00:00 UTC",
+            "unit_price": 62249,
+            "quantity": 143,
+            "listings": 67
+        },
+        {
+            "listing_datetime": "2018-10-24 00:00:00 UTC",
+            "unit_price": 61589,
+            "quantity": 121,
+            "listings": 66
+        },
+        {
+            "listing_datetime": "2018-10-23 00:00:00 UTC",
+            "unit_price": 69473,
+            "quantity": 119,
+            "listings": 64
+        },
+        {
+            "listing_datetime": "2018-10-22 00:00:00 UTC",
+            "unit_price": 67496,
+            "quantity": 123,
+            "listings": 67
+        },
+        {
+            "listing_datetime": "2018-10-21 00:00:00 UTC",
+            "unit_price": 68321,
+            "quantity": 118,
+            "listings": 65
+        },
+        {
+            "listing_datetime": "2018-10-20 00:00:00 UTC",
+            "unit_price": 70877,
+            "quantity": 122,
+            "listings": 66
+        },
+        {
+            "listing_datetime": "2018-10-19 00:00:00 UTC",
+            "unit_price": 83412,
+            "quantity": 143,
+            "listings": 78
+        },
+        {
+            "listing_datetime": "2018-10-18 00:00:00 UTC",
+            "unit_price": 73367,
+            "quantity": 141,
+            "listings": 76
+        },
+        {
+            "listing_datetime": "2018-10-17 00:00:00 UTC",
+            "unit_price": 1259544,
+            "quantity": 72,
+            "listings": 55
+        },
+        {
+            "listing_datetime": "2018-10-16 00:00:00 UTC",
+            "unit_price": 1810012,
+            "quantity": 58,
+            "listings": 52
+        },
+        {
+            "listing_datetime": "2018-10-15 00:00:00 UTC",
+            "unit_price": 1810012,
+            "quantity": 58,
+            "listings": 52
+        },
+        {
+            "listing_datetime": "2018-10-14 00:00:00 UTC",
+            "unit_price": 1810012,
+            "quantity": 59,
+            "listings": 53
+        },
+        {
+            "listing_datetime": "2018-10-13 00:00:00 UTC",
+            "unit_price": 1810012,
+            "quantity": 60,
+            "listings": 54
+        },
+        {
+            "listing_datetime": "2018-10-12 00:00:00 UTC",
+            "unit_price": 1810011,
+            "quantity": 60,
+            "listings": 54
+        },
+        {
+            "listing_datetime": "2018-10-11 00:00:00 UTC",
+            "unit_price": 1810011,
+            "quantity": 59,
+            "listings": 53
+        },
+        {
+            "listing_datetime": "2018-10-10 00:00:00 UTC",
+            "unit_price": 1810015,
+            "quantity": 60,
+            "listings": 54
+        },
+        {
+            "listing_datetime": "2018-10-09 00:00:00 UTC",
+            "unit_price": 1810018,
+            "quantity": 60,
+            "listings": 54
+        },
+        {
+            "listing_datetime": "2018-10-08 00:00:00 UTC",
+            "unit_price": 1810018,
+            "quantity": 60,
+            "listings": 54
+        },
+        {
+            "listing_datetime": "2018-10-07 00:00:00 UTC",
+            "unit_price": 1810015,
+            "quantity": 60,
+            "listings": 54
+        },
+        {
+            "listing_datetime": "2018-10-06 00:00:00 UTC",
+            "unit_price": 1810011,
+            "quantity": 59,
+            "listings": 53
+        },
+        {
+            "listing_datetime": "2018-10-05 00:00:00 UTC",
+            "unit_price": 1810011,
+            "quantity": 60,
+            "listings": 54
+        },
+        {
+            "listing_datetime": "2018-10-04 00:00:00 UTC",
+            "unit_price": 1810011,
+            "quantity": 60,
+            "listings": 54
+        },
+        {
+            "listing_datetime": "2018-10-03 00:00:00 UTC",
+            "unit_price": 1810010,
+            "quantity": 59,
+            "listings": 53
+        },
+        {
+            "listing_datetime": "2018-10-02 00:00:00 UTC",
+            "unit_price": 1810011,
+            "quantity": 61,
+            "listings": 55
+        },
+        {
+            "listing_datetime": "2018-10-01 00:00:00 UTC",
+            "unit_price": 1810011,
+            "quantity": 62,
+            "listings": 56
+        },
+        {
+            "listing_datetime": "2018-09-30 00:00:00 UTC",
+            "unit_price": 1810009,
+            "quantity": 62,
+            "listings": 56
+        },
+        {
+            "listing_datetime": "2018-09-29 00:00:00 UTC",
+            "unit_price": 1810008,
+            "quantity": 62,
+            "listings": 56
+        },
+        {
+            "listing_datetime": "2018-09-28 00:00:00 UTC",
+            "unit_price": 1810007,
+            "quantity": 63,
+            "listings": 57
+        },
+        {
+            "listing_datetime": "2018-09-27 00:00:00 UTC",
+            "unit_price": 1810006,
+            "quantity": 62,
+            "listings": 56
+        },
+        {
+            "listing_datetime": "2018-09-26 00:00:00 UTC",
+            "unit_price": 1810003,
+            "quantity": 61,
+            "listings": 55
+        },
+        {
+            "listing_datetime": "2018-09-25 00:00:00 UTC",
+            "unit_price": 1810003,
+            "quantity": 61,
+            "listings": 55
+        },
+        {
+            "listing_datetime": "2018-09-24 00:00:00 UTC",
+            "unit_price": 1810002,
+            "quantity": 61,
+            "listings": 55
+        },
+        {
+            "listing_datetime": "2018-09-23 00:00:00 UTC",
+            "unit_price": 1810002,
+            "quantity": 58,
+            "listings": 54
+        },
+        {
+            "listing_datetime": "2018-09-22 00:00:00 UTC",
+            "unit_price": 1810004,
+            "quantity": 58,
+            "listings": 54
+        },
+        {
+            "listing_datetime": "2018-09-21 00:00:00 UTC",
+            "unit_price": 1810003,
+            "quantity": 58,
+            "listings": 54
+        },
+        {
+            "listing_datetime": "2018-09-20 00:00:00 UTC",
+            "unit_price": 1810002,
+            "quantity": 57,
+            "listings": 53
+        },
+        {
+            "listing_datetime": "2018-09-19 00:00:00 UTC",
+            "unit_price": 1810001,
+            "quantity": 56,
+            "listings": 52
+        },
+        {
+            "listing_datetime": "2018-09-18 00:00:00 UTC",
+            "unit_price": 1810001,
+            "quantity": 57,
+            "listings": 53
+        },
+        {
+            "listing_datetime": "2018-09-17 00:00:00 UTC",
+            "unit_price": 1810001,
+            "quantity": 58,
+            "listings": 54
+        },
+        {
+            "listing_datetime": "2018-09-16 00:00:00 UTC",
+            "unit_price": 1832106,
+            "quantity": 58,
+            "listings": 54
+        },
+        {
+            "listing_datetime": "2018-09-15 00:00:00 UTC",
+            "unit_price": 1810001,
+            "quantity": 58,
+            "listings": 54
+        },
+        {
+            "listing_datetime": "2018-09-14 00:00:00 UTC",
+            "unit_price": 1810001,
+            "quantity": 57,
+            "listings": 53
+        },
+        {
+            "listing_datetime": "2018-09-13 00:00:00 UTC",
+            "unit_price": 1814211,
+            "quantity": 57,
+            "listings": 53
+        },
+        {
+            "listing_datetime": "2018-09-12 00:00:00 UTC",
+            "unit_price": 1810001,
+            "quantity": 57,
+            "listings": 53
+        },
+        {
+            "listing_datetime": "2018-09-11 00:00:00 UTC",
+            "unit_price": 1810000,
+            "quantity": 56,
+            "listings": 52
+        },
+        {
+            "listing_datetime": "2018-09-10 00:00:00 UTC",
+            "unit_price": 1823157,
+            "quantity": 56,
+            "listings": 52
+        },
+        {
+            "listing_datetime": "2018-09-09 00:00:00 UTC",
+            "unit_price": 1859999,
+            "quantity": 57,
+            "listings": 53
+        },
+        {
+            "listing_datetime": "2018-09-08 00:00:00 UTC",
+            "unit_price": 1859999,
+            "quantity": 57,
+            "listings": 53
+        },
+        {
+            "listing_datetime": "2018-09-07 00:00:00 UTC",
+            "unit_price": 1859999,
+            "quantity": 57,
+            "listings": 53
+        },
+        {
+            "listing_datetime": "2018-09-06 00:00:00 UTC",
+            "unit_price": 1859999,
+            "quantity": 57,
+            "listings": 53
+        },
+        {
+            "listing_datetime": "2018-09-05 00:00:00 UTC",
+            "unit_price": 1859999,
+            "quantity": 57,
+            "listings": 53
+        },
+        {
+            "listing_datetime": "2018-09-04 00:00:00 UTC",
+            "unit_price": 1859999,
+            "quantity": 57,
+            "listings": 53
+        },
+        {
+            "listing_datetime": "2018-09-03 00:00:00 UTC",
+            "unit_price": 1859999,
+            "quantity": 57,
+            "listings": 53
+        },
+        {
+            "listing_datetime": "2018-09-02 00:00:00 UTC",
+            "unit_price": 1817893,
+            "quantity": 58,
+            "listings": 54
+        },
+        {
+            "listing_datetime": "2018-09-01 00:00:00 UTC",
+            "unit_price": 1809999,
+            "quantity": 58,
+            "listings": 54
+        },
+        {
+            "listing_datetime": "2018-08-31 00:00:00 UTC",
+            "unit_price": 1809999,
+            "quantity": 58,
+            "listings": 54
+        },
+        {
+            "listing_datetime": "2018-08-30 00:00:00 UTC",
+            "unit_price": 1809999,
+            "quantity": 59,
+            "listings": 55
+        },
+        {
+            "listing_datetime": "2018-08-29 00:00:00 UTC",
+            "unit_price": 1810000,
+            "quantity": 61,
+            "listings": 57
+        },
+        {
+            "listing_datetime": "2018-08-28 00:00:00 UTC",
+            "unit_price": 1809999,
+            "quantity": 61,
+            "listings": 57
+        },
+        {
+            "listing_datetime": "2018-08-27 00:00:00 UTC",
+            "unit_price": 1809999,
+            "quantity": 63,
+            "listings": 59
+        },
+        {
+            "listing_datetime": "2018-08-26 00:00:00 UTC",
+            "unit_price": 1809999,
+            "quantity": 64,
+            "listings": 60
+        },
+        {
+            "listing_datetime": "2018-08-25 00:00:00 UTC",
+            "unit_price": 1765790,
+            "quantity": 64,
+            "listings": 60
+        },
+        {
+            "listing_datetime": "2018-08-24 00:00:00 UTC",
+            "unit_price": 1750000,
+            "quantity": 66,
+            "listings": 62
+        },
+        {
+            "listing_datetime": "2018-08-23 00:00:00 UTC",
+            "unit_price": 1710153,
+            "quantity": 66,
+            "listings": 62
+        },
+        {
+            "listing_datetime": "2018-08-22 00:00:00 UTC",
+            "unit_price": 1550713,
+            "quantity": 65,
+            "listings": 61
+        },
+        {
+            "listing_datetime": "2018-08-21 00:00:00 UTC",
+            "unit_price": 1550571,
+            "quantity": 62,
+            "listings": 58
+        },
+        {
+            "listing_datetime": "2018-08-20 00:00:00 UTC",
+            "unit_price": 1550564,
+            "quantity": 62,
+            "listings": 58
+        },
+        {
+            "listing_datetime": "2018-08-19 00:00:00 UTC",
+            "unit_price": 1550561,
+            "quantity": 63,
+            "listings": 59
+        },
+        {
+            "listing_datetime": "2018-08-18 00:00:00 UTC",
+            "unit_price": 1550560,
+            "quantity": 63,
+            "listings": 59
+        },
+        {
+            "listing_datetime": "2018-08-17 00:00:00 UTC",
+            "unit_price": 1550560,
+            "quantity": 63,
+            "listings": 59
+        },
+        {
+            "listing_datetime": "2018-08-16 00:00:00 UTC",
+            "unit_price": 1550558,
+            "quantity": 61,
+            "listings": 57
+        },
+        {
+            "listing_datetime": "2018-08-15 00:00:00 UTC",
+            "unit_price": 1550557,
+            "quantity": 60,
+            "listings": 56
+        },
+        {
+            "listing_datetime": "2018-08-14 00:00:00 UTC",
+            "unit_price": 1534628,
+            "quantity": 59,
+            "listings": 55
+        },
+        {
+            "listing_datetime": "2018-08-13 00:00:00 UTC",
+            "unit_price": 1500118,
+            "quantity": 58,
+            "listings": 54
+        },
+        {
+            "listing_datetime": "2018-08-12 00:00:00 UTC",
+            "unit_price": 2265017,
+            "quantity": 59,
+            "listings": 55
+        },
+        {
+            "listing_datetime": "2018-08-11 00:00:00 UTC",
+            "unit_price": 2400414,
+            "quantity": 61,
+            "listings": 57
+        },
+        {
+            "listing_datetime": "2018-08-10 00:00:00 UTC",
+            "unit_price": 2231648,
+            "quantity": 61,
+            "listings": 57
+        },
+        {
+            "listing_datetime": "2018-08-09 00:00:00 UTC",
+            "unit_price": 2021054,
+            "quantity": 60,
+            "listings": 56
+        },
+        {
+            "listing_datetime": "2018-08-08 00:00:00 UTC",
+            "unit_price": 1957898,
+            "quantity": 61,
+            "listings": 57
+        },
+        {
+            "listing_datetime": "2018-08-07 00:00:00 UTC",
+            "unit_price": 1902633,
+            "quantity": 60,
+            "listings": 56
+        },
+        {
+            "listing_datetime": "2018-08-06 00:00:00 UTC",
+            "unit_price": 1667406,
+            "quantity": 60,
+            "listings": 56
+        },
+        {
+            "listing_datetime": "2018-08-05 00:00:00 UTC",
+            "unit_price": 1560054,
+            "quantity": 59,
+            "listings": 55
+        },
+        {
+            "listing_datetime": "2018-08-04 00:00:00 UTC",
+            "unit_price": 1560042,
+            "quantity": 61,
+            "listings": 57
+        },
+        {
+            "listing_datetime": "2018-08-03 00:00:00 UTC",
+            "unit_price": 1550036,
+            "quantity": 60,
+            "listings": 56
+        },
+        {
+            "listing_datetime": "2018-08-02 00:00:00 UTC",
+            "unit_price": 1550031,
+            "quantity": 60,
+            "listings": 56
+        },
+        {
+            "listing_datetime": "2018-08-01 00:00:00 UTC",
+            "unit_price": 1550029,
+            "quantity": 59,
+            "listings": 55
+        },
+        {
+            "listing_datetime": "2018-07-31 00:00:00 UTC",
+            "unit_price": 1550028,
+            "quantity": 57,
+            "listings": 53
+        },
+        {
+            "listing_datetime": "2018-07-30 00:00:00 UTC",
+            "unit_price": 1550022,
+            "quantity": 59,
+            "listings": 55
+        },
+        {
+            "listing_datetime": "2018-07-29 00:00:00 UTC",
+            "unit_price": 1550015,
+            "quantity": 60,
+            "listings": 56
+        },
+        {
+            "listing_datetime": "2018-07-28 00:00:00 UTC",
+            "unit_price": 1550008,
+            "quantity": 59,
+            "listings": 55
+        },
+        {
+            "listing_datetime": "2018-06-27 00:00:00 UTC",
+            "unit_price": 833943,
+            "quantity": 53,
+            "listings": 51
+        },
+        {
+            "listing_datetime": "2018-06-26 00:00:00 UTC",
+            "unit_price": 760351,
+            "quantity": 53,
+            "listings": 51
+        },
+        {
+            "listing_datetime": "2018-06-25 00:00:00 UTC",
+            "unit_price": 760347,
+            "quantity": 53,
+            "listings": 51
+        },
+        {
+            "listing_datetime": "2018-06-24 00:00:00 UTC",
+            "unit_price": 760344,
+            "quantity": 52,
+            "listings": 50
+        },
+        {
+            "listing_datetime": "2018-06-23 00:00:00 UTC",
+            "unit_price": 760343,
+            "quantity": 51,
+            "listings": 49
+        },
+        {
+            "listing_datetime": "2018-06-22 00:00:00 UTC",
+            "unit_price": 760341,
+            "quantity": 50,
+            "listings": 48
+        },
+        {
+            "listing_datetime": "2018-06-21 00:00:00 UTC",
+            "unit_price": 760338,
+            "quantity": 50,
+            "listings": 48
+        },
+        {
+            "listing_datetime": "2018-06-20 00:00:00 UTC",
+            "unit_price": 760333,
+            "quantity": 48,
+            "listings": 46
+        },
+        {
+            "listing_datetime": "2018-06-19 00:00:00 UTC",
+            "unit_price": 760328,
+            "quantity": 46,
+            "listings": 44
+        },
+        {
+            "listing_datetime": "2018-06-18 00:00:00 UTC",
+            "unit_price": 751380,
+            "quantity": 44,
+            "listings": 42
+        },
+        {
+            "listing_datetime": "2018-06-17 00:00:00 UTC",
+            "unit_price": 750329,
+            "quantity": 45,
+            "listings": 43
+        },
+        {
+            "listing_datetime": "2018-06-16 00:00:00 UTC",
+            "unit_price": 781700,
+            "quantity": 45,
+            "listings": 43
+        },
+        {
+            "listing_datetime": "2018-06-15 00:00:00 UTC",
+            "unit_price": 750328,
+            "quantity": 47,
+            "listings": 45
+        },
+        {
+            "listing_datetime": "2018-06-14 00:00:00 UTC",
+            "unit_price": 750311,
+            "quantity": 47,
+            "listings": 45
+        },
+        {
+            "listing_datetime": "2018-06-13 00:00:00 UTC",
+            "unit_price": 750218,
+            "quantity": 46,
+            "listings": 44
+        },
+        {
+            "listing_datetime": "2018-06-12 00:00:00 UTC",
+            "unit_price": 750216,
+            "quantity": 45,
+            "listings": 43
+        },
+        {
+            "listing_datetime": "2018-06-11 00:00:00 UTC",
+            "unit_price": 750216,
+            "quantity": 46,
+            "listings": 44
+        },
+        {
+            "listing_datetime": "2018-06-10 00:00:00 UTC",
+            "unit_price": 750216,
+            "quantity": 46,
+            "listings": 44
+        },
+        {
+            "listing_datetime": "2018-06-09 00:00:00 UTC",
+            "unit_price": 750210,
+            "quantity": 46,
+            "listings": 44
+        },
+        {
+            "listing_datetime": "2018-06-08 00:00:00 UTC",
+            "unit_price": 750116,
+            "quantity": 46,
+            "listings": 44
+        },
+        {
+            "listing_datetime": "2018-06-07 00:00:00 UTC",
+            "unit_price": 750114,
+            "quantity": 46,
+            "listings": 44
+        },
+        {
+            "listing_datetime": "2018-06-06 00:00:00 UTC",
+            "unit_price": 750114,
+            "quantity": 46,
+            "listings": 44
+        },
+        {
+            "listing_datetime": "2018-06-05 00:00:00 UTC",
+            "unit_price": 750114,
+            "quantity": 46,
+            "listings": 44
+        },
+        {
+            "listing_datetime": "2018-06-04 00:00:00 UTC",
+            "unit_price": 750114,
+            "quantity": 46,
+            "listings": 44
+        },
+        {
+            "listing_datetime": "2018-06-03 00:00:00 UTC",
+            "unit_price": 715042,
+            "quantity": 46,
+            "listings": 44
+        },
+        {
+            "listing_datetime": "2018-06-02 00:00:00 UTC",
+            "unit_price": 700010,
+            "quantity": 45,
+            "listings": 43
+        },
+        {
+            "listing_datetime": "2018-06-01 00:00:00 UTC",
+            "unit_price": 700010,
+            "quantity": 45,
+            "listings": 43
+        },
+        {
+            "listing_datetime": "2018-05-31 00:00:00 UTC",
+            "unit_price": 700007,
+            "quantity": 45,
+            "listings": 43
+        },
+        {
+            "listing_datetime": "2018-05-30 00:00:00 UTC",
+            "unit_price": 700007,
+            "quantity": 44,
+            "listings": 42
+        },
+        {
+            "listing_datetime": "2018-05-25 00:00:00 UTC",
+            "unit_price": 472170,
+            "quantity": 45,
+            "listings": 43
+        },
+        {
+            "listing_datetime": "2018-05-24 00:00:00 UTC",
+            "unit_price": 400703,
+            "quantity": 48,
+            "listings": 44
+        },
+        {
+            "listing_datetime": "2018-05-23 00:00:00 UTC",
+            "unit_price": 400597,
+            "quantity": 49,
+            "listings": 44
+        },
+        {
+            "listing_datetime": "2018-05-22 00:00:00 UTC",
+            "unit_price": 396117,
+            "quantity": 46,
+            "listings": 42
+        },
+        {
+            "listing_datetime": "2018-05-21 00:00:00 UTC",
+            "unit_price": 390212,
+            "quantity": 45,
+            "listings": 41
+        },
+        {
+            "listing_datetime": "2018-05-20 00:00:00 UTC",
+            "unit_price": 560033,
+            "quantity": 47,
+            "listings": 41
+        },
+        {
+            "listing_datetime": "2018-05-19 00:00:00 UTC",
+            "unit_price": 560033,
+            "quantity": 49,
+            "listings": 42
+        },
+        {
+            "listing_datetime": "2018-05-18 00:00:00 UTC",
+            "unit_price": 560032,
+            "quantity": 55,
+            "listings": 45
+        },
+        {
+            "listing_datetime": "2018-05-17 00:00:00 UTC",
+            "unit_price": 560031,
+            "quantity": 46,
+            "listings": 42
+        },
+        {
+            "listing_datetime": "2018-05-16 00:00:00 UTC",
+            "unit_price": 560029,
+            "quantity": 44,
+            "listings": 42
+        },
+        {
+            "listing_datetime": "2018-05-15 00:00:00 UTC",
+            "unit_price": 560027,
+            "quantity": 43,
+            "listings": 41
+        },
+        {
+            "listing_datetime": "2018-05-14 00:00:00 UTC",
+            "unit_price": 660933,
+            "quantity": 42,
+            "listings": 40
+        },
+        {
+            "listing_datetime": "2018-05-13 00:00:00 UTC",
+            "unit_price": 696972,
+            "quantity": 43,
+            "listings": 41
+        },
+        {
+            "listing_datetime": "2018-05-12 00:00:00 UTC",
+            "unit_price": 696972,
+            "quantity": 43,
+            "listings": 41
+        },
+        {
+            "listing_datetime": "2018-05-11 00:00:00 UTC",
+            "unit_price": 696972,
+            "quantity": 43,
+            "listings": 41
+        },
+        {
+            "listing_datetime": "2018-05-10 00:00:00 UTC",
+            "unit_price": 696972,
+            "quantity": 43,
+            "listings": 41
+        },
+        {
+            "listing_datetime": "2018-05-09 00:00:00 UTC",
+            "unit_price": 696972,
+            "quantity": 43,
+            "listings": 41
+        },
+        {
+            "listing_datetime": "2018-05-08 00:00:00 UTC",
+            "unit_price": 696972,
+            "quantity": 43,
+            "listings": 41
+        },
+        {
+            "listing_datetime": "2018-05-07 00:00:00 UTC",
+            "unit_price": 696972,
+            "quantity": 43,
+            "listings": 41
+        },
+        {
+            "listing_datetime": "2018-05-06 00:00:00 UTC",
+            "unit_price": 696972,
+            "quantity": 44,
+            "listings": 42
+        },
+        {
+            "listing_datetime": "2018-05-05 00:00:00 UTC",
+            "unit_price": 696972,
+            "quantity": 44,
+            "listings": 42
+        },
+        {
+            "listing_datetime": "2018-05-04 00:00:00 UTC",
+            "unit_price": 705916,
+            "quantity": 44,
+            "listings": 42
+        },
+        {
+            "listing_datetime": "2018-05-03 00:00:00 UTC",
+            "unit_price": 706969,
+            "quantity": 45,
+            "listings": 43
+        },
+        {
+            "listing_datetime": "2018-05-02 00:00:00 UTC",
+            "unit_price": 698023,
+            "quantity": 46,
+            "listings": 44
+        },
+        {
+            "listing_datetime": "2018-05-01 00:00:00 UTC",
+            "unit_price": 696969,
+            "quantity": 47,
+            "listings": 45
+        },
+        {
+            "listing_datetime": "2018-04-30 00:00:00 UTC",
+            "unit_price": 647750,
+            "quantity": 50,
+            "listings": 46
+        },
+        {
+            "listing_datetime": "2018-04-29 00:00:00 UTC",
+            "unit_price": 560022,
+            "quantity": 51,
+            "listings": 47
+        },
+        {
+            "listing_datetime": "2018-04-28 00:00:00 UTC",
+            "unit_price": 550017,
+            "quantity": 51,
+            "listings": 48
+        },
+        {
+            "listing_datetime": "2018-04-27 00:00:00 UTC",
+            "unit_price": 550009,
+            "quantity": 48,
+            "listings": 45
+        },
+        {
+            "listing_datetime": "2018-04-26 00:00:00 UTC",
+            "unit_price": 644739,
+            "quantity": 47,
+            "listings": 44
+        },
+        {
+            "listing_datetime": "2018-04-25 00:00:00 UTC",
+            "unit_price": 681580,
+            "quantity": 49,
+            "listings": 46
+        },
+        {
+            "listing_datetime": "2018-04-24 00:00:00 UTC",
+            "unit_price": 647368,
+            "quantity": 49,
+            "listings": 46
+        },
+        {
+            "listing_datetime": "2018-04-23 00:00:00 UTC",
+            "unit_price": 565791,
+            "quantity": 49,
+            "listings": 46
+        },
+        {
+            "listing_datetime": "2018-04-22 00:00:00 UTC",
+            "unit_price": 509709,
+            "quantity": 49,
+            "listings": 46
+        },
+        {
+            "listing_datetime": "2018-04-21 00:00:00 UTC",
+            "unit_price": 502153,
+            "quantity": 49,
+            "listings": 46
+        },
+        {
+            "listing_datetime": "2018-04-20 00:00:00 UTC",
+            "unit_price": 502150,
+            "quantity": 49,
+            "listings": 46
+        },
+        {
+            "listing_datetime": "2018-04-19 00:00:00 UTC",
+            "unit_price": 502149,
+            "quantity": 50,
+            "listings": 47
+        },
+        {
+            "listing_datetime": "2018-04-18 00:00:00 UTC",
+            "unit_price": 502144,
+            "quantity": 50,
+            "listings": 47
+        },
+        {
+            "listing_datetime": "2018-04-17 00:00:00 UTC",
+            "unit_price": 502142,
+            "quantity": 50,
+            "listings": 47
+        },
+        {
+            "listing_datetime": "2018-04-16 00:00:00 UTC",
+            "unit_price": 502137,
+            "quantity": 50,
+            "listings": 47
+        },
+        {
+            "listing_datetime": "2018-04-15 00:00:00 UTC",
+            "unit_price": 502122,
+            "quantity": 51,
+            "listings": 47
+        },
+        {
+            "listing_datetime": "2018-04-14 00:00:00 UTC",
+            "unit_price": 501591,
+            "quantity": 51,
+            "listings": 47
+        },
+        {
+            "listing_datetime": "2018-04-13 00:00:00 UTC",
+            "unit_price": 462550,
+            "quantity": 51,
+            "listings": 47
+        },
+        {
+            "listing_datetime": "2018-04-12 00:00:00 UTC",
+            "unit_price": 452006,
+            "quantity": 50,
+            "listings": 47
+        },
+        {
+            "listing_datetime": "2018-04-11 00:00:00 UTC",
+            "unit_price": 451056,
+            "quantity": 51,
+            "listings": 48
+        },
+        {
+            "listing_datetime": "2018-04-10 00:00:00 UTC",
+            "unit_price": 450999,
+            "quantity": 52,
+            "listings": 49
+        },
+        {
+            "listing_datetime": "2018-04-09 00:00:00 UTC",
+            "unit_price": 450988,
+            "quantity": 52,
+            "listings": 49
+        },
+        {
+            "listing_datetime": "2018-04-08 00:00:00 UTC",
+            "unit_price": 450820,
+            "quantity": 51,
+            "listings": 48
+        },
+        {
+            "listing_datetime": "2018-04-07 00:00:00 UTC",
+            "unit_price": 450786,
+            "quantity": 51,
+            "listings": 48
+        },
+        {
+            "listing_datetime": "2018-04-06 00:00:00 UTC",
+            "unit_price": 450720,
+            "quantity": 50,
+            "listings": 47
+        },
+        {
+            "listing_datetime": "2018-04-05 00:00:00 UTC",
+            "unit_price": 450682,
+            "quantity": 51,
+            "listings": 48
+        },
+        {
+            "listing_datetime": "2018-04-04 00:00:00 UTC",
+            "unit_price": 450679,
+            "quantity": 52,
+            "listings": 49
+        },
+        {
+            "listing_datetime": "2018-04-03 00:00:00 UTC",
+            "unit_price": 450673,
+            "quantity": 52,
+            "listings": 49
+        },
+        {
+            "listing_datetime": "2018-04-02 00:00:00 UTC",
+            "unit_price": 450596,
+            "quantity": 52,
+            "listings": 49
+        },
+        {
+            "listing_datetime": "2018-04-01 00:00:00 UTC",
+            "unit_price": 450559,
+            "quantity": 52,
+            "listings": 49
+        },
+        {
+            "listing_datetime": "2018-03-31 00:00:00 UTC",
+            "unit_price": 450555,
+            "quantity": 52,
+            "listings": 49
+        },
+        {
+            "listing_datetime": "2018-03-30 00:00:00 UTC",
+            "unit_price": 450548,
+            "quantity": 52,
+            "listings": 49
+        },
+        {
+            "listing_datetime": "2018-03-29 00:00:00 UTC",
+            "unit_price": 450541,
+            "quantity": 53,
+            "listings": 50
+        },
+        {
+            "listing_datetime": "2018-03-28 00:00:00 UTC",
+            "unit_price": 450533,
+            "quantity": 53,
+            "listings": 50
+        },
+        {
+            "listing_datetime": "2018-03-27 00:00:00 UTC",
+            "unit_price": 450521,
+            "quantity": 54,
+            "listings": 51
+        },
+        {
+            "listing_datetime": "2018-03-26 00:00:00 UTC",
+            "unit_price": 450201,
+            "quantity": 54,
+            "listings": 51
+        },
+        {
+            "listing_datetime": "2018-03-25 00:00:00 UTC",
+            "unit_price": 450118,
+            "quantity": 53,
+            "listings": 50
+        },
+        {
+            "listing_datetime": "2018-03-24 00:00:00 UTC",
+            "unit_price": 450017,
+            "quantity": 52,
+            "listings": 49
+        },
+        {
+            "listing_datetime": "2018-03-23 00:00:00 UTC",
+            "unit_price": 450004,
+            "quantity": 51,
+            "listings": 48
+        },
+        {
+            "listing_datetime": "2018-03-22 00:00:00 UTC",
+            "unit_price": 450002,
+            "quantity": 51,
+            "listings": 48
+        },
+        {
+            "listing_datetime": "2018-03-21 00:00:00 UTC",
+            "unit_price": 442172,
+            "quantity": 52,
+            "listings": 49
+        },
+        {
+            "listing_datetime": "2018-03-20 00:00:00 UTC",
+            "unit_price": 400339,
+            "quantity": 51,
+            "listings": 48
+        },
+        {
+            "listing_datetime": "2018-03-19 00:00:00 UTC",
+            "unit_price": 400317,
+            "quantity": 51,
+            "listings": 48
+        },
+        {
+            "listing_datetime": "2018-03-18 00:00:00 UTC",
+            "unit_price": 400315,
+            "quantity": 51,
+            "listings": 48
+        },
+        {
+            "listing_datetime": "2018-03-17 00:00:00 UTC",
+            "unit_price": 400313,
+            "quantity": 53,
+            "listings": 50
+        }
+    ]
+}
