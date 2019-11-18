@@ -39,6 +39,7 @@
     "ngx-moment": "^3.4.0",
     "ngx-toast": "^1.1.4",
     "ngx-toastr": "^10.0.4",
+    "randomcolor": "^0.5.4",
     "rxjs": "~6.3.3",
     "tslib": "^1.9.0",
     "web-animations-js": "^2.3.1",

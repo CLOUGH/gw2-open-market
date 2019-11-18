@@ -1,8 +1,8 @@
 import { Component, OnInit, Input, ElementRef, ViewChild, ViewEncapsulation, AfterViewInit } from '@angular/core';
 import * as d3 from 'd3';
 import { Listing } from 'src/app/core/models/listing';
-import moment from 'moment';
 import { Observable, of, Subject } from 'rxjs';
+import moment from 'moment';
 
 interface TradeData {
   date: Date;
@@ -74,7 +74,7 @@ export class TradeHistoryChartComponent implements OnInit, AfterViewInit {
 
     this.viewInitialized.subscribe(() => {
       this.data = data;
-      console.log(data);
+      // console.log(data);
       if (data) {
         this.buildChart(data);
       }
@@ -96,13 +96,13 @@ export class TradeHistoryChartComponent implements OnInit, AfterViewInit {
   buildChart(data) {
     // convert data
     this.buyData = data.buy.map(d => ({
-      date: new Date(d.listing_datetime),
+      date: moment.utc(d.listing_datetime, 'YYYY-MM-DD hh:mm:ss').toDate(),
       price: +d.unit_price,
       quantity: +d.quantity
     })).sort((a, b) => a.date - b.date);
 
     this.sellData = data.sell.map(d => ({
-      date: new Date(d.listing_datetime),
+      date: moment.utc(d.listing_datetime, 'YYYY-MM-DD hh:mm:ss').toDate(),
       price: +d.unit_price,
       quantity: +d.quantity
     })).sort((a, b) => a.date - b.date);
@@ -156,7 +156,7 @@ export class TradeHistoryChartComponent implements OnInit, AfterViewInit {
     this.yAxis2 = d3.axisLeft(this.yScale2);
     this.yAxis3 = d3.axisLeft(this.yScale3);
 
-    console.log(this.height, this.height2, this.height3);
+    // console.log(this.height, this.height2, this.height3);
     this.brush = d3.brushX()
       .extent([[0, 0], [this.width, this.height2]])
       .on('brush end', this.brushed.bind(this));
