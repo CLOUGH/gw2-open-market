@@ -11,11 +11,13 @@ import { CoinComponent } from 'src/app/shared/components/coin/coin.component';
 import { TradeHistoryChartComponent } from 'src/app/shared/components/trade-history-chart/trade-history-chart.component';
 import { TabsModule } from 'ngx-bootstrap';
 import { SharedModule } from 'src/app/shared/shared.module';
+import { FilterFormComponent } from './components/filter-form/filter-form.component';
 
 @NgModule({
   declarations: [
     ItemComponent,
     ItemListComponent,
+    FilterFormComponent,
   ],
   imports: [
     CommonModule,

@@ -1,5 +1,10 @@
 <div class="container pb-3">
   <!-- <h1 class="display-4 mt-3 mb-3">Items</h1> -->
+
+  <div class="mt-5 mb-5">
+    <app-filter-form [(filter)]="filter" (filterChange)="onFilterChange()"></app-filter-form>
+  </div>
+
   <table class="table">
     <thead>
       <tr>
@@ -11,7 +16,7 @@
     </thead>
     <tbody *ngIf="!loading">
       <tr *ngFor="let item of items">
-        <td scope="row">          
+        <td scope="row">
           <a [routerLink]="[ '/item', item.id ]" preserveQueryParams="true">
             <img [src]="item.icon" [alt]="item.name" height="25">
             {{item.name}}
@@ -23,7 +28,7 @@
       </tr>
     </tbody>
     <tbody *ngIf="loading">
-      <tr >
+      <tr>
         <td scope="row" colspan="4" class="text-center">
           <app-loading></app-loading>
         </td>
@@ -31,10 +36,11 @@
     </tbody>
   </table>
   <div class="d-flex justify-content-between p-2" *ngIf="collectionSize">
-    <ngb-pagination [collectionSize]="collectionSize" [(page)]="itemListOffset" [pageSize]="listSize" maxSize="10" (pageChange)="pageChanged()" [rotate]="true">
+    <ngb-pagination [collectionSize]="collectionSize" [(page)]="filter.page" [pageSize]="filter.limit" maxSize="10"
+      (pageChange)="onPageChange()" [rotate]="true">
     </ngb-pagination>
-  
-    <select class="custom-select" style="width: auto" [(ngModel)]="listSize" (change)="pageChanged()">
+
+    <select class="custom-select" style="width: auto" [(ngModel)]="filter.limit" (change)="onPageChange()">
       <option [ngValue]="10">10 items per page</option>
       <option [ngValue]="15">15 items per page</option>
       <option [ngValue]="20">20 items per page</option>

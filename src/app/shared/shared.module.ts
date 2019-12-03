@@ -4,13 +4,15 @@ import { PriceComparisonChartComponent } from './components/price-comparison-cha
 import { CoinComponent } from './components/coin/coin.component';
 import { LoadingComponent } from './components/loading/loading.component';
 import { TradeHistoryChartComponent } from './components/trade-history-chart/trade-history-chart.component';
+import { BuySellChartComponent } from './components/buy-sell-chart/buy-sell-chart.component';
 
 @NgModule({
   declarations: [
     PriceComparisonChartComponent,
     CoinComponent,
     LoadingComponent,
-    TradeHistoryChartComponent
+    TradeHistoryChartComponent,
+    BuySellChartComponent
   ],
   imports: [
     CommonModule
@@ -19,7 +21,8 @@ import { TradeHistoryChartComponent } from './components/trade-history-chart/tra
     PriceComparisonChartComponent,
     CoinComponent,
     LoadingComponent,
-    TradeHistoryChartComponent
+    TradeHistoryChartComponent,
+    BuySellChartComponent
   ]
 })
 export class SharedModule { }

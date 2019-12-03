@@ -98,7 +98,8 @@ export class TradeHistoryChartComponent implements OnInit, AfterViewInit {
     this.buyData = data.buy.map(d => ({
       date: moment.utc(d.listing_datetime, 'YYYY-MM-DD hh:mm:ss').toDate(),
       price: +d.unit_price,
-      quantity: +d.quantity
+      quantity: +d.quantity,
+      profit: d.unit_price
     })).sort((a, b) => a.date - b.date);
 
     this.sellData = data.sell.map(d => ({
@@ -199,6 +200,14 @@ export class TradeHistoryChartComponent implements OnInit, AfterViewInit {
       .attr('stroke', 'steelblue')
       .attr('stroke-width', '1.5')
       .attr('d', this.line);
+    this.focus
+      .append('path')
+      .data([this.profitData])
+      .style('fill', 'none')
+      .attr('class', 'profitLine')
+      .attr('stroke', 'green')
+      .attr('stroke-width', '1.5')
+      .attr('d', this.profitLine);
     this.focus
       .append('path')
       .data([this.sellData])
@@ -353,6 +362,7 @@ export class TradeHistoryChartComponent implements OnInit, AfterViewInit {
 
     this.focus.select('.buyLine').attr('d', this.line);
     this.focus.select('.sellLine').attr('d', this.line);
+    this.focus.select('.profitLine').attr('d', this.line);
     this.focus.select('.axis--x').call(this.xAxis);
     this.focus.select('.axis--y').call(this.yAxis);
 
@@ -409,6 +419,7 @@ export class TradeHistoryChartComponent implements OnInit, AfterViewInit {
     this.focus.selectAll('.supply rect').attr('x', (d: any) => this.xScale(d.date)).attr('width', bandWidth);
     this.focus.select('.sellLine').attr('d', this.line);
     this.focus.select('.buyLine').attr('d', this.line);
+    this.focus.select('.profitLine').attr('d', this.line);
     this.focus.select('.axis--x').call(this.xAxis);
 
     this.context2.selectAll('.profit rect')

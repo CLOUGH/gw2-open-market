@@ -1,0 +1,13 @@
+<form (submit)="onSubmit()" autocomplete="off">
+  <input autocomplete="false" name="hidden" type="text" style="display:none;">
+  <div class="form-group">
+    <label for="search">Search</label>
+    <input [(ngModel)]="filter.search" type="text" name="search" id="search" class="form-control" placeholder=""
+      aria-describedby="searchHelp">
+    <small id="searchHelp" class="text-muted">Search item by keywords</small>
+  </div>
+
+  <div class="text-right">
+    <button class="btn btn-primary" type="submit">Search</button>
+  </div>
+</form>

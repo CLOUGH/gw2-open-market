@@ -1,4 +1,4 @@
-<div class="container" *ngIf="item">
+<div class="container-fluid " *ngIf="item">
   <nav class="breadcrumb mt-3">
     <a class="breadcrumb-item" [href]="locationBackUrl">Items</a>
     <span class="breadcrumb-item active">{{item.name}}</span>
@@ -28,10 +28,14 @@
       </div>
 
       <h4 class="mt-3 mb-3">Buy and Sell Prices</h4>
-      <div *ngIf="listingsData&&listingsData.buy">
+
+      <app-buy-sell-chart [data]="listingsData"></app-buy-sell-chart>
+
+
+      <!-- <div *ngIf="listingsData&&listingsData.buy">
         <app-trade-history-chart [data]="listingsData"></app-trade-history-chart>
 
-      </div>
+      </div> -->
     </tab>
     <tab heading="Listings">
       <div class="row">

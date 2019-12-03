@@ -48,16 +48,17 @@ export class PriceComparisonChartComponent implements OnInit, AfterViewInit {
     data.buy.forEach((listing, index) => {
       const listingDate = moment.utc(listing.listing_datetime, 'YYYY-MM-DD hh:mm:ss');
       const sundayOfListingDate = moment(listingDate.toDate()).startOf('week').toDate();
+      const currentWeeksBack = moment().startOf('week').diff(moment(sundayOfListingDate), 'week');
 
-      if (moment().startOf('week').diff(moment(sundayOfListingDate), 'week') < weeksBack) {
+      if (currentWeeksBack < weeksBack) {
         const weekIndex = weeklyListing.findIndex(weekListing => {
-          return weekListing[0].weekNo === listingDate.week();
+          return weekListing[0].weekNo === currentWeeksBack;
         });
 
         const value = {
           ...listing,
           date: listingDate.toDate(),
-          weekNo: listingDate.week(),
+          weekNo: currentWeeksBack,
           adjustedDate: listingDate.add(moment().startOf('week').diff(sundayOfListingDate, 'week'), 'week').toDate()
         };
 
@@ -81,16 +82,16 @@ export class PriceComparisonChartComponent implements OnInit, AfterViewInit {
     data.sell.forEach((listing, index) => {
       const listingDate = moment.utc(listing.listing_datetime, 'YYYY-MM-DD hh:mm:ss');
       const sundayOfListingDate = moment(listingDate.toDate()).startOf('week').toDate();
-
-      if (moment().startOf('week').diff(moment(sundayOfListingDate), 'week') < weeksBack) {
+      const currentWeeksBack = moment().startOf('week').diff(moment(sundayOfListingDate), 'week');
+      if (currentWeeksBack < weeksBack) {
         const weekIndex = weeklyBuyPrice.findIndex(weekListing => {
-          return weekListing[0].weekNo === listingDate.week();
+          return weekListing[0].weekNo === currentWeeksBack;
         });
 
         const value = {
           ...listing,
           date: listingDate.toDate(),
-          weekNo: listingDate.week(),
+          weekNo: currentWeeksBack,
           adjustedDate: listingDate.add(moment().startOf('week').diff(sundayOfListingDate, 'week'), 'week').toDate()
         };
 
@@ -109,6 +110,8 @@ export class PriceComparisonChartComponent implements OnInit, AfterViewInit {
         }
       }
     });
+
+    console.log({weeklyBuyPrice});
 
     // set the dimensions and margins of the graph
     const margin = { top: 20, right: 20, bottom: 30, left: 50 };
@@ -157,7 +160,7 @@ export class PriceComparisonChartComponent implements OnInit, AfterViewInit {
         .attr('fill', 'none')
         .attr('stroke', 'steelblue')
         .attr('stroke-width', (d: any) => {
-          return d[0].weekNo === moment().week() ? 4 : 0.5;
+          return d[0].weekNo === 0 ? 4 : 0.5;
         })
         .attr('stroke-linejoin', 'round')
         .attr('stroke-linecap', 'round')
@@ -175,7 +178,7 @@ export class PriceComparisonChartComponent implements OnInit, AfterViewInit {
         .attr('fill', 'none')
         .attr('stroke', 'red')
         .attr('stroke-width', (d: any) => {
-          return d[0].weekNo === moment().week() ? 4 : 0.5;
+          return d[0].weekNo === 0 ? 4 : 0.5;
         })
         .attr('stroke-linejoin', 'round')
         .attr('stroke-linecap', 'round')
