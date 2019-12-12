@@ -22,6 +22,7 @@ interface Data {
 export class BuySellChartComponent implements OnInit {
 
   @ViewChild('chart') chartElement: ElementRef;
+  @ViewChild('tooltip') tooltipElement: ElementRef;
 
   @Input('data') set data(data: Data) {
     if (data) {
@@ -34,6 +35,10 @@ export class BuySellChartComponent implements OnInit {
   }
 
   drawChart(data: Data) {
+
+    data.buy.sort((a, b) => moment.utc(a.listing_datetime, 'YYYY-MM-DD hh:mm:ss').diff(moment.utc(b.listing_datetime, 'YYYY-MM-DD hh:mm:ss')));
+    data.sell.sort((a, b) => moment.utc(a.listing_datetime, 'YYYY-MM-DD hh:mm:ss').diff(moment.utc(b.listing_datetime, 'YYYY-MM-DD hh:mm:ss')));
+
     const mainMargin = { top: 20, right: 40, bottom: 110, left: 20 };
     const zoomMargin = { top: 430, right: 40, bottom: 30, left: 20 };
     const width = 960 - mainMargin.left - mainMargin.right;
@@ -41,7 +46,7 @@ export class BuySellChartComponent implements OnInit {
     const zoomHeight = 500 - zoomMargin.top - zoomMargin.bottom;
 
     const svg = d3.select(this.chartElement.nativeElement)
-      .attr('viewBox', `0 0 ${width + mainMargin.left + mainMargin.right} ${mainHeight + mainMargin.top + mainMargin.bottom}`)
+      .attr('viewBox', `0 0 ${width + mainMargin.left + mainMargin.right} ${mainHeight + mainMargin.top + mainMargin.bottom}`);
     // .attr('transform', `translate(${mainMargin.left}, ${mainMargin.top})`);
 
     // find data range
@@ -124,12 +129,22 @@ export class BuySellChartComponent implements OnInit {
       .attr('class', 'context')
       .attr('transform', `translate(${zoomMargin.left}, ${zoomMargin.top})`);
 
+    const tooltip = d3.select(this.tooltipElement.nativeElement)
+      .style('overflow', 'hidden')
+      .style('position', 'absolute')
+      .style('z-index', '10')
+      .style('visibility', 'hidden')
+      .style('background', 'black')
+      .style('padding', '5px')
+      .style('color', 'white')
+      .style('border-radius', '3px')
+      .style('font-size', '10px');
+
     const zoom = d3.zoom()
       .scaleExtent([1, Infinity])
       .translateExtent([[0, 0], [width, mainHeight]])
       .extent([[0, 0], [width, mainHeight]])
       .on('zoom', () => {
-        console.log(d3.event.sourceEvent && d3.event.sourceEvent.type);
         // ignore zoom-by-brush
         if (d3.event.sourceEvent && d3.event.sourceEvent.type === 'brush') {
           return;
@@ -141,15 +156,15 @@ export class BuySellChartComponent implements OnInit {
 
         const zoomBuyRange = data.buy.filter(d => {
           return moment.utc(d.listing_datetime, 'YYYY-MM-DD hh:mm:ss').toDate() > mainDomain[0]
-            && moment.utc(d.listing_datetime, 'YYYY-MM-DD hh:mm:ss').toDate() < mainDomain[1]
+            && moment.utc(d.listing_datetime, 'YYYY-MM-DD hh:mm:ss').toDate() < mainDomain[1];
         });
         const zoomSellRange = data.sell.filter(d => {
           return moment.utc(d.listing_datetime, 'YYYY-MM-DD hh:mm:ss').toDate() > mainDomain[0]
-            && moment.utc(d.listing_datetime, 'YYYY-MM-DD hh:mm:ss').toDate() < mainDomain[1]
+            && moment.utc(d.listing_datetime, 'YYYY-MM-DD hh:mm:ss').toDate() < mainDomain[1];
         });
         const zoomProfitRange = data.sell.filter(d => {
           return moment.utc(d.listing_datetime, 'YYYY-MM-DD hh:mm:ss').toDate() > mainDomain[0]
-            && moment.utc(d.listing_datetime, 'YYYY-MM-DD hh:mm:ss').toDate() < mainDomain[1]
+            && moment.utc(d.listing_datetime, 'YYYY-MM-DD hh:mm:ss').toDate() < mainDomain[1];
         }).map(d => {
           return {
             listing_datetime: d.listing_datetime,
@@ -208,6 +223,11 @@ export class BuySellChartComponent implements OnInit {
       .attr('transform', `translate(${width}, 0)`)
       .call(yAxis);
 
+
+    const buyCircle = focus.append('circle').attr('r', 3).style('fill', 'steelblue');
+    const sellCircle = focus.append('circle').attr('r', 3).style('fill', 'green');
+    const profitCircle = focus.append('circle').attr('r', 3).style('fill', '#FF8900');
+
     mainChart.append('path')
       .datum(data.buy)
       .style('fill', 'none')
@@ -240,18 +260,97 @@ export class BuySellChartComponent implements OnInit {
       .call(zoomXAxis);
     context.append('g')
       .attr('class', 'brush')
+
+
+
     // .call(brush)
     // .call(brush.move, mainXScale.range());
 
-    svg.append('rect')
-      .attr('class', 'zoom')
+    const bisectDate = d3.bisector((d: any) => {
+      return moment.utc(d.listing_datetime, 'YYYY-MM-DD hh:mm:ss').toDate();
+    }).left;
+    focus.append('rect')
+      .attr('transform', `translate(${mainMargin.left}, ${mainMargin.top})`)
       .attr('width', width)
       .attr('height', mainHeight)
-      .style('fill', 'none')
+      .attr('fill', 'none')
       .style('pointer-events', 'all')
-      .style('cursor', 'move')
-      .attr('transform', `translate(${mainMargin.left}, ${mainMargin.top})`)
-      .call(zoom);
+      .on('mouseover', (d) => {
+        return tooltip.style('visibility', 'visible');
+      })
+      .on('mousemove', () => {
+        // this.xScale.invert(d3.mouse(d3.event.target)[0]);
+        const x0 = mainXScale.invert(d3.mouse(d3.event.target)[0]);
+        const buyIndex = bisectDate(data.buy, x0, 1);
+        const d0Buy = data.buy[buyIndex - 1];
+        const d1Buy = data.buy[buyIndex];
+        const dBuy = moment(x0).diff(moment.utc(d0Buy.listing_datetime, 'YYYY-MM-DD hh:mm:ss')) >
+          moment.utc(d1Buy.listing_datetime, 'YYYY-MM-DD hh:mm:ss').diff(moment(x0)) ? d1Buy : d0Buy;
+
+        const sellIndex = bisectDate(data.sell, x0, 1);
+        const d0Sell = data.sell[sellIndex - 1];
+        const d1Sell = data.sell[sellIndex];
+        const dSell = moment(x0).diff(moment.utc(d0Sell.listing_datetime, 'YYYY-MM-DD hh:mm:ss')) >
+          moment.utc(d1Sell.listing_datetime, 'YYYY-MM-DD hh:mm:ss').diff(moment(x0)) ? d1Sell : d0Sell;
+
+        const profit = Math.floor((dSell.unit_price - dBuy.unit_price) - (dSell.unit_price * 0.15));
+        const roi = Math.round((profit / (dBuy.unit_price + (dSell.unit_price * 0.15)) * 10000)) / 10000;
+        tooltip
+          .style('top', `${d3.event.pageY - 10}px`)
+          .style('left', `${d3.event.pageX + 10}px`);
+        tooltip
+          .select('.date')
+          .text(moment.utc(dBuy.listing_datetime, 'YYYY-MM-DD hh:mm:ss').format('dddd, MMMM Do YYYY, h:mm:ss a'));
+        tooltip
+          .select('.buy')
+          .text(dBuy.unit_price);
+        tooltip
+          .select('.sell')
+          .text(dSell.unit_price);
+        tooltip
+          .select('.profit-at')
+          .text(Math.floor(dSell.unit_price - (dSell.unit_price * 0.15)));
+        tooltip
+          .select('.profit')
+          .text(profit);
+        tooltip
+          .select('.roi')
+          .text(roi * 100);
+        tooltip
+          .select('.demand')
+          .text(dBuy.quantity);
+        tooltip
+          .select('.supply')
+          .text(dSell.quantity);
+
+        // tslint:disable-next-line: max-line-length
+        buyCircle.attr('transform', `translate( ${mainXScale(moment.utc(dBuy.listing_datetime, 'YYYY-MM-DD hh:mm:ss').toDate())},${mainYScale(dBuy.unit_price)})`);
+        // tslint:disable-next-line: max-line-length
+        sellCircle.attr('transform', `translate( ${mainXScale(moment.utc(dSell.listing_datetime, 'YYYY-MM-DD hh:mm:ss').toDate())},${mainYScale(dSell.unit_price)})`);
+        // tslint:disable-next-line: max-line-length
+        profitCircle.attr('transform', `translate( ${mainXScale(moment.utc(dSell.listing_datetime, 'YYYY-MM-DD hh:mm:ss').toDate())},${mainYScale(dSell.unit_price - (dSell.unit_price * 0.15))})`);
+      })
+      .on('mouseout', (d) => {
+        return tooltip.style('visibility', 'hidden');
+      })
+
+      .call(zoom)
+
+    // .call(zoom.transform, d3.zoomIdentity.translate(100, 50).scale(0.5))
+    // .append("svg:g")
+    // .attr("transform","translate(100,50) scale(.5,.5)");
+
+
+    // svg.append('rect')
+    //   .attr('class', 'zoom')
+    //   .attr('width', width)
+    //   .attr('height', mainHeight)
+    //   .style('fill', 'none')
+    //   .style('pointer-events', 'all')
+    //   .style('cursor', 'move')
+    //   .attr('transform', `translate(${mainMargin.left}, ${mainMargin.top})`)
+    //   .call(zoom);
+
   }
 
 }

@@ -1,4 +1,4 @@
-<div class="container-fluid " *ngIf="item">
+<div class="container " *ngIf="item">
   <nav class="breadcrumb mt-3">
     <a class="breadcrumb-item" [href]="locationBackUrl">Items</a>
     <span class="breadcrumb-item active">{{item.name}}</span>
@@ -22,14 +22,15 @@
 
   <tabset>
     <tab heading="Charts" id="tab1">
+      <h4 class="mt-3 mb-3">Buy and Sell Prices</h4>
+
+      <app-buy-sell-chart [data]="listingsData"></app-buy-sell-chart>
+
       <h4 class="mt-3 mb-3">Past 4 Week Prices</h4>
       <div *ngIf="listingsData&&listingsData.buy">
         <app-price-comparison-chart [data]="listingsData"></app-price-comparison-chart>
       </div>
 
-      <h4 class="mt-3 mb-3">Buy and Sell Prices</h4>
-
-      <app-buy-sell-chart [data]="listingsData"></app-buy-sell-chart>
 
 
       <!-- <div *ngIf="listingsData&&listingsData.buy">

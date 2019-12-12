@@ -1,3 +1,13 @@
-<div class="wrapper">
+<div class="wrapper" #wrapper>
   <svg #chart class="chart"></svg>
+  <div class="d3-tooltip" #tooltip>
+    <div>Date: <span class="date"></span></div>
+    <div>Buy: <span class="buy"></span></div>
+    <div>Sell: <span class="sell"></span></div>
+    <div>Profitable at: <span class="profit-at"></span></div>
+    <div>Profit: <span class="profit"></span></div>
+    <div>Demand: <span class="demand"></span></div>
+    <div>Supply: <span class="supply"></span></div>
+    <div>ROI: <span class="roi"></span>%</div>
+  </div>
 </div>

@@ -17,6 +17,7 @@ export class ItemComponent implements OnInit {
   listings: any;
   listingsData: any;
   locationBackUrl = '/item';
+  transactionsData: any;
 
   constructor(
     private gw2ApiService: Gw2ApiServiceService,
@@ -44,6 +45,11 @@ export class ItemComponent implements OnInit {
         console.log(previousUrl);
         this.locationBackUrl = previousUrl;
       }
+    });
+
+    this.gw2ApiService.getTransactions().subscribe((d) => {
+      this.transactionsData = d;
+      console.log({d})
     });
   }
 }

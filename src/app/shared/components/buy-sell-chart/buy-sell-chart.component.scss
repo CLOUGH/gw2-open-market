@@ -3,11 +3,27 @@
   // color: #67809f;
 }
 .wrapper {
-  overflow: hidden;
+  // position: relative;
   margin-bottom: 15px;
 }
 
 .zoom {
   fill: none;
   pointer-events: all;
+}
+// .d3-tooltip {
+//   color: white;
+//   position: absolute;
+//   text-align: center;
+//   width: 60px;
+//   height: 28px;
+//   padding: 2px;
+//   font: 12px sans-serif;
+//   background: rgba(0,0,0,.8);
+//   border: 2px solid black;
+//   pointer-events: none;;
+// }
+
+.d3-tooltip {
+  visibility: hidden;
 }
