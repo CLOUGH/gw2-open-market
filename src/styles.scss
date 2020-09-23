@@ -1,1 +1,58 @@
 /* You can add global styles to this file, and also import other style files */
+// @import '@angular/material/prebuilt-themes/pink-bluegrey.css';
+// @import '@angular/material/prebuilt-themes/purple-green.css';
+// @import '@angular/material/prebuilt-themes/deeppurple-amber.css';
+// @import 'highcharts/css/themes/dark-unica.css';
+
+// .highcharts-color-0 {
+//   fill: #f45b5b;
+//   stroke: #f45b5b;
+// }
+
+/* Titles */
+.highcharts-title {
+  fill: white;
+  font-size: 26px;
+  font-weight: bold;
+}
+
+html,
+body {
+  height: 100%;
+  background-color: #303030;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+$junk: #aaa;
+$basic: #000;
+$fine: #62a4da;
+$masterworks: #1a9306;
+$rare: #fcd00b;
+$exotic: #ffa405;
+$ascended: #fb3e8d;
+$legendary: #4c139d;
+
+.text-junk {
+  color: $junk;
+}
+.text-fine {
+  color: $fine;
+}
+.text-masterwork {
+  color: $masterworks;
+}
+.text-rare {
+  color: $rare;
+}
+.text-exotic {
+  color: $exotic;
+}
+.text-ascended {
+  color: $ascended;
+}
+.text-legendary {
+  color: $legendary;
+}

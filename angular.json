@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/gw2-open-market",
+            "outputPath": "dist/gw2-open-market/browser",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -28,9 +28,23 @@
               "src/assets"
             ],
             "styles": [
+              "./node_modules/@angular/material/prebuilt-themes/purple-green.css",
+              "./node_modules/highcharts/css/stocktools/gui.css",
+              "./node_modules/highcharts/css/annotations/popup.css",
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [
+              "./node_modules/highcharts/indicators/indicators-all.js",
+              "./node_modules/highcharts/indicators/indicators.js",
+              "./node_modules/highcharts/indicators/rsi.js",
+              "./node_modules/highcharts/indicators/ema.js",
+              "./node_modules/highcharts/indicators/macd.js",
+              "./node_modules/highcharts/modules/drag-panes.js",
+              "./node_modules/highcharts/modules/annotations-advanced.js",
+              "./node_modules/highcharts/modules/price-indicator.js",
+              "./node_modules/highcharts/modules/full-screen.js",
+              "./node_modules/highcharts/modules/stock-tools.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -92,6 +106,7 @@
               "src/assets"
             ],
             "styles": [
+              "./node_modules/@angular/material/prebuilt-themes/purple-green.css",
               "src/styles.scss"
             ],
             "scripts": []
@@ -103,7 +118,8 @@
             "tsConfig": [
               "tsconfig.app.json",
               "tsconfig.spec.json",
-              "e2e/tsconfig.json"
+              "e2e/tsconfig.json",
+              "tsconfig.server.json"
             ],
             "exclude": [
               "**/node_modules/**"
@@ -121,8 +137,59 @@
               "devServerTarget": "gw2-open-market:serve:production"
             }
           }
+        },
+        "server": {
+          "builder": "@angular-devkit/build-angular:server",
+          "options": {
+            "outputPath": "dist/gw2-open-market/server",
+            "main": "server.ts",
+            "tsConfig": "tsconfig.server.json"
+          },
+          "configurations": {
+            "production": {
+              "outputHashing": "media",
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.prod.ts"
+                }
+              ],
+              "sourceMap": false,
+              "optimization": true
+            }
+          }
+        },
+        "serve-ssr": {
+          "builder": "@nguniversal/builders:ssr-dev-server",
+          "options": {
+            "browserTarget": "gw2-open-market:build",
+            "serverTarget": "gw2-open-market:server"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "gw2-open-market:build:production",
+              "serverTarget": "gw2-open-market:server:production"
+            }
+          }
+        },
+        "prerender": {
+          "builder": "@nguniversal/builders:prerender",
+          "options": {
+            "browserTarget": "gw2-open-market:build:production",
+            "serverTarget": "gw2-open-market:server:production",
+            "routes": [
+              "/"
+            ]
+          },
+          "configurations": {
+            "production": {}
+          }
         }
       }
-    }},
-  "defaultProject": "gw2-open-market"
+    }
+  },
+  "defaultProject": "gw2-open-market",
+  "cli": {
+    "analytics": false
+  }
 }
