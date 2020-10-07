@@ -15,7 +15,7 @@ export class ItemTradeListingService {
   async getItemTradeListing(itemId: number): Promise<IItemTradeListing> {
     try {
       // get the latest items listings
-      const itemTradeListings = (await this.gw2SpidyApiService.getTradeHistory(itemId));
+      const itemTradeListings = (await this.gw2SpidyApiService.getTradeHistory(itemId, 36));
 
       // for performance do the update in the background
       const promise = new Promise((resolve, reject) => {
@@ -83,8 +83,11 @@ export class ItemTradeListingService {
               // },
               {
                 // trade: { $exists: false }
-                trade: null
-              },
+                trade: null,
+                listed: {
+                  $eq: true
+                }
+              }
             ],
           }
         }
@@ -111,7 +114,7 @@ export class ItemTradeListingService {
     } catch (e) {
       console.log('A error has occurred while getting trade data');
       console.error(e);
-      throw e;
+      // throw e;
     }
   }
 

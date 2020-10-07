@@ -9,4 +9,8 @@
   <div class="content">
     <router-outlet></router-outlet>
   </div>
+  <button mat-fab color="accent" class="profit-calculator-btn" (click)="showCalculator= !showCalculator">
+    <mat-icon>calculate</mat-icon>
+  </button>
+  <app-profit-calculator [hidden]="!showCalculator" (closeChange)="closeCalculator()"></app-profit-calculator>
 </div>

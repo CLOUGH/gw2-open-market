@@ -32,4 +32,9 @@ export class Gw2OpenMarketServiceService {
       observe: 'response'
     });
   }
+  public getItemRecipes(itemId: number): Observable<HttpResponse<any>> {
+    return this.http.get<any>(`${this.apiUrl}/items/${itemId}/recipes`, {
+      observe: 'response'
+    });
+  }
 }

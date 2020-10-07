@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'gw2-open-market';
+
+  showCalculator = false;
+
+  closeCalculator(): void {
+    this.showCalculator = false;
+  }
 }

@@ -1,0 +1,49 @@
+<mat-card class="calculator mat-elevation-z8" cdkDrag cdkDragBoundary=".wrapper">
+  <button color="accent" mat-icon-button class="close-btn" (click)="close()">
+    <mat-icon>close</mat-icon>
+  </button>
+  <h2>Profit Calculator</h2>
+  <mat-card-content>
+    <form autocomplete="off" fxLayout="column">
+      <mat-form-field>
+        <mat-label>Buy Price</mat-label>
+        <input matInput [(ngModel)]="buy" name="buy" type="number" min="0">
+      </mat-form-field>
+      <div fxLayout="row" fxLayoutAlign="space-between">
+        <span>Break Even</span>
+        <app-coin [units]="getBreakEven()"></app-coin>
+      </div>
+      <mat-form-field>
+        <mat-label>Bell Price</mat-label>
+        <input matInput [(ngModel)]="sell" name="sell" type="number" min="0">
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>Bell Price</mat-label>
+        <input matInput [(ngModel)]="quantity" name="quantity" type="number" min="1">
+      </mat-form-field>
+    </form>
+    <div>
+      <h2>Results</h2>
+      <div fxLayout="row" fxLayoutAlign="space-between">
+        <span>Cost</span>
+        <app-coin [units]="buy*quantity"></app-coin>
+      </div>
+      <div fxLayout="row" fxLayoutAlign="space-between">
+        <span>Listing Fee</span>
+        <app-coin [units]="getListingFee()"></app-coin>
+      </div>
+      <div fxLayout="row" fxLayoutAlign="space-between">
+        <span>Selling Fee</span>
+        <app-coin [units]="getSellingFee()"></app-coin>
+      </div>
+      <div fxLayout="row" fxLayoutAlign="space-between">
+        <span>Profit</span>
+        <app-coin [units]="getProfit()"></app-coin>
+      </div>
+      <div fxLayout="row" fxLayoutAlign="space-between">
+        <span>ROI</span>
+        <span>{{getROI()}} %</span>
+      </div>
+    </div>
+  </mat-card-content>
+</mat-card>

@@ -66,12 +66,14 @@ export class GW2SpidyApiService {
           ...tradeList,
           ...this.gw2SpidyListingResultToTrade(listingResponse.results)
         ];
-        const oldestFromResult = tradeList.reduce((a, b) => moment(a.timestamp).valueOf() < moment(b.timestamp).valueOf() ? a : b);
+        const oldestFromResult = tradeList && tradeList.length>1
+          && tradeList.reduce((a, b) => moment(a.timestamp).valueOf() < moment(b.timestamp).valueOf() ? a : b);
         // continueSearching = (!recentDBTrade || recentDBTrade.timestamp < oldestFromResult.timestamp)
         //   && page <= listingResponse.last_page;
 
         continueSearching = (!numberOfMonths && page <= listingResponse.last_page) || (
           numberOfMonths
+          && oldestFromResult
           && moment().diff(moment(oldestFromResult.timestamp), 'months') < numberOfMonths
           && page <= listingResponse.last_page
         );

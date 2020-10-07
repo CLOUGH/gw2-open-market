@@ -1,5 +1,5 @@
+import { GW2ApiService } from './src/server/services/gw2-api.service';
 import { ItemTradeListingService } from './src/server/services/Item-trade-listing.service';
-import { ItemPriceService } from './src/server/services/item-price-serivce';
 import 'zone.js/dist/zone-node';
 
 import { ngExpressEngine } from '@nguniversal/express-engine';
@@ -24,8 +24,8 @@ mongoose.connection.on('error', () => {
 
 // Cron config
 const minuteJob = new CronJob('*/15 * * * *', async () => {
-  const itemPriceService = new ItemPriceService();
-  itemPriceService.updateExistingItemPrice();
+  const gw2ApiService = new GW2ApiService();
+  gw2ApiService.updateItemPrices();
   console.log(`Started minutely job. Started at ${new Date()}`);
 });
 
@@ -78,7 +78,7 @@ function run(): void {
   // itemPriceService.updateExistingItemPrice();
   const itemTradePriceService = new ItemTradeListingService();
   // itemTradePriceService.removeOldListings();
-  itemTradePriceService.updateAllItemTradeListing();
+  // itemTradePriceService.updateAllItemTradeListing();
 
   // Start up the Node server
   const server = app();

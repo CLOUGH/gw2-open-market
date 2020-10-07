@@ -1,7 +1,8 @@
 <div class="container">
   <mat-card class="filter-card">
-    <form (submit)="getItems()" autocomplete="off" #filterForm="ngForm" class="filter-form">
-      <mat-form-field class="search-input">
+    <form (submit)="getItems()" autocomplete="off" class="filter-form" fxLayout="row wrap" fxLayout.xs="column"
+      fxLayoutGap="15px" style="margin-right:-15px;">
+      <mat-form-field class="search-input" fxFlex="100%">
         <mat-label>Search</mat-label>
         <input matInput type="text" [(ngModel)]="filter.search" placeholder="Search item by keywords" name="search">
         <button mat-button type="button" *ngIf="filter.search" matSuffix mat-icon-button aria-label="Clear"
@@ -9,186 +10,184 @@
           <mat-icon>close</mat-icon>
         </button>
       </mat-form-field>
-      <div class="item-type-filter">
-        <mat-form-field>
-          <mat-label>Category</mat-label>
-          <mat-select [(ngModel)]="filter.category" name="category">
-            <mat-option *ngFor="let category of itemFilterOptions.categories" [value]="category.value">
-              {{category.label}}
-            </mat-option>
-          </mat-select>
+      <mat-form-field fxFlex="0 0 calc(25%-15px)" >
+        <mat-label>Category</mat-label>
+        <mat-select [(ngModel)]="filter.category" name="category">
+          <mat-option *ngFor="let category of itemFilterOptions.categories" [value]="category.value">
+            {{category.label}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+      <mat-form-field fxFlex="0 0 calc(25%-15px)" >
+        <mat-label>{{filter.category}} Sub Category </mat-label>
+        <mat-select [disabled]="!filter.category || subCategoryOptions.length===0" [(ngModel)]="filter.subCategory"
+          name="subCategory">
+          <mat-option *ngFor="let subCategory of ( subCategoryOptions)" [value]="subCategory.value">
+            {{subCategory.label}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+      <mat-form-field fxFlex="0 0 calc(25%-15px)" >
+        <mat-label>Rarity</mat-label>
+        <mat-select [(ngModel)]="filter.rarity" name="rarity">
+          <mat-option *ngFor="let rarity of itemFilterOptions.rarity" [value]="rarity.value">
+            {{rarity.label}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+      <div class="min-max-range" fxFlex="0 0 calc(25%-15px)" fxLayout="row" fxLayoutGap="15px"  >
+        <mat-form-field fxFlex="calc(50%-15px)">
+          <mat-label>Min Level</mat-label>
+          <input matInput type="text" [(ngModel)]="filter.minLevel" type="number" name="minLevel">
+          <button mat-button type="button" *ngIf="filter.minLevel" matSuffix mat-icon-button aria-label="Clear"
+            (click)="filter.minLevel=''">
+            <mat-icon>close</mat-icon>
+          </button>
         </mat-form-field>
-        <mat-form-field>
-          <mat-label>{{filter.category}} Sub Category </mat-label>
-          <mat-select [disabled]="!filter.category || subCategoryOptions.length===0" [(ngModel)]="filter.subCategory"
-            name="subCategory">
-            <mat-option *ngFor="let subCategory of ( subCategoryOptions)" [value]="subCategory.value">
-              {{subCategory.label}}
-            </mat-option>
-          </mat-select>
+        <mat-form-field fxFlex="calc(50%-15px)">
+          <mat-label>Max Level</mat-label>
+          <input matInput type="text" [(ngModel)]="filter.maxLevel" type="number" name="maxLevel">
+          <button mat-button type="button" *ngIf="filter.maxLevel" matSuffix mat-icon-button aria-label="Clear"
+            (click)="filter.maxLevel=''">
+            <mat-icon>close</mat-icon>
+          </button>
         </mat-form-field>
-        <mat-form-field>
-          <mat-label>Rarity</mat-label>
-          <mat-select [(ngModel)]="filter.rarity" name="rarity">
-            <mat-option *ngFor="let rarity of itemFilterOptions.rarity" [value]="rarity.value">
-              {{rarity.label}}
-            </mat-option>
-          </mat-select>
-        </mat-form-field>
-        <div class="min-max-range">
-          <mat-form-field>
-            <mat-label>Min Level</mat-label>
-            <input matInput type="text" [(ngModel)]="filter.minLevel" type="number" name="minLevel">
-            <button mat-button type="button" *ngIf="filter.minLevel" matSuffix mat-icon-button aria-label="Clear"
-              (click)="filter.minLevel=''">
-              <mat-icon>close</mat-icon>
-            </button>
-          </mat-form-field>
-          <mat-form-field>
-            <mat-label>Max Level</mat-label>
-            <input matInput type="text" [(ngModel)]="filter.maxLevel" type="number" name="maxLevel">
-            <button mat-button type="button" *ngIf="filter.maxLevel" matSuffix mat-icon-button aria-label="Clear"
-              (click)="filter.maxLevel=''">
-              <mat-icon>close</mat-icon>
-            </button>
-          </mat-form-field>
-        </div>
-        <div class="min-max-range">
-          <mat-form-field>
-            <mat-label>Min Buy</mat-label>
-            <input matInput type="text" [(ngModel)]="filter.minBuy" type="number" name="minBuy">
-            <button mat-button type="button" *ngIf="filter.minBuy" matSuffix mat-icon-button aria-label="Clear"
-              (click)="filter.minBuy=''">
-              <mat-icon>close</mat-icon>
-            </button>
-          </mat-form-field>
-          <mat-form-field>
-            <mat-label>Max Buy</mat-label>
-            <input matInput type="text" [(ngModel)]="filter.maxBuy" type="number" name="maxBuy">
-            <button mat-button type="button" *ngIf="filter.maxBuy" matSuffix mat-icon-button aria-label="Clear"
-              (click)="filter.maxBuy=''">
-              <mat-icon>close</mat-icon>
-            </button>
-          </mat-form-field>
-        </div>
-        <div class="min-max-range">
-          <mat-form-field>
-            <mat-label>Min Sell</mat-label>
-            <input matInput type="text" [(ngModel)]="filter.minSell" type="number" name="minSell">
-            <button mat-button type="button" *ngIf="filter.minSell" matSuffix mat-icon-button aria-label="Clear"
-              (click)="filter.minSell=''">
-              <mat-icon>close</mat-icon>
-            </button>
-          </mat-form-field>
-          <mat-form-field>
-            <mat-label>Max Sell</mat-label>
-            <input matInput type="text" [(ngModel)]="filter.maxSell" type="number" name="maxSell">
-            <button mat-button type="button" *ngIf="filter.maxSell" matSuffix mat-icon-button aria-label="Clear"
-              (click)="filter.maxSell=''">
-              <mat-icon>close</mat-icon>
-            </button>
-          </mat-form-field>
-        </div>
-        <div class="min-max-range">
-          <mat-form-field>
-            <mat-label>Min Supply</mat-label>
-            <input matInput type="text" [(ngModel)]="filter.minSupply" type="number" name="minSupply">
-            <button mat-button type="button" *ngIf="filter.minSupply" matSuffix mat-icon-button aria-label="Clear"
-              (click)="filter.minSupply=''">
-              <mat-icon>close</mat-icon>
-            </button>
-          </mat-form-field>
-          <mat-form-field>
-            <mat-label>Max Supply</mat-label>
-            <input matInput type="text" [(ngModel)]="filter.maxSupply" type="number" name="maxSupply">
-            <button mat-button type="button" *ngIf="filter.maxSupply" matSuffix mat-icon-button aria-label="Clear"
-              (click)="filter.maxSupply=''">
-              <mat-icon>close</mat-icon>
-            </button>
-          </mat-form-field>
-        </div>
-        <div class="min-max-range">
-          <mat-form-field>
-            <mat-label>Min Demand</mat-label>
-            <input matInput type="text" [(ngModel)]="filter.minDemand" type="number" name="minDemand">
-            <button mat-button type="button" *ngIf="filter.minDemand" matSuffix mat-icon-button aria-label="Clear"
-              (click)="filter.minDemand=''">
-              <mat-icon>close</mat-icon>
-            </button>
-          </mat-form-field>
-          <mat-form-field>
-            <mat-label>Max Demand</mat-label>
-            <input matInput type="text" [(ngModel)]="filter.maxDemand" type="number" name="maxDemand">
-            <button mat-button type="button" *ngIf="filter.maxDemand" matSuffix mat-icon-button aria-label="Clear"
-              (click)="filter.maxDemand=''">
-              <mat-icon>close</mat-icon>
-            </button>
-          </mat-form-field>
-        </div>
-        <div class="min-max-range">
-          <mat-form-field>
-            <mat-label>Min ROI</mat-label>
-            <input matInput type="text" [(ngModel)]="filter.minRoi" type="number" name="minRoi">
-            <button mat-button type="button" *ngIf="filter.minRoi" matSuffix mat-icon-button aria-label="Clear"
-              (click)="filter.minRoi=''">
-              <mat-icon>close</mat-icon>
-            </button>
-          </mat-form-field>
-          <mat-form-field>
-            <mat-label>Max ROI</mat-label>
-            <input matInput type="text" [(ngModel)]="filter.maxRoi" type="number" name="maxRoi">
-            <button mat-button type="button" *ngIf="filter.maxRoi" matSuffix mat-icon-button aria-label="Clear"
-              (click)="filter.maxRoi=''">
-              <mat-icon>close</mat-icon>
-            </button>
-          </mat-form-field>
-        </div>
-        <div class="min-max-range">
-          <mat-form-field>
-            <mat-label>Min Flip Profit</mat-label>
-            <input matInput type="text" [(ngModel)]="filter.minFlipProfit" type="number" name="minFlipProfit">
-            <button mat-button type="button" *ngIf="filter.minFlipProfit" matSuffix mat-icon-button aria-label="Clear"
-              (click)="filter.minFlipProfit=''">
-              <mat-icon>close</mat-icon>
-            </button>
-          </mat-form-field>
-          <mat-form-field>
-            <mat-label>Max Flip Profit</mat-label>
-            <input matInput type="text" [(ngModel)]="filter.maxFlipProfit" type="number" name="maxFlipProfit">
-            <button mat-button type="button" *ngIf="filter.maxFlipProfit" matSuffix mat-icon-button aria-label="Clear"
-              (click)="filter.maxFlipProfit=''">
-              <mat-icon>close</mat-icon>
-            </button>
-          </mat-form-field>
-        </div>
-        <div class="min-max-range">
-          <mat-form-field>
-            <mat-label>Min Demand > Supply</mat-label>
-            <input matInput type="text" [(ngModel)]="filter.minDemandSupplyRatio" type="number" name="minDemandSupplyRatio">
-            <button mat-button type="button" *ngIf="filter.minDemandSupplyRatio" matSuffix mat-icon-button aria-label="Clear"
-              (click)="filter.minDemandSupplyRatio=''">
-              <mat-icon>close</mat-icon>
-            </button>
-          </mat-form-field>
-          <mat-form-field>
-            <mat-label>Max Demand > Supply</mat-label>
-            <input matInput type="text" [(ngModel)]="filter.maxDemandSupplyRatio" type="number" name="maxDemandSupplyRatio">
-            <button mat-button type="button" *ngIf="filter.maxDemandSupplyRatio" matSuffix mat-icon-button aria-label="Clear"
-              (click)="filter.maxDemandSupplyRatio=''">
-              <mat-icon>close</mat-icon>
-            </button>
-          </mat-form-field>
-        </div>
-
-
       </div>
-      <div class="button-action">
+      <div class="min-max-range" fxFlex="0 0 calc(25%-15px)"  fxLayout="row" fxLayoutGap="15px"  >
+        <mat-form-field fxFlex="calc(50%-15px)">
+          <mat-label>Min Buy</mat-label>
+          <input matInput type="text" [(ngModel)]="filter.minBuy" type="number" name="minBuy">
+          <button mat-button type="button" *ngIf="filter.minBuy" matSuffix mat-icon-button aria-label="Clear"
+            (click)="filter.minBuy=''">
+            <mat-icon>close</mat-icon>
+          </button>
+        </mat-form-field>
+        <mat-form-field fxFlex="calc(50%-15px)">
+          <mat-label>Max Buy</mat-label>
+          <input matInput type="text" [(ngModel)]="filter.maxBuy" type="number" name="maxBuy">
+          <button mat-button type="button" *ngIf="filter.maxBuy" matSuffix mat-icon-button aria-label="Clear"
+            (click)="filter.maxBuy=''">
+            <mat-icon>close</mat-icon>
+          </button>
+        </mat-form-field>
+      </div>
+      <div class="min-max-range" fxFlex="0 0 calc(25%-15px)"  fxLayout="row" fxLayoutGap="15px"  >
+        <mat-form-field fxFlex="calc(50%-15px)">
+          <mat-label>Min Sell</mat-label>
+          <input matInput type="text" [(ngModel)]="filter.minSell" type="number" name="minSell">
+          <button mat-button type="button" *ngIf="filter.minSell" matSuffix mat-icon-button aria-label="Clear"
+            (click)="filter.minSell=''">
+            <mat-icon>close</mat-icon>
+          </button>
+        </mat-form-field>
+        <mat-form-field fxFlex="calc(50%-15px)">
+          <mat-label>Max Sell</mat-label>
+          <input matInput type="text" [(ngModel)]="filter.maxSell" type="number" name="maxSell">
+          <button mat-button type="button" *ngIf="filter.maxSell" matSuffix mat-icon-button aria-label="Clear"
+            (click)="filter.maxSell=''">
+            <mat-icon>close</mat-icon>
+          </button>
+        </mat-form-field>
+      </div>
+      <div class="min-max-range" fxFlex="0 0 calc(25%-15px)" fxLayout="row" fxLayoutGap="15px"   >
+        <mat-form-field fxFlex="calc(50%-15px)">
+          <mat-label>Min Supply</mat-label>
+          <input matInput type="text" [(ngModel)]="filter.minSupply" type="number" name="minSupply">
+          <button mat-button type="button" *ngIf="filter.minSupply" matSuffix mat-icon-button aria-label="Clear"
+            (click)="filter.minSupply=''">
+            <mat-icon>close</mat-icon>
+          </button>
+        </mat-form-field>
+        <mat-form-field fxFlex="calc(50%-15px)">
+          <mat-label>Max Supply</mat-label>
+          <input matInput type="text" [(ngModel)]="filter.maxSupply" type="number" name="maxSupply">
+          <button mat-button type="button" *ngIf="filter.maxSupply" matSuffix mat-icon-button aria-label="Clear"
+            (click)="filter.maxSupply=''">
+            <mat-icon>close</mat-icon>
+          </button>
+        </mat-form-field>
+      </div>
+      <div class="min-max-range" fxFlex="0 0 calc(25%-15px)"  fxLayout="row" fxLayoutGap="15px"  >
+        <mat-form-field fxFlex="calc(50%-15px)">
+          <mat-label>Min Demand</mat-label>
+          <input matInput type="text" [(ngModel)]="filter.minDemand" type="number" name="minDemand">
+          <button mat-button type="button" *ngIf="filter.minDemand" matSuffix mat-icon-button aria-label="Clear"
+            (click)="filter.minDemand=''">
+            <mat-icon>close</mat-icon>
+          </button>
+        </mat-form-field>
+        <mat-form-field fxFlex="calc(50%-15px)">
+          <mat-label>Max Demand</mat-label>
+          <input matInput type="text" [(ngModel)]="filter.maxDemand" type="number" name="maxDemand">
+          <button mat-button type="button" *ngIf="filter.maxDemand" matSuffix mat-icon-button aria-label="Clear"
+            (click)="filter.maxDemand=''">
+            <mat-icon>close</mat-icon>
+          </button>
+        </mat-form-field>
+      </div>
+      <div class="min-max-range" fxFlex="0 0 calc(25%-15px)" fxLayout="row" fxLayoutGap="15px"  >
+        <mat-form-field fxFlex="calc(50%-15px)">
+          <mat-label>Min ROI</mat-label>
+          <input matInput type="text" [(ngModel)]="filter.minRoi" type="number" name="minRoi">
+          <button mat-button type="button" *ngIf="filter.minRoi" matSuffix mat-icon-button aria-label="Clear"
+            (click)="filter.minRoi=''">
+            <mat-icon>close</mat-icon>
+          </button>
+        </mat-form-field>
+        <mat-form-field fxFlex="calc(50%-15px)">
+          <mat-label>Max ROI</mat-label>
+          <input matInput type="text" [(ngModel)]="filter.maxRoi" type="number" name="maxRoi">
+          <button mat-button type="button" *ngIf="filter.maxRoi" matSuffix mat-icon-button aria-label="Clear"
+            (click)="filter.maxRoi=''">
+            <mat-icon>close</mat-icon>
+          </button>
+        </mat-form-field>
+      </div>
+      <div class="min-max-range" fxFlex="0 0 calc(25%-15px)" fxLayout="row" fxLayoutGap="15px"  >
+        <mat-form-field fxFlex="calc(50%-15px)">
+          <mat-label>Min Flip Profit</mat-label>
+          <input matInput type="text" [(ngModel)]="filter.minFlipProfit" type="number" name="minFlipProfit">
+          <button mat-button type="button" *ngIf="filter.minFlipProfit" matSuffix mat-icon-button aria-label="Clear"
+            (click)="filter.minFlipProfit=''">
+            <mat-icon>close</mat-icon>
+          </button>
+        </mat-form-field>
+        <mat-form-field fxFlex="calc(50%-15px)">
+          <mat-label>Max Flip Profit</mat-label>
+          <input matInput type="text" [(ngModel)]="filter.maxFlipProfit" type="number" name="maxFlipProfit">
+          <button mat-button type="button" *ngIf="filter.maxFlipProfit" matSuffix mat-icon-button aria-label="Clear"
+            (click)="filter.maxFlipProfit=''">
+            <mat-icon>close</mat-icon>
+          </button>
+        </mat-form-field>
+      </div>
+      <div class="min-max-range" fxFlex="0 0 calc(25%-15px)" fxLayout="row" fxLayoutGap="15px"  >
+        <mat-form-field fxFlex="calc(50%-15px)">
+          <mat-label>Min Demand > Supply</mat-label>
+          <input matInput type="text" [(ngModel)]="filter.minDemandSupplyRatio" type="number"
+            name="minDemandSupplyRatio">
+          <button mat-button type="button" *ngIf="filter.minDemandSupplyRatio" matSuffix mat-icon-button
+            aria-label="Clear" (click)="filter.minDemandSupplyRatio=''">
+            <mat-icon>close</mat-icon>
+          </button>
+        </mat-form-field>
+        <mat-form-field fxFlex="calc(50%-15px)">
+          <mat-label>Max Demand > Supply</mat-label>
+          <input matInput type="text" [(ngModel)]="filter.maxDemandSupplyRatio" type="number"
+            name="maxDemandSupplyRatio">
+          <button mat-button type="button" *ngIf="filter.maxDemandSupplyRatio" matSuffix mat-icon-button
+            aria-label="Clear" (click)="filter.maxDemandSupplyRatio=''">
+            <mat-icon>close</mat-icon>
+          </button>
+        </mat-form-field>
+      </div>
+      <div class="button-action" fxFlex="100%">
         <button mat-raised-button type="submit" class="search-button" color="accent">Search</button>
       </div>
     </form>
   </mat-card>
 
-  <div class="mat-elevation-z8">
+  <div class="mat-elevation-z8 table-wrapper">
     <table mat-table [dataSource]="items" matSort multiTemplateDataRows class="item-table">
       <ng-container matColumnDef="id">
         <th mat-header-cell *matHeaderCellDef width="80px"> ID </th>
@@ -247,7 +246,8 @@
         <th mat-header-cell *matHeaderCellDef></th>
         <td mat-cell *matCellDef="let element">
 
-          <button mat-icon-button color="accent" aria-label="Example icon button with a home icon" (click)="toggleItemDetail(element)">
+          <button mat-icon-button color="accent" aria-label="Example icon button with a home icon"
+            (click)="toggleItemDetail(element)">
             <mat-icon>{{element == expandedElement ? 'expand_less': 'expand_more' }}</mat-icon>
           </button>
         </td>
@@ -258,9 +258,82 @@
         <td mat-cell *matCellDef="let element" [attr.colspan]="displayedColumns.length">
 
           <div class="example-element-detail" [@detailExpand]="element == expandedElement ? 'expanded' : 'collapsed'">
-            <mat-progress-bar *ngIf="chartIsLoading" color="accent" mode="indeterminate"></mat-progress-bar>
-            <highcharts-chart *ngIf="isHighcharts && showChart" [Highcharts]="Highcharts" constructorType="stockChart"
-              [options]="chartOptions" style="width: 100%; height: 800px; display: block;"></highcharts-chart>
+            <mat-tab-group mat-align-tabs="center" color="accent" animationDuration="0ms">
+              <mat-tab label="Chart">
+                <mat-spinner *ngIf="chartIsLoading" color="accent" mode="indeterminate"></mat-spinner>
+                <!-- <mat-progress-bar *ngIf="chartIsLoading" color="accent" mode="indeterminate"></mat-progress-bar> -->
+                <highcharts-chart *ngIf="isHighcharts && showChart" [Highcharts]="Highcharts"
+                  constructorType="stockChart" [options]="chartOptions"
+                  style="width: 100%; height: 800px; display: block;"></highcharts-chart>
+              </mat-tab>
+              <mat-tab label="Recipes">
+                <div *ngIf="recipes" class="recipes-container">
+                  <div class="crafted-by">
+                    <h3>Crafted By</h3>
+                    <div *ngFor="let recipe of recipes.craftedBy">
+                      <div>{{element.name}}</div>
+                      <ul>
+                        <li *ngFor="let item of recipe.ingredient_items">
+                          <img [src]="item.icon" [alt]="item.name" height="25" class="item-icon">
+                          <span [class]="'text-'+item.rarity.toLowerCase()">{{item.name}}</span>
+                          <button mat-icon-button class="copy-btn" aria-label="Copy name"
+                            (click)="copyToClipBoard(item.name)">
+                            <mat-icon>content_copy</mat-icon>
+                          </button>
+                          <span *ngIf="item.price">
+                            Buy Price
+                            <app-coin [units]="item.price.buys.unit_price"></app-coin>
+                            Sell Price
+                            <app-coin [units]="item.price.sells.unit_price"></app-coin>
+                          </span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div class="used-by">
+                    <h3>Used to Craft</h3>
+                    <cdk-virtual-scroll-viewport itemSize="50">
+                      <div *cdkVirtualFor="let recipe of recipes.useIn">
+                        <div *ngIf="recipe.output_item[0]">
+                          <img *ngIf="recipe.output_item[0].icon" [src]="recipe.output_item[0].icon"
+                            [alt]="recipe.output_item[0].name" height="25" class="item-icon">
+                          <span
+                            [class]="'text-'+recipe.output_item[0].rarity.toLowerCase()">{{recipe.output_item[0].name}}</span>
+                          <button mat-icon-button class="copy-btn" aria-label="Copy name"
+                            (click)="copyToClipBoard(recipe.output_item[0].name)">
+                            <mat-icon>content_copy</mat-icon>
+                          </button>
+                          <span *ngIf="recipe.output_item[0].price">
+                            Buy Price
+                            <app-coin [units]="recipe.output_item[0].price.buys.unit_price"></app-coin>
+                            Sell Price
+                            <app-coin [units]="recipe.output_item[0].price.sells.unit_price"></app-coin>
+                          </span>
+                        </div>
+                        <ul>
+                          <li *ngFor="let item of recipe.ingredient_items">
+                            <img *ngIf="item.icon" [src]="item.icon" [alt]="item.name" height="25" class="item-icon">
+                            <span [class]="'text-'+item.rarity.toLowerCase()">{{item.name}}</span>
+                            <button mat-icon-button class="copy-btn" aria-label="Copy name"
+                              (click)="copyToClipBoard(item.name)">
+                              <mat-icon>content_copy</mat-icon>
+                            </button>
+                            <span *ngIf="item.price">
+                              Buy Price
+                              <app-coin [units]="item.price.buys.unit_price"></app-coin>
+                              Sell Price
+                              <app-coin [units]="item.price.sells.unit_price"></app-coin>
+                            </span>
+                          </li>
+                        </ul>
+                      </div>
+                    </cdk-virtual-scroll-viewport>
+                  </div>
+                </div>
+              </mat-tab>
+              <!-- <mat-tab label="Third">Content 3</mat-tab> -->
+            </mat-tab-group>
           </div>
         </td>
       </ng-container>
@@ -271,7 +344,7 @@
       </tr>
       <tr mat-row *matRowDef="let row; columns: ['expandedDetail']" class="example-detail-row"></tr>
     </table>
-    <mat-paginator [length]="collectionSize" [pageSizeOptions]="pageSizeOptions" [pageSize]="filter.limit"
-      (page)="onPageChange($event)"></mat-paginator>
+    <mat-paginator *ngIf="filter" [length]="collectionSize" [pageSizeOptions]="pageSizeOptions"
+      [pageSize]="filter.limit" (page)="onPageChange($event)"></mat-paginator>
   </div>
 </div>

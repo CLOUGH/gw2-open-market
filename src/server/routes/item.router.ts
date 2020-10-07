@@ -1,8 +1,10 @@
+import { GW2ProfitsApiService } from './../services/gw2-profits.service';
+import { GW2ApiService } from './../services/gw2-api.service';
 import { ItemTradeListingService } from '../services/Item-trade-listing.service';
-import { ItemPriceService } from './../services/item-price-serivce';
 import { Request, Response, Router } from 'express';
 import Item from '../models/Item';
 import { min } from 'rxjs/operators';
+import Recipe from '../models/Recipe';
 
 export const itemRouter = Router();
 
@@ -173,6 +175,9 @@ itemRouter.get('/', async (req: Request, res: Response, next) => {
       },
     });
   }
+  lookUpCriteria.push({
+    listed: { $eq: true }
+  });
 
   query = {
     ...query,
@@ -184,25 +189,82 @@ itemRouter.get('/', async (req: Request, res: Response, next) => {
 
   console.log(JSON.stringify(query, null, 2));
 
-  // @ts-ignore
-  Item.paginate(query, { limit: +limit, page: +page }).then(result => {
-    res.set('X-LENGTH', result.total)
-      .set('X-LIMIT', result.limit)
-      .set('X-PAGE', result.page)
-      .set('X-PAGES', result.pages)
-      .json(result.docs);
+  // Item.paginate(query, { limit: +limit, page: +page , sort: {createdAt : 1}})
 
-  }).catch(e => {
+  const aggregate = Item.aggregate();
+  aggregate.match(query).addFields({ sort: roiFormula});
+
+  // @ts-ignore
+  Item.aggregatePaginate(aggregate, { limit: +limit, page: +page, sort: { sort: -1 } })
+    .then(result => {
+      res.set('X-LENGTH', result.total)
+        .set('X-LIMIT', result.limit)
+        .set('X-PAGE', result.page)
+        .set('X-PAGES', result.pages)
+        .json(result.docs);
+
+    }).catch(e => {
+      res.status(500).json({
+        message: e.message
+      });
+    });
+});
+
+itemRouter.get('/:id/recipes', async (req: Request, res: Response, next) => {
+  try {
+    const itemId = +req.params.id;
+    const query = {};
+    const craftedBy = await Recipe.aggregate([{
+      $match: {
+        output_item_id: itemId
+      }
+    }, {
+      $lookup: {
+        from: 'items',
+        localField: 'ingredients.item_id',
+        foreignField: 'id',
+        as: 'ingredient_items',
+      }
+    }]);
+    const useIn = await Recipe.aggregate([
+      {
+        $match: { 'ingredients.item_id': itemId }
+      },
+      {
+        $lookup: {
+          from: 'items',
+          localField: 'ingredients.item_id',
+          foreignField: 'id',
+          as: 'ingredient_items',
+        }
+      },
+      {
+        $lookup: {
+          from: 'items',
+          localField: 'output_item_id',
+          foreignField: 'id',
+          as: 'output_item',
+        }
+      }
+    ]);
+
+    res.json({
+      craftedBy,
+      useIn
+    });
+
+  } catch (e) {
+    console.log(`An error has occurred while trying to get item ${req.params.id} recipe`);
     res.status(500).json({
       message: e.message
     });
-  });
+  }
 });
 
 itemRouter.post('/update-item-prices', async (req: Request, res: Response, next) => {
   try {
-    const itemPriceService = new ItemPriceService();
-    const bulkWriteUpdateResult = await itemPriceService.updateExistingItemPrice();
+    const gW2ApiService = new GW2ApiService();
+    const bulkWriteUpdateResult = await gW2ApiService.updateItemPrices();
 
     res.json(bulkWriteUpdateResult);
   } catch (e) {
@@ -233,9 +295,41 @@ itemRouter.post('/update-item-trade-listings', async (req: Request, res: Respons
     const itemTradeListingService = new ItemTradeListingService();
     itemTradeListingService.updateAllItemTradeListing();
     console.log('Completed update of all listings');
-    res.json({ message: 'Performing action to update item trade listings'});
+    res.json({ message: 'Performing action to update item trade listings' });
   } catch (e) {
-    next(e);
-    res.status(500).json({message: e.getMessage()});
+    console.log('An error has occurred while trying to update trade list data');
+    console.error(e);
+  }
+});
+
+itemRouter.post('/update-item-recipes', async (req: Request, res: Response, next) => {
+  try {
+    const gw2ApiService = new GW2ApiService();
+    console.log('Received request to update recipe list')
+    gw2ApiService.updateRecipeList();
+
+    const gw2ProfitApiService = new GW2ProfitsApiService();
+    gw2ProfitApiService.getMysticForgeRecipes();
+
+    console.log('Completed update of all recipe');
+    res.json({ message: 'Performing action to update item recipe ' });
+
+  } catch (e) {
+    console.log('An error has occurred while trying to update recipe data');
+    console.error(e);
+  }
+});
+itemRouter.post('/update-all-items', async (req: Request, res: Response, next) => {
+  try {
+    const gw2ApiService = new GW2ApiService();
+    console.log('Received request to all update item listing')
+    gw2ApiService.updateItems();
+
+    console.log('Completed update of all update item listing');
+    res.json({ message: 'Performing action to update item all items ' });
+
+  } catch (e) {
+    console.log('An error has occurred while trying to update all items data');
+    console.error(e);
   }
 });

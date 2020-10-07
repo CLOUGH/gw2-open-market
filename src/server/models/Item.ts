@@ -1,5 +1,6 @@
 import * as mongoose from 'mongoose';
 import * as mongoosePaginate from 'mongoose-paginate';
+import * as mongooseAggregatePaginate  from 'mongoose-aggregate-paginate';
 
 export interface IIPrice {
   quantity?: number;
@@ -14,6 +15,7 @@ export interface IItemPrice {
 
 export interface IItem extends mongoose.Document {
   _id: string;
+  listed: true;
   name?: string;
   description?: string;
   type?: string;
@@ -39,37 +41,89 @@ const ItemSchema = new mongoose.Schema({
     index: true,
     unique: true
   },
-  name: String,
-  description: String,
-  type: String,
-  level: Number,
-  rarity: String,
-  vendor_value: Number,
-  default_skin: Number,
-  game_types: [String],
-  flags: [String],
-  upgrades_into: [mongoose.Schema.Types.Mixed],
-  restrictions: [mongoose.Schema.Types.Mixed],
-  upgrades_from: [mongoose.Schema.Types.Mixed],
-  chat_link: String,
-  icon: String,
-  details: mongoose.Schema.Types.Mixed,
-  listing: { type: mongoose.Schema.Types.ObjectId, ref: 'ItemListing' },
+  listed: {
+    type: Boolean,
+    index: true
+  },
+  name: {
+    type: String,
+    required: false,
+  },
+  description: {
+    type: String,
+    required: false,
+  },
+  type: {
+    type: String,
+    required: false,
+  },
+  level: {
+    type: Number,
+    required: false,
+  },
+  rarity: {
+    type: String,
+    required: false,
+  },
+  vendor_value: {
+    type: Number,
+    required: false,
+  },
+  default_skin: {
+    type: Number,
+    required: false,
+  },
+  game_types: {
+    type: [String],
+    required: false,
+  },
+  flags: {
+    type: [String],
+    required: false,
+  },
+  upgrades_into: {
+    type: [mongoose.Schema.Types.Mixed],
+    required: false,
+  },
+  restrictions: {
+    type: [mongoose.Schema.Types.Mixed],
+    required: false,
+  },
+  upgrades_from: {
+    type: [mongoose.Schema.Types.Mixed],
+    required: false,
+  },
+  chat_link: {
+    type: String,
+    required: false,
+  },
+  icon: {
+    type: String,
+    required: false,
+  },
+  details: {
+    type: mongoose.Schema.Types.Mixed,
+    required: false
+  },
   price: {
-    whitelisted: Boolean,
-    buys: {
-      quantity: Number,
-      unit_price: Number
+    type: {
+      whitelisted: Boolean,
+      buys: {
+        quantity: Number,
+        unit_price: Number
+      },
+      sells: {
+        quantity: Number,
+        unit_price: Number,
+      },
+      createdAt: Date,
+      updatedAt: Date,
     },
-    sells: {
-      quantity: Number,
-      unit_price: Number,
-    },
-    createdAt: Date,
-    updatedAt: Date,
+    required: false
   }
 }, { timestamps: true });
 
+mongooseAggregatePaginate(ItemSchema);
 mongoosePaginate(ItemSchema);
 ItemSchema.index({ name: 'text', description: 'text' }, { name: 'textSearch', weights: { name: 10, description: 5 } });
 

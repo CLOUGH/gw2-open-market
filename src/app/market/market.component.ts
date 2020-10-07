@@ -43,9 +43,9 @@ export class MarketComponent implements OnInit, AfterViewInit {
   chartOptions: Highcharts.Options;
   showChart = false;
   chartIsLoading = false;
-  @ViewChild('filterForm') filterForm: NgForm;
   @ViewChild(MatSort) sort: MatSort;
   subCategoryOptions = [];
+  recipes: any;
 
   itemFilterOptions: ItemFilterOption = {
     categories: [
@@ -105,14 +105,14 @@ export class MarketComponent implements OnInit, AfterViewInit {
         ]
       },
       {
-        label: 'Upgrade Component', value: 'Upgrade Component', subCategory: [
+        label: 'Upgrade Component', value: 'UpgradeComponent', subCategory: [
           { label: 'Weapon Sigil', value: 'Weapon Sigil' },
           { label: 'Armour Run', value: 'Armour Run' },
           { label: 'Other', value: 'Other' }
         ]
       },
-      { label: 'Packaged Good', value: 'Packaged Good' },
-      { label: 'Crafting Material', value: 'Crafting Material' },
+      { label: 'Packaged Good', value: 'PackagedGood' },
+      { label: 'Crafting Material', value: 'CraftingMaterial' },
       { label: 'Miscellaneous', value: 'Miscellaneous' },
       { label: 'Mini', value: 'Mini' },
       { label: 'Trophy', value: 'Trophy' },
@@ -128,15 +128,16 @@ export class MarketComponent implements OnInit, AfterViewInit {
     ],
     rarity: [
       { label: '', value: '' },
-      {label:'Basic', value: 'Basic'},
-      {label:'Fine', value: 'Fine'},
-      {label:'Masterwork', value: 'Masterwork'},
-      {label:'Rare', value: 'Rare'},
-      {label:'Exotic', value: 'Exotic'},
-      {label:'Ascended', value: 'Ascended'},
-      {label:'Legendary', value: 'Legendary'},
+      { label: 'Basic', value: 'Basic' },
+      { label: 'Fine', value: 'Fine' },
+      { label: 'Masterwork', value: 'Masterwork' },
+      { label: 'Rare', value: 'Rare' },
+      { label: 'Exotic', value: 'Exotic' },
+      { label: 'Ascended', value: 'Ascended' },
+      { label: 'Legendary', value: 'Legendary' },
     ]
   };
+  chartRenderingDone: boolean;
 
   constructor(
     private activatedRoute: ActivatedRoute,
@@ -147,7 +148,6 @@ export class MarketComponent implements OnInit, AfterViewInit {
   ) {
     console.log({ initChartModules: typeof Highcharts === 'object' });
     if (typeof Highcharts === 'object') {
-      HC_exporting(Highcharts);
       theme(Highcharts);
     }
     this.Highcharts = Highcharts;
@@ -159,8 +159,8 @@ export class MarketComponent implements OnInit, AfterViewInit {
       if (queryParams) {
         this.filter = queryParams;
       }
-      console.log({isPlatformServer: isPlatformServer(this.platform)});
-      if (isPlatformServer(this.platform)===false) {
+      console.log({ isPlatformServer: isPlatformServer(this.platform) });
+      if (isPlatformServer(this.platform) === false) {
         this.getItems();
       }
     });
@@ -168,23 +168,23 @@ export class MarketComponent implements OnInit, AfterViewInit {
 
   ngAfterViewInit(): void {
 
-    this.filterForm.valueChanges.subscribe(value => {
-      const selectedCategory = this.getSelectedCategory(value);
-      this.subCategoryOptions = selectedCategory && selectedCategory.subCategory ? selectedCategory.subCategory : [];
+    // this.filterForm.valueChanges.subscribe(value => {
+    //   const selectedCategory = this.getSelectedCategory(value);
+    //   this.subCategoryOptions = selectedCategory && selectedCategory.subCategory ? selectedCategory.subCategory : [];
 
-      if (this.subCategoryOptions.length === 0) {
-        this.filter = {
-          ...this.filter,
-          subCategory: ''
-        };
-      }
-    });
+    //   if (this.subCategoryOptions.length === 0) {
+    //     this.filter = {
+    //       ...this.filter,
+    //       subCategory: ''
+    //     };
+    //   }
+    // });
   }
 
   getItems(): void {
     this.updateUrl();
 
-    console.log({sort: this.sort});
+    this.chartOptions = null;
     this.gw2OpenMarketService
       .getItems(this.filter)
       .subscribe((res: HttpResponse<IItem[]>) => {
@@ -245,6 +245,16 @@ export class MarketComponent implements OnInit, AfterViewInit {
       });
 
       this.chartOptions = {
+        chart: {
+          animation: false,
+          reflow: false,
+          events: {
+            redraw: () => {
+              console.log('highcharts redraw, rendering-done');
+              this.chartRenderingDone = true;
+            }
+          },
+        },
         rangeSelector: {
           allButtonsEnabled: true,
           buttons: [
@@ -390,10 +400,17 @@ export class MarketComponent implements OnInit, AfterViewInit {
 
   toggleItemDetail(item: IItem): void {
     this.expandedElement = this.expandedElement === item ? null : item;
-
+    this.chartOptions = null;
     if (this.expandedElement) {
       this.getTradeHistory(item);
+      this.getRecipes(item);
     }
+  }
+
+  getRecipes(item: IItem): void {
+    this.gw2OpenMarketService.getItemRecipes(item.id).subscribe((recipes) => {
+      this.recipes = recipes.body;
+    })
   }
 
   getProfit(sellPrice, buyPrice) {

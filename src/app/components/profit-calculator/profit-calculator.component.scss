@@ -1,0 +1,28 @@
+@import '~@angular/material/theming';
+
+:host {
+  position: absolute;
+
+  left: 50%;
+  top: 50%;
+  margin-left: -200px;
+  margin-top: -250px;
+}
+
+mat-card {
+  height: 100%;
+}
+
+.calculator {
+  width: 400px;
+  height: 400px;
+  // position: relative;
+  z-index: 1;
+}
+
+.close-btn {
+  float: right;
+  // position: absolute;
+  // right: 15px;;
+  // top: 15px;
+}
