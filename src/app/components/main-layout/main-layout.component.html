@@ -1,0 +1,16 @@
+<div class="wrapper">
+    <mat-toolbar class="sticky" color="accent">
+        <span>GW2 Open Market</span>
+        <span class="example-spacer"></span>
+        <a mat-button routerLink="home">Home</a>
+        <a mat-button routerLink="market">Market</a>
+        <a mat-button routerLink="portfolio">Portfolio</a>
+    </mat-toolbar>
+    <div class="content">
+        <router-outlet></router-outlet>
+    </div>
+    <button mat-fab color="accent" class="profit-calculator-btn" (click)="showCalculator= !showCalculator">
+        <mat-icon>calculate</mat-icon>
+    </button>
+    <app-profit-calculator [hidden]="!showCalculator" (closeChange)="closeCalculator()"></app-profit-calculator>
+</div>

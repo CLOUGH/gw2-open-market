@@ -16,9 +16,7 @@ import { Promise } from 'bluebird';
 import { CronJob } from 'cron';
 
 // Mongoose config
-const user = 'root';
-const pass = '5JmUVYzMfb';
-const mongodbUrl = `mongodb://${user}:${pass}@localhost:27017`;
+const mongodbUrl = `mongodb://localhost:27017`;
 mongoose.connect(mongodbUrl, { useNewUrlParser: true, keepAlive: true, useCreateIndex: true, useUnifiedTopology: true});
 mongoose.connection.on('error', () => {
   throw new Error(`unable to connect to database: ${mongodbUrl}`);

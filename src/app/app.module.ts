@@ -31,6 +31,9 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import {DragDropModule} from '@angular/cdk/drag-drop';
 import { RecipeComponent } from './components/recipe/recipe.component';
 import {CdkTreeModule} from '@angular/cdk/tree';
+import { MainLayoutComponent } from './components/main-layout/main-layout.component';
+import { AdminLayoutComponent } from './components/admin-layout/admin-layout.component';
+import { AdminDashboardComponent } from './admin-dashboard/admin-dashboard.component';
 
 @NgModule({
   declarations: [
@@ -42,6 +45,9 @@ import {CdkTreeModule} from '@angular/cdk/tree';
     ItemTradeChartComponent,
     ProfitCalculatorComponent,
     RecipeComponent,
+    MainLayoutComponent,
+    AdminLayoutComponent,
+    AdminDashboardComponent,
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
