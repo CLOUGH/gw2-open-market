@@ -29,6 +29,8 @@ import { ScrollingModule } from '@angular/cdk/scrolling';
 import { ProfitCalculatorComponent } from './components/profit-calculator/profit-calculator.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import {DragDropModule} from '@angular/cdk/drag-drop';
+import { RecipeComponent } from './components/recipe/recipe.component';
+import {CdkTreeModule} from '@angular/cdk/tree';
 
 @NgModule({
   declarations: [
@@ -39,6 +41,7 @@ import {DragDropModule} from '@angular/cdk/drag-drop';
     PortfolioComponent,
     ItemTradeChartComponent,
     ProfitCalculatorComponent,
+    RecipeComponent,
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
@@ -62,7 +65,8 @@ import {DragDropModule} from '@angular/cdk/drag-drop';
     FormsModule,
     ScrollingModule,
     FlexLayoutModule,
-    DragDropModule
+    DragDropModule,
+    CdkTreeModule
 
   ],
   providers: [],

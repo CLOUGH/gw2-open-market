@@ -107,7 +107,7 @@ export class ItemTradeListingService {
         console.log(`Item ${item.id} trade listing was successfully updated`);
 
         console.log('Waiting before making a call to the service again');
-        await new Promise(resolve => setTimeout(() => resolve(), 1000));
+        await new Promise(resolve => setTimeout(() => resolve(null), 1000));
       }
 
       return null;

@@ -91,10 +91,12 @@ mat-form-field {
   // grid-template-columns: 1fr 1fr;
 }
 
-cdk-virtual-scroll-viewport {
+// cdk-virtual-scroll-viewport {
+//   height: 400px;
+// }
+.example-viewport {
   height: 400px;
 }
-
 
 mat-spinner {
   margin-left: auto ;

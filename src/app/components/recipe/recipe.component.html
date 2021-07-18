@@ -1,0 +1,40 @@
+<cdk-tree [dataSource]="dataSource" [treeControl]="treeControl">
+  <cdk-nested-tree-node *cdkTreeNodeDef="let node" class="example-tree-node">
+    <!-- use a disabled button to provide padding for tree leaf -->
+    <button mat-icon-button disabled></button>
+    <span>{{node.amount}}x</span>
+    <img *ngIf="node.icon" [src]="node.icon" [alt]="node.name" height="25" class="item-icon">
+    <span [class]="'text-'+node.rarity.toLowerCase()">{{node.name}}</span>
+    Buy Price
+    <app-coin [units]="node.amount * node.buyPrice"></app-coin> (<app-coin [units]="node.amount * node.buyPrice"></app-coin>)
+    Sell Price
+    <app-coin [units]="node.amount * node.sellPrice"></app-coin>
+    (<app-coin [units]="node.sellPrice"></app-coin>)
+    <!-- <button mat-icon-button class="copy-btn" aria-label="Copy name">
+      <mat-icon>content_copy</mat-icon>
+    </button> -->
+  </cdk-nested-tree-node>
+  <!-- This is the tree node template for expandable nodes -->
+  <cdk-nested-tree-node *cdkTreeNodeDef="let node; when: hasChild" class="example-tree-node">
+    <button mat-icon-button [attr.aria-label]="'Toggle ' + node.name" cdkTreeNodeToggle>
+      <mat-icon class="mat-icon-rtl-mirror">
+        {{treeControl.isExpanded(node) ? 'expand_more' : 'chevron_right'}}
+      </mat-icon>
+    </button>
+    <span>{{node.amount}}x</span>
+    <img *ngIf="node.icon" [src]="node.icon" [alt]="node.name" height="25" class="item-icon">
+    <span [class]="'text-'+node.rarity.toLowerCase()">{{node.name}}</span>
+    Buy Price
+    <app-coin [units]="node.buyPrice"></app-coin>
+    Sell Price
+    <app-coin [units]="node.sellPrice"></app-coin>
+    Craft Price
+    <app-coin [units]="node.craftPrice"></app-coin>
+    Profit
+    <app-coin [units]="node.amount*node.sellPrice - (node.sellPrice*0.15*node.amount) - node.craftPrice"></app-coin>
+
+    <div [class.example-tree-invisible]="!treeControl.isExpanded(node)">
+      <ng-container cdkTreeNodeOutlet></ng-container>
+    </div>
+  </cdk-nested-tree-node>
+</cdk-tree>

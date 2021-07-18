@@ -192,7 +192,7 @@ itemRouter.get('/', async (req: Request, res: Response, next) => {
   // Item.paginate(query, { limit: +limit, page: +page , sort: {createdAt : 1}})
 
   const aggregate = Item.aggregate();
-  aggregate.match(query).addFields({ sort: roiFormula});
+  aggregate.match(query).addFields({ sort: roiFormula });
 
   // @ts-ignore
   Item.aggregatePaginate(aggregate, { limit: +limit, page: +page, sort: { sort: -1 } })
@@ -214,18 +214,28 @@ itemRouter.get('/:id/recipes', async (req: Request, res: Response, next) => {
   try {
     const itemId = +req.params.id;
     const query = {};
-    const craftedBy = await Recipe.aggregate([{
-      $match: {
-        output_item_id: itemId
+    const craftedBy = await Recipe.aggregate([
+      {
+        $match: {
+          output_item_id: itemId
+        }
+      }, {
+        $lookup: {
+          from: 'items',
+          localField: 'ingredients.item_id',
+          foreignField: 'id',
+          as: 'ingredient_items',
+        },
+      },
+      {
+        $lookup: {
+          from: 'items',
+          localField: 'output_item_id',
+          foreignField: 'id',
+          as: 'output_item',
+        }
       }
-    }, {
-      $lookup: {
-        from: 'items',
-        localField: 'ingredients.item_id',
-        foreignField: 'id',
-        as: 'ingredient_items',
-      }
-    }]);
+    ]);
     const useIn = await Recipe.aggregate([
       {
         $match: { 'ingredients.item_id': itemId }

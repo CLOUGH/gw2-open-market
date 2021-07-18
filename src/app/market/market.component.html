@@ -271,7 +271,8 @@
                   <div class="crafted-by">
                     <h3>Crafted By</h3>
                     <div *ngFor="let recipe of recipes.craftedBy">
-                      <div>{{element.name}}</div>
+                      <app-recipe [recipe]="recipe"></app-recipe>
+                      <!-- <div>{{element.name}}</div>
                       <ul>
                         <li *ngFor="let item of recipe.ingredient_items">
                           <img [src]="item.icon" [alt]="item.name" height="25" class="item-icon">
@@ -287,15 +288,22 @@
                             <app-coin [units]="item.price.sells.unit_price"></app-coin>
                           </span>
                         </li>
-                      </ul>
+                      </ul> -->
                     </div>
                   </div>
 
                   <div class="used-by">
                     <h3>Used to Craft</h3>
-                    <cdk-virtual-scroll-viewport itemSize="50">
+                    <cdk-virtual-scroll-viewport itemSize="20"  class="example-viewport">
                       <div *cdkVirtualFor="let recipe of recipes.useIn">
-                        <div *ngIf="recipe.output_item[0]">
+                        <div *ngIf="recipe">
+                          <app-recipe [recipe]="recipe"></app-recipe>
+                        </div>
+                        <div *ngIf="!recipe">
+                          Loading...
+                        </div>
+
+                        <!-- <div *ngIf="recipe.output_item[0]">
                           <img *ngIf="recipe.output_item[0].icon" [src]="recipe.output_item[0].icon"
                             [alt]="recipe.output_item[0].name" height="25" class="item-icon">
                           <span
@@ -326,7 +334,7 @@
                               <app-coin [units]="item.price.sells.unit_price"></app-coin>
                             </span>
                           </li>
-                        </ul>
+                        </ul> -->
                       </div>
                     </cdk-virtual-scroll-viewport>
                   </div>
