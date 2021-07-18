@@ -25,7 +25,7 @@ mongoose.connection.on('error', () => {
 // Cron config
 const minuteJob = new CronJob('*/15 * * * *', async () => {
   const gw2ApiService = new GW2ApiService();
-  gw2ApiService.updateItemPrices();
+  // gw2ApiService.updateItemPrices();
   console.log(`Started minutely job. Started at ${new Date()}`);
 });
 

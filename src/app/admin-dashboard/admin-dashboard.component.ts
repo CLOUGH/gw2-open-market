@@ -16,8 +16,20 @@ export class AdminDashboardComponent implements OnInit {
   updateItemList() {
     
     this.gw2OpenMarketService.updateItemList().subscribe(() => {
+      console.log('Updating item list running')
+    });
+  }
+
+
+  updateItemPrices(){
+    this.gw2OpenMarketService.updateItemPrices().subscribe(() => {
       console.log('Price update running')
     });
   }
 
+  updateItemRecipes(){
+    this.gw2OpenMarketService.updateItemRecipes().subscribe(() => {
+      console.log('Recipes update running')
+    });
+  }
 }

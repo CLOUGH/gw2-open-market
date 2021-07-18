@@ -43,4 +43,15 @@ export class Gw2OpenMarketServiceService {
       observe: 'response'
     });
   }
+  public updateItemPrices(): Observable<HttpResponse<any>> {
+    return this.http.post<any>(`${this.apiUrl}/items/update-item-prices`, {
+      observe: 'response'
+    });
+  }
+
+  public updateItemRecipes(): Observable<HttpResponse<any>> {
+    return this.http.post<any>(`${this.apiUrl}/items/update-item-recipes`, {
+      observe: 'response'
+    });
+  }
 }
