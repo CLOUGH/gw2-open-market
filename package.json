@@ -12,7 +12,9 @@
     "serve:ssr": "node dist/gw2-open-market/server/main.js",
     "build:ssr": "ng build --prod && ng run gw2-open-market:server:production",
     "prerender": "ng run gw2-open-market:prerender",
-    "postinstall": "ngcc"
+    "postinstall": "ngcc",
+    "build:functions": "npm run --prefix functions build",
+    "build:all": "npm run build:ssr && npm run build:functions"
   },
   "private": true,
   "dependencies": {
@@ -39,8 +41,10 @@
     "axios": "^0.20.0",
     "bluebird": "^3.7.2",
     "cron": "^1.8.2",
+    "dotenv": "^10.0.0",
     "express": "^4.15.2",
     "fs": "0.0.1-security",
+    "fs-extra": "^10.0.0",
     "highcharts": "^8.2.0",
     "highcharts-angular": "^2.8.0",
     "moment": "^2.28.0",

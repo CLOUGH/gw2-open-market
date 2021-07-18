@@ -19,6 +19,7 @@ export class ProfitCalculatorComponent implements OnInit {
   }
 
   getListingFee(): number {
+    console.log(this.sell, this.buy)
     return this.sell ? this.sell * 0.05 * this.quantity : 0;
   }
   getSellingFee(): number {

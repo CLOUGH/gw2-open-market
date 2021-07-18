@@ -14,9 +14,10 @@ import { router } from 'src/server/routes';
 import * as mongoose from 'mongoose';
 import { Promise } from 'bluebird';
 import { CronJob } from 'cron';
+require('dotenv').config()
 
 // Mongoose config
-const mongodbUrl = `mongodb://localhost:27017`;
+const mongodbUrl = process.env.databaseUrl;
 mongoose.connect(mongodbUrl, { useNewUrlParser: true, keepAlive: true, useCreateIndex: true, useUnifiedTopology: true});
 mongoose.connection.on('error', () => {
   throw new Error(`unable to connect to database: ${mongodbUrl}`);

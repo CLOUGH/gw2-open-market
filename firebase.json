@@ -1,0 +1,18 @@
+{
+  "functions": {
+  },
+  "hosting": {
+    "public": "dist/gw2-open-market/browser",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "function": "ssr"
+      }
+    ]
+  }
+}
